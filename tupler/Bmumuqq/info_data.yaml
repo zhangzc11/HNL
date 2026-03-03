@@ -1,0 +1,17 @@
+input_raw_format: 0.5
+input_type: ROOT
+output_type: ROOT
+input_process: Spruce
+input_stream: qee
+simulation: False
+lumi: False
+data_type: Upgrade
+geometry_version: run3/trunk
+conditions_version: master
+scheduler_legacy_mode: False
+input_files:
+  - /data0/lhcb/zhicaiz/data/Collision24/QEE.DST/00257671/00257671_00000101_1.qee.dst
+print_freq: 1000
+evt_max: -1
+ntuple_file: dv_ntuple_data_Wmumuqq.root
+

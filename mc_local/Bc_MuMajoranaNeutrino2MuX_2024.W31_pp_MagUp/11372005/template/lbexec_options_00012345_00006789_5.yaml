@@ -1,0 +1,20 @@
+compression:
+  algorithm: ZSTD
+  level: 1
+  max_buffer_size: 1048576
+conddb_tag: sim10-2024.W31-v00.00-mu100
+data_type: Upgrade
+dddb_tag: 2024-v00.04
+evt_max: -1
+input_files:
+- LFN:00012345_00006789_4.hlt2.dst
+input_process: Hlt2
+input_raw_format: 0.5
+input_type: ROOT
+n_threads: 1
+output_file: 00012345_00006789_5.spruce.dst
+output_type: ROOT
+process: Spruce
+simulation: true
+xml_file_catalog: pool_xml_catalog.xml
+xml_summary_file: summaryMoore_00012345_00006789_5.xml

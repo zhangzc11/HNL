@@ -1,0 +1,32 @@
+compression:
+  algorithm: LZMA
+  level: 4
+  max_buffer_size: 1048576
+conddb_tag: sim10-2024.W31-v00.00-mu100
+data_type: Upgrade
+dddb_tag: 2024-v00.04
+evt_max: -1
+input_files:
+- ../010/00012345_00006789_4.hlt2.dst
+- ../011/00012345_00006789_4.hlt2.dst
+- ../012/00012345_00006789_4.hlt2.dst
+- ../013/00012345_00006789_4.hlt2.dst
+- ../014/00012345_00006789_4.hlt2.dst
+- ../015/00012345_00006789_4.hlt2.dst
+- ../016/00012345_00006789_4.hlt2.dst
+- ../017/00012345_00006789_4.hlt2.dst
+- ../018/00012345_00006789_4.hlt2.dst
+- ../019/00012345_00006789_4.hlt2.dst
+input_raw_format: 0.5
+input_type: ROOT
+n_threads: 1
+output_file: 00012345_00006789_4.hlt2.dst
+output_type: ROOT
+root_ioalg_name: RootIOAlgExt
+root_ioalg_opts:
+  IgnorePaths:
+  - /Event/DAQ/RawEvent/moved/aside
+  StoreOldFSRs: true
+simulation: true
+xml_file_catalog: pool_xml_catalog_4.xml
+xml_summary_file: summaryLHCb_00012345_00006789_4.xml

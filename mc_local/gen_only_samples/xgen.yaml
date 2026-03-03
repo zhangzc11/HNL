@@ -1,0 +1,14 @@
+input_files: Gauss-14312006-10000ev-20251231.xgen
+input_type: ROOT
+data_type: "Upgrade"
+simulation: true
+conddb_tag: "sim10-2024.W31-v00.00-mu100"
+dddb_tag: "2024-v00.04"
+conditions_version: master
+geometry_version: run3/trunk
+histo_file: DV_histo_xgen.root
+ntuple_file: DV_tuple_xgen.root
+input_raw_format: 0.5
+input_process: Gen
+lumi: False
+write_fsr: False

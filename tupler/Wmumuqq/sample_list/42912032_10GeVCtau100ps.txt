@@ -1,0 +1,10 @@
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912032_10GeVCtau100ps/merge00/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912032_10GeVCtau100ps/merge01/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912032_10GeVCtau100ps/merge02/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912032_10GeVCtau100ps/merge03/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912032_10GeVCtau100ps/merge04/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912032_10GeVCtau100ps/merge05/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912032_10GeVCtau100ps/merge06/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912032_10GeVCtau100ps/merge07/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912032_10GeVCtau100ps/merge08/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912032_10GeVCtau100ps/merge09/00012345_00006789_6.spruce.dst

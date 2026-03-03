@@ -1,0 +1,4 @@
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912037_20GeVCtau1000ps/merge00/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912037_20GeVCtau1000ps/merge01/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912037_20GeVCtau1000ps/merge02/00012345_00006789_6.spruce.dst
+/pool2/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42912037_20GeVCtau1000ps/merge03/00012345_00006789_6.spruce.dst

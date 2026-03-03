@@ -1,0 +1,10 @@
+
+- TRUTH matching:
+
+```
+"abs(Mu_TRUEID)==13 && abs(MuNuR_TRUEID)==13 && abs(Mu_MC_MOTHER_ID) == 9900024 && abs(MuNuR_MC_MOTHER_ID) == 9900014 && abs(MuNuR_MC_GD_MOTHER_ID) == 9900024 && (Jet1_ConMC_GDall_MOTHER_ID_N9900014>0 || Jet1_ConTRUEID_N9900014 > 0) "
+```
+
+```
+"abs(Mu_TRUEID)==13 && abs(MuNuR_TRUEID)==13 && abs(Mu_MC_MOTHER_ID) == 9900024 && abs(MuNuR_MC_MOTHER_ID) == 9900014 && abs(MuNuR_MC_GD_MOTHER_ID) == 9900024 && (Jet1_ConMC_GDall_MOTHER_ID_N9900014>0 || Jet1_ConTRUEID_N9900014 > 0) &&  (Jet2_ConMC_GDall_MOTHER_ID_N9900014>0 || Jet2_ConTRUEID_N9900014 > 0)"
+```

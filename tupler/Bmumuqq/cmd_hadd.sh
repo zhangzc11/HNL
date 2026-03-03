@@ -1,0 +1,12 @@
+cd local_run_LFNs_42912010_5GeVCtau0ps_options_20260213_165559; source cmd_hadd.sh; cd ..
+cd local_run_LFNs_42912011_5GeVCtau10ps_options_20260213_165559; source cmd_hadd.sh; cd ..
+cd local_run_LFNs_42912012_10GeVCtau0ps_options_20260213_165559; source cmd_hadd.sh; cd ..
+cd local_run_LFNs_42912014_15GeVCtau0ps_options_20260213_165559; source cmd_hadd.sh; cd ..
+cd local_run_LFNs_42912016_20GeVCtau0ps_options_20260213_165559; source cmd_hadd.sh; cd ..
+cd local_run_LFNs_42912018_30GeVCtau0ps_options_20260213_165559; source cmd_hadd.sh; cd ..
+cd local_run_LFNs_42912020_50GeVCtau0ps_options_20260213_165559; source cmd_hadd.sh; cd ..
+cd local_run_LFNs_42912021_50GeVCtau10ps_options_20260213_165559; source cmd_hadd.sh; cd ..
+cd local_run_LFNs_42912030_5GeVCtau100ps_options_20260213_165559; source cmd_hadd.sh; cd ..
+cd local_run_LFNs_42912031_5GeVCtau1000ps_options_20260213_165559; source cmd_hadd.sh; cd ..
+cd local_run_LFNs_42912040_50GeVCtau100ps_options_20260213_165559; source cmd_hadd.sh; cd ..
+cd local_run_LFNs_42912041_50GeVCtau1000ps_options_20260213_205850; source cmd_hadd.sh; cd ..

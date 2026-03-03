@@ -1,0 +1,14 @@
+input_raw_format: 0.5
+input_type: ROOT
+output_type: ROOT
+input_process: Spruce
+simulation: True
+lumi: False
+conddb_tag: sim10-2024.W31-v00.00-mu100
+data_type: Upgrade
+dddb_tag: 2024-v00.04
+geometry_version: run3/trunk
+conditions_version: master
+scheduler_legacy_mode: False
+print_freq: 1000
+evt_max: -1
