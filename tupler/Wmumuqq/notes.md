@@ -1,4 +1,12 @@
 
+
+- Reference for ntuple branch definitions:
+
+https://lhcbdoc.web.cern.ch/lhcbdoc/moore/master/selection/thor_functors_reference.html
+
+https://lhcb-davinci.docs.cern.ch/autoapi/FunTuple/functorcollections/index.html#FunTuple.functorcollections.EventInfo
+
+
 - TRUTH matching:
 
 ```
