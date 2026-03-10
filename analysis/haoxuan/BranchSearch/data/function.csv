@@ -1,0 +1,503 @@
+Function,Discription
+ABS,Evaluates the absolute value of a scalar quantity
+ABS_DELTA_MASS,"Get the absolute value of the difference between the reconstructed and the PDG mass (for reference see PDG_MASS()), e.g. ABS_DELTA_MASS(“J/psi(1S)”) < 10.*MeV"
+ACCEPT,"Return specified bool value, regardless of the arguments"
+ADDRESSOF,Return address of input. E.g. for pointer comparison
+ADJUST_ANGLE,Adjust angle if larger than pi
+ALL,Accept everything; always evaluates to ‘true’.
+ALLPVX,vector of x-coordinates of all primary vertices
+ALLPVY,vector of y-coordinates of all primary vertices
+ALLPVZ,vector of z-coordinates of all primary vertices
+ALLPV_FD,Calculate flight distance with respect to all specified primary vertices.
+ALLPV_IP,Calculate Impact Parameter with respect to all specified primary vertices.
+ALV,Compute the cosine value of angle between two decay products.
+ASYM,Evaluates the asymmetry value between the application of the functor on the reference particle and the sum of the results of the application of the functor to each related particle
+BACK,Back element of range
+BESTLHCBIDOVERLAP,Return the particle with the highest overlap in LHCbIDs for a given input particle Args: Particles: DataHandle of container of Particles to search for largest overlap VPFrac: Minimum overlap fraction in VP to be considered for best overlap UTFrac: Minimum overlap fraction in UT to be considered for best overlap FTFrac: Minimum overlap fraction in FT to be considered for best overlap MuonFrac: Minimum overlap fraction in the Muon to be considered for best overlap UseMuonNeighbours: Use neighbouring muon hits for overlap check
+BEST_PV,"Given list of vertices, get best PV of particle."
+BKGCAT,Background category of composite particle.
+BPV,Determine Best Primary Vertex of a particle
+BPVCORRM,Compute the corrected mass of the composite using the BPV().
+BPVCORRMERR,Compute the corrected mass error of the composite using the BPV().
+BPVDIRA,Cosine of angle between particle momentum and flight direction (BPVFDVEC())
+BPVDLS,Decay length with respect to the BPV()
+BPVETA,Eta (pseudorapidity) coordinate of the distance vector between ENDVERTEX_POS() and BPV_POS()
+BPVFD,Flight distance (magnitude of BPVFDVEC())
+BPVFDCHI2,FDCHI2 with respect to the BPV()
+BPVFDIR,Normalized flight direction vector (unitvector of BPVFDVEC())
+BPVFDVEC,Distance vector between ENDVERTEX_POS() and BPV_POS()
+BPVIP,Impact parameter with respect to the BPV().
+BPVIPCHI2,Impact parameter Chi2 with respect to the BPV(). More precisely that means the difference in the chi2 of the PV fit (of the BPV) between including and excluding the object the function is called on.
+BPVLTIME,Lifetime with respect to the BPV()
+BPVVDRHO,Rho coordinate of the distance vector between ENDVERTEX_POS() and BPV_POS()
+BPVVDX,X distance between ENDVERTEX_POS() and BPV_POS()
+BPVVDY,Y distance between ENDVERTEX_POS() and BPV_POS()
+BPVVDZ,Z distance between ENDVERTEX_POS() and BPV_POS()
+BPVX,X position of BPV_POS()
+BPVY,Y position of BPV_POS()
+BPVZ,Z position of BPV_POS()
+BPV_POS,Position of BPV()
+BREMBENDCORR,Correction factor accounting for bending biases in track due to brem.
+BREMENERGY,Brem momentum-recovery energy.
+BREMHYPODELTAX,Test statistic of being first-state like of CaloHypo (photon) for brem recovery
+BREMHYPOENERGY,Energy of CaloHypo (photon) associated to track for brem recovery.
+BREMHYPOID,"All significant bits representation of CellID (32bits), i.e. CellID.all(), for CaloHypo (photon) associated to track for brem recovery 0 is invalid/unavailable (see Detector/Calo/include/Detector/Calo/CaloCellID.h)"
+BREMHYPOISNEUTRAL,If the CaloHypo is neutral (as opposed to charged/unassigned).
+BREMHYPOMATCH_CHI2,2D chi2 of CaloHypo (photon) associated to track for brem recovery
+BREMPIDE,Brem-based DLL for electron-ID.
+BREMTRACKBASEDENERGY,Track-based brem energy determination
+BTRACKING_BPVCORRM,Compute the corrected mass of the composite using the associated heavy flavour track.
+BTRACKING_NHITS,Number of hits on heavy flavour track.
+BTRACKING_NPRVELO3DEXPECT,Number of crossed VELO sensors according to pattern recognition window.
+BTRACKING_TRACK,Returns heavy flavour track object associated to composite.
+BUNCHCROSSING_ID,Extracts bunch crossing id from ODIN
+BUNCHCROSSING_TYPE,Extracts bunch crossing type from ODIN
+CALL,Return an element of a matrix :param Row: row of element :param Col: column of element
+CALOCELLID_ALL,Retrieve bitwise information (32bits) of Calo CellID. 0 is invalid/unavailable (see Detector/Calo/include/Detector/Calo/CaloCellID.h)
+CALOCELLID_AREA,Retrieve area code of CellID
+CALOCELLID_COLUMN,Retrieve column code of CellID
+CALOCELLID_ROW,Retrieve row code of CellID
+CALOCLUSTER,Get the CaloCluster of a CaloHypo.
+CALO_CLUSTER_MASS,Retrieve the CALO cluster mass obtained from MergedPi0Alg.
+CALO_NEUTRAL_1TO9_ENERGY_RATIO,Fraction of highest E cell (seed) to 9 (3x3) cells forming the cluster.
+CALO_NEUTRAL_4TO9_ENERGY_RATIO,Fraction of highest 2x2 cell (seed) to 9 (3x3) cells forming the cluster.
+CALO_NEUTRAL_ECAL_ENERGY,Retrieve the ECAL cluster energy associated to the neutral CaloHypo.
+CALO_NEUTRAL_HCAL2ECAL_ENERGY_RATIO,"Retrieve the HCAL/ECAL energy ratio associated to the neutral CaloHypo, usually used to compute neutral PID."
+CALO_NEUTRAL_ID,Retrieve bitwise information (32bits) of all CALO neutral seed CellIDs. 0 is invalid/unavailable (see Detector/Calo/include/Detector/Calo/CaloCellID.h)
+CALO_NEUTRAL_SHOWER_SHAPE,CaloID estimator: 2nd order moment of the cluster. Return the square of the width of the shower/cluster in the transverse plane
+CALO_NUM_SATURATED_CELLS,ComposedBoundFunctor:
+CAST_TO_FLOAT,Return argument as float
+CAST_TO_INT,Return argument as int
+CELLENERGIES,Return the energies of the (mostly) 3x3 Cells surrounding the center of a CaloCluster.
+CELLIDS,returns the Cell IDs of the (mostly) 3x3 Cells surrounding the center of a CaloCluster.
+CHARGE,Compute the charge
+CHARGEDHYPO,Get the Charged CaloHypo of particle.
+CHARGEDHYPO_CELLENERGIES,Calo cluster cell energies of a charged particle.
+CHARGEDHYPO_CELLIDS,Calo cluster cell IDs of a charged particle.
+CHI2,Vertex or track chi^2.
+CHI2DOF,Vertex or track chi^2 per degrees of freedom.
+CHILD,Apply functor on a child.
+CLOSESTTOBEAM,‘Returns the closest-to-beam state of a given track.’
+CLUSTERID,CellID.all() of the best matching cluster for a given reconstructed track. 0 is invalid/unavailable (see Detector/Calo/include/Detector/Calo/CaloCellID.h)
+CLUSTERMATCH_CHI2,CaloID estimator : 2D chi2 for Track/CaloCluster matching (neutral + charged).
+CLUSTERNEUTRALITY,Neutral/charged separation variable Functor’s call operator expects an LHCb::Particle or ProtoParticle.
+COLUMN,Returns T(‘label’) when acting on T.
+COMB_MASS,Evaluates the invariant mass of the sum of two 4-vectors.
+COSANGLE,Evaluates dot product of two unit vectors
+COS_HELICITY_ANGLE,Get the cosine of the helicity angle for the given inputs.
+COS_SIMPLIFIED_HELICITY_ANGLE,Get the cosine of the simplified helicity angle for the given inputs.
+COUNT_IF,Count the number of elements in a range satisfying some predicate
+COV,"Return an element of a track’s covariance TRACK_COVARIANCE(): (x,y,tx,ty,qop)"
+DECISION,Extract HLT event decision with respect to a given trigger line using selection DecReports
+DECREPORTS_FILTER,Filter events depending on DecReports decision
+DECREPORTS_RE_FILTER,Filter events depending on DecReports decision
+DELHCB,Returns a handle to LHCb::Detector::DeLHCb
+DELTAQ,"Evaluate the momentum transfer for two particles, which are considered to originate from a common decay, with optional mass hypotheses."
+DETA,Evaluates the difference between the pseudorapidity of two particles
+DOT,Dot product.
+DOWNSTREAMCHI2,Return chi2 of fitted downstream track segment
+DOWNSTREAMCHI2DOF,Return chi2/ndof of fitted downstream track segment
+DPHI,Evaluates the difference between the phi angle of two particles
+DR2,ComposedBoundFunctor:
+ECALPIDE,Ecal-based DLL for electron-ID.
+ECALPIDMU,Ecal-based DLL for mu-ID.
+ELECTRONENERGY,Cluster energy associated to CaloHypo (charged)
+ELECTRONID,"All significant bits representation of CellID (32bits), i.e. CellID.all(), associated to CaloHypo seed (electron hypo) 0 is invalid/unavailable (see Detector/Calo/include/Detector/Calo/CaloCellID.h)"
+ELECTRONMATCH_CHI2,CaloID estimator : 3D chi2 for Track/CaloHypo(e) matching (charged).
+ELECTRONSHOWERDLL,Summed per-cell E/p DLL (electron versus pion) with track-based cell selection and energy estimation.
+ELECTRONSHOWEREOP,Electron energy/momentum with track-based cell selection.
+ELEMENT_AT_INDEX,Element at given index of range
+ENDVERTEX,Get the endvertex of an object.
+ENDVERTEX_POS,Get the 3-vector position of the ENDVERTEX() of a particle.
+END_VRHO,Get the rho-coordinate of the ENDVERTEX() of a particle.
+END_VX,Get the X-coordinate of the ENDVERTEX() of a particle.
+END_VY,Get the Y-coordinate of the ENDVERTEX() of a particle.
+END_VZ,Get the Z–coordinate of the ENDVERTEX() of a particle.
+ENERGY,Get the energy (see FOURMOMENTUM() for definition).
+ENTRY_WITH_MAX_REL_VALUE_OF,"Return an entry in the list which corresponds to the maximum value of the functor. If X is the original list and F(X) is the result of the functor F, this returns element x for which F(X) is a maximum i.e. x = argmax F(X)"
+ENTRY_WITH_MIN_REL_VALUE_OF,"Return an entry in the list which corresponds to the minimum value of the functor. If X is the original list and F(X) is the result of the functor F, this returns element x for which F(X) is a minimum i.e. x = argmin F(X)"
+ETA,Get the eta (pseudorapidity) coordinate of a slope (see SLOPES() for definition).
+ETA_COORDINATE,Get eta coordinate (pseudorapidity). Functor to be used in composition.
+EVENTNUMBER,Extracts event number from ODIN
+EVENTTYPE,Extracts event type from ODIN
+EXTRAPOLATE_TRACK,Get extrapolated position vector of track at given z
+EXTRAPOLATE_TRACK_TO_POCA,"Get the track state at the closest position to the given point (x,y,z) using the used-provided TrackStateProvider. This algorithm uses golden-section minimisation algorithm."
+E_COORDINATE,Get E coordinate. Functor to be used in composition.
+FILL_NUMBER,Get the fill number from the LHC conditions.
+FILTER,Adapt a predicate to filter a container.
+FIND_DECAY,Find a particle in the reconstructed decay
+FIND_IN_TREE,Check whenever a basic particle (from InputCandidates) is inside a decay tree of a composite one (from ReferenceParticles).
+FIND_MCDECAY,Find a MCParticle in the decay
+FLATTEN,Flatten nested vector of vectors or Join two vectors.
+FLAVOURTAG,Flavour tagging decision
+FORWARDARG0,Forward the first argument.
+FORWARDARG1,Forward the second argument
+FORWARDARG2,Forward the third argument
+FORWARDARGS,"Forward all the arguments. It can be used in binding operation for composed functors with argument. While binding, one (or more) argument is fixed and all the other will be forwarded."
+FOURMOMENTUM,4-Momentum vector.
+FROM,"Given a relation, return the FROM side"
+FRONT,Front element of range
+FTLHCBIDOVERLAP,Return the overlap in FT LHCbIDs between a Particle and the Particle in a container of Particles with the highest overlap in LHCbIDs Args: Particles: DataHandle of container of Particles to search for largest overlap VPFrac: Minimum overlap fraction in VP to be considered for best overlap UTFrac: Minimum overlap fraction in UT to be considered for best overlap FTFrac: Minimum overlap fraction in FT to be considered for best overlap MuonFrac: Minimum overlap fraction in the Muon to be considered for best overlap UseMuonNeighbours: Use neighbouring muon hits for overlap check
+GATHER,A functor using other (bound) functors as inputs and returns vector of return values
+GET,Get an element of statically indexed data. :param index: index of dats
+GET_ALL_BASICS,Returns all basic particles.
+GET_ALL_DESCENDANTS,Returns all descendants. The descendants include intermediate (composite) and final (basic) states.
+GET_CHILDREN,Get the first generation of descendants (see GET_GENERATION() for definition).
+GET_GENERATION,Returns all descendants belonging to a given generation.
+GET_GRANDCHILDREN,Get the second generation of descendants (see GET_GENERATION() for definition).
+GHOSTPROB,Track ghost probability (see TRACK() for definition).
+GPSTIME,Extracts gps time from ODIN
+GSIP,"Calculates the impact parameter (IP) of a track with respect to a best primary vertex (see BPV definition). The best primary vertex is choosen using a closest track state to point (0,0,0)."
+HASBREM,Has non-zero brem momentum-recovery energy.
+HASBREMADDED,Has non-zero brem momentum-recovery energy added (using Particle class flag). Functor’s call operator expects a particle-like object in v1 event model.
+HASOWNPV,Check if particle has associated PV.
+HASVPSENSOROVERLAP,Check if track has hits in different sensors of same VELO module
+HAS_BOTTOM,return true if particle has bottom quark.
+HAS_CHARM,return true if particle has charm quark.
+HAS_QUARK,Returns if particle contains a given quark.
+HAS_VALUE,Return true if the input has a valid value.
+HCALEOP,Hcal energy deposit over momentum (track)
+HCALPIDE,Hcal-based DLL for electron-ID.
+HCALPIDMU,Hcal-based DLL for mu-ID.
+HIT_PATTERN,Get HitPattern from LHCbIDs
+IDENTITY,Returns the same value.
+INBREM,In Brem acceptance.
+INECAL,In Ecal acceptance.
+INGENERATION,Requires there is a particle in a decay tree satisfying the predicate at the given depth (see GET_GENERATION() for definition)
+INHCAL,In Hcal acceptance.
+INMUON,InAcceptance. Functor’s call operator expects a particle-like object.
+INTERACTIONREGION,Get the interaction region from the LHC conditions.
+INTREE,Requires there is a particle in a decay tree satisfying the predicate (see GET_ALL_DESCENDANTS() for definition)
+INT_CALO_NUM_SATURATED_CELLS,Retrieve the number of saturated cells.
+IP,Calculate IP between vertex and state position. The first implicit argument type is a three-vector position.
+IPCHI2,Calculate IP Chi2 between vertex and state position. The first implicit argument type is a vertex.
+ISBASICPARTICLE,IsBasicParticle. Returns the ‘isBasicParticle’ of the Particle object.
+ISMUON,IsMuon. Functor’s call operator expects a particle-like object.
+ISMUONTIGHT,IsMuonTight. Functor’s call operator expects a particle-like object.
+IS_ABS_ID,"Check if particle ABSID matches the specific abs(ID) (string representation). Both are compared by the absolute values, e.g. IS_ABS_ID(“pi+”) is equivalent to IS_ABS_ID(“pi-“)"
+IS_BARYON,return true if either LHCb::Particle or LHCb::MCParticle is baryon.
+IS_HADRON,return true if either LHCb::Particle or LHCb::MCParticle is hadron.
+IS_ID,"Check if particle ID matches the specific ID (string representation, e.g. IS_ID(“pi+”) )."
+IS_LEPTON,return true if either LHCb::Particle or LHCb::MCParticle is lepton.
+IS_MESON,return true if either LHCb::Particle or LHCb::MCParticle is meson.
+IS_NOT_H,MLP-based neutralID - anti-hadron ID
+IS_PHOTON,Gamma/Pi0 separation variable (neutral)
+IS_TIS,Check if the trigger result for a particle is TIS for a given trigger line
+IS_TOS,Check if the trigger result for a particle is TOS for a given trigger line
+LARGESTMUONCLUSTER,Return the transverse size of the largest muon cluster in a given station and region.
+LHCBID2MCPARTICLE,MCParticle associated to LHCbID
+LHCBIDS,Get LHCbIDs from track-like object
+LHCB_CLOCKPHASE,Get the LHCb clock phase from the LHC conditions.
+LHC_ENERGY,Get the LHC beam energy.
+LOGGER,"Print argument, and then return the same value."
+MAGNITUDE,Get magnitude of vector.
+MAP,Map a functor over a range
+MAP_ALL_OF,"Map a predicate over range, early stopping if one value is false"
+MAP_ANY_OF,"Map a predicate over range, early stopping if one value is true"
+MAP_INPUT,Map the input object to the related object (via relations table) and apply functor to it.
+MAP_INPUT_ARRAY,Create a map with the relations between the input candidate and a vector of output particles.
+MAP_INPUT_SIZE,Return the size of mapped object
+MAP_TO_RELATED,Get the related object from the input object (via relations table).
+MAP_WEIGHT,Map the input object to the weights of related objects via relations table.
+MASS,Get the particle (composite or basic) mass.
+MASSWITHHYPOTHESES,Invariant mass of a combined particle given child mass hypotheses.
+MASS_WITH_BREM,Get invariant mass of a particle with brem correction
+MATCHCHI2,Return chi2 of upstream-downstream match of fitted track
+MATCHCHI2DOF,Return chi2/ndof of upstream-downstream match of fitted track
+MATH_ERROR,Returns the error of Gaudi::Math::ValueWithError
+MATH_INVARIANT_MASS,Returns the scalar momentum by input.invariantMass()
+MATH_SCALAR_MOMENTUM,Returns the scalar momentum by input.scalarMomentum()
+MATH_VALUE,Returns the value of Gaudi::Math::ValueWithError
+MAX,Calculate the maximum of the given functor value.
+MAXCONE,Evaluates the maximum element of the results of the application of the functor to each particle on the TO side of the table
+MAXDOCA,Compute the maximum pairwise distance of closest approach between members of a combination using IDistanceCalculator.
+MAXDOCACHI2,"Compute the maximum pairwise significance of the distance of closest approach, computed using an IDistanceCalculator implementation, between members of a combination."
+MAXDOCACHI2CUT,Cut on the significance of the distance of closest approach between two track-like object which may need transport.
+MAXDOCACUT,Cut on the the distance of closest approach between two track-like objects which may need transport.
+MAXSDOCA,Compute the maximum pairwise distance of closest approach between members of a combination.
+MAXSDOCACHI2,Compute the maximum pairwise significance of the distance of closest approach between members of a combination.
+MAXSDOCACHI2CUT,Cut on the significance of the distance of closest approach between two ‘states’.
+MAXSDOCACUT,Cut on the the distance of closest approach between two ‘states’.
+MAXTREE,Evaluates the maximal value of the applied functor through a decay tree (see GET_ALL_DESCENDANTS() for definition)
+MAX_ELEMENT,Maximum value of range
+MC_ALLPVS,Return all MC primary vertices from MC Header
+MC_COS_HELICITY_ANGLE,Get the cosine of the helicity angle for the given inputs.
+MC_COS_SIMPLIFIED_HELICITY_ANGLE,Get the cosine of the simplified helicity angle for the given inputs.
+MC_EVTNUMBER,Return event number from MC Header
+MC_EVTTIME,Return event time from MC Header
+MC_FIRST_LONGLIVED_ANCESTOR,Get the first longlived ancestor.
+MC_ISPROMPT,Determine whenever a decay originates from prompt charm based on the true lifetime of its ancestors.
+MC_LIFETIME,Get the lifetime of a MCParticle.
+MC_MOTHER,Apply functor on mother.
+MC_ORIGINFLAG,Get the true origin type of a tagging MCParticle.
+MC_ORIGINVERTEX,Get the origin vertex of a MCParticle.
+MC_PRIMARYVERTEX,Get the primary vertex of a MCParticle.
+MC_PROPERTY,Retrieve the MCProperty object from MCTrackInfo object.
+MC_PV_VX,Get the (true) x position of the primary vertex of a MCParticle.
+MC_PV_VY,Get the (true) y position of the primary vertex of a MCParticle.
+MC_PV_VZ,Get the (true) z position of the primary vertex of a MCParticle.
+MC_RECONSTRUCTED,MC Reconstructed category
+MC_RUNNUMBER,Return run number from MC Header
+MC_TRACKINFO,Has Flag in property
+MC_VTX_ISDECAY,Returns true if the MCVertex is a primary vertex.
+MC_VTX_ISPRIMARY,Returns true if the MCVertex is a decay vertex.
+MC_VTX_PRODUCTS,Get all decay products of a MCVertex.
+MC_VTX_TIME,Get the time of a MCVertex.
+MC_VTX_TYPE,"Get the type code of a MCVertex, the type code is defined as following: | Type | Code | | ———————– | —- | | Unknown | 0 | | ppCollision | 1 | | DecayVertex | 2 | | OscillatedAndDecay | 3 | | StringFragmentation | 4 | | HadronicInteraction | 100 | | Bremsstrahlung | 101 | | PairProduction | 102 | | Compton | 103 | | DeltaRay | 104 | | PhotoElectric | 105 | | Annihilation | 106 | | RICHPhotoElectric | 107 | | Cerenkov | 108 | | RichHpdBackScat | 109 | | GenericInteraction | 110 | | LHCHalo | 200 | | MuonBackground | 300 | | MuonBackgroundFlat | 301 | | MuonBackgroundSpillover | 302 | | WorldLimit | 400 | | KinematicLimit | 401 |"
+MEAN,Evaluates the mean of a vector
+MEASUREDMASSERR,Get the particle (composite or basic) mass error.
+MEDIAN,Evaluates the median of a vector
+MIN,Calculate the minimum of the given functor value.
+MINCONE,Evaluates the minimum element of the results of the application of the functor to each particle on the TO side of the table
+MINIP,Miniumum impact parameter with respect to the given vertices.
+MINIPCHI2,Miniumum impact parameter chi2 with respect to the given vertices.
+MINIPCHI2CUT,Require the minimum impact parameter chi2 w.r.t. any of the given vertices is greater than the threshold IPChi2Cut.
+MINIPCUT,Require the minimum impact parameter w.r.t. any of the given Vertices is greater than the threshold IPCut.
+MINTREE,Evaluates the minimal value of the applied functor through a decay tree (see GET_ALL_DESCENDANTS() for definition)
+MIN_ELEMENT,Miniumum value of range
+MIN_ELEMENT_NOTZERO,"Miniumum value of range, skipping zero values"
+MOM_COV_MATRIX,"Get the covariance matrix for (px, py, pz, pe)"
+MOM_POS_COV_MATRIX,"Get the covariance matrix for (px, py, pz, pe) x (x, y, z): [(x,px), (x,py), (x,pz), (x,pe)] [(y,px), (y,py), (y,pz), (y,pe)] [(z,px), (z,py), (z,pz), (z,pe)]"
+MTDOCACHI2,Compute the significance of the distance of closest approach between mother and child.
+MUONCATBOOST,CatBoost. Functor’s call operator expects a particle-like object.
+MUONCHI2CORR,MuonChi2Corr. Functor’s call operator expects a particle-like object.
+MUONLHCBIDOVERLAP,Return the overlap in Muon LHCbIDs between a Particle and the Particle in a container of Particles with the highest overlap in LHCbIDs Args: Particles: DataHandle of container of Particles to search for largest overlap VPFrac: Minimum overlap fraction in VP to be considered for best overlap UTFrac: Minimum overlap fraction in UT to be considered for best overlap FTFrac: Minimum overlap fraction in FT to be considered for best overlap MuonFrac: Minimum overlap fraction in the Muon to be considered for best overlap UseMuonNeighbours: Use neighbouring muon hits for overlap check
+MUONLHCBIDOVERLAPWITHNEIGHBOURS,"Return the overlap in Muon LHCbIDs between a Particle and the Particle in a container of Particles with the highest overlap in LHCbIDs, taking neighboring Muon hits into account for the overlap Args: Particles: DataHandle of container of Particles to search for largest overlap VPFrac: Minimum overlap fraction in VP to be considered for best overlap UTFrac: Minimum overlap fraction in UT to be considered for best overlap FTFrac: Minimum overlap fraction in FT to be considered for best overlap MuonFrac: Minimum overlap fraction in the Muon to be considered for best overlap UseMuonNeighbours: Use neighbouring muon hits for overlap check"
+MUONLLBG,MuonLLBg. Functor’s call operator expects a particle-like object.
+MUONLLMU,MuonLLMu. Functor’s call operator expects a particle-like object.
+MVA,An MVA functor using other (bound) functors as inputs.
+NBODY_IPFISHER,Calculate the Fisher discriminant for a N-body decay
+NDOF,Number of degrees of freedom [for chi2]
+NEUTRALHYPO,Get the Neutral CaloHypo of particle.
+NEUTRALHYPO_CELLENERGIES,Calo cluster cell energies of a neutral particle.
+NEUTRALHYPO_CELLIDS,Calo cluster cell IDs of a neutral particle.
+NFTHITS,Number of FT hits.
+NFTHITSBOTTOM,Return number of hits in bottom SciFi half (quarters Q0 and Q1) of track
+NFTHITSLEFT,Return number of hits in left SciFi half (quarters Q1 and Q3) of track
+NFTHITSRIGHT,Return number of hits in right SciFi half (quarters Q0 and Q2) of track
+NFTHITSTOP,Return number of hits in top SciFi half (quarters Q2 and Q3) of track
+NFTHOLES,Return number of holes in SciFi of track as defined by HitPattern
+NHITS,Track number of hits.
+NHITSINMUON,Size of the container at the given TES location
+NINGENERATION,Evaluates the number of particles in a decay tree satisfying the predicate at the given depth (see GET_GENERATION() for definition)
+NINTREE,Evaluates the number of particles in a decay tree satisfying the predicate (see GET_ALL_DESCENDANTS() for definition)
+NONE,Accept nothing; always evaluates to ‘false’.
+NONLINEAR_DOCA,"Compute the distance of closest approach between two track-like objects using the TrajPoca algorithm with a user-defined TrackStateProvider tool. The starting point for the minimisation z_init is computed as y-z interception. In case, if the computed z_init is outside of the range [StateParameters::ZEndVelo, StateParameters::ZEndRich2], the StateParameters::ZMidMag is used instead."
+NONLINEAR_POCA,"Compute the position of closest approach between two track-like objects using the TrajPoca with a user-defined TrackStateProvider tool. The starting point for the minimisation z_init is computed as y-z interception. In case, if the computed z_init is outside of the range [StateParameters::ZEndVelo, StateParameters::ZEndRich2], the StateParameters::ZMidMag is used instead."
+NORMEDDOT,Evaluates dot product of two unit vectors
+NORMEDDOT_3D,"Calculates the cosine of angle between two 3-vectors. If passed vectors are 4-vectors, the functor will use only coordinate part."
+NPRVELO3DEXPECT,Number of expected Velo clusters from VELO 3D pattern recognition.
+NUTHITS,Number of UT hits.
+NUTLAYERS,Return number of fired layers in UT of track as defined by HitPattern Functor’s call operator expects a track-like object.
+NVPHITS,Number of VP hits.
+NVPHITSA,Return number of hits in VELO A-side
+NVPHITSC,Return number of hits in VELO C-side
+NVPHOLES,Return number of holes in VELO of track as defined by HitPattern
+NVPLAYERS,Return number of VELO layers of track as defined by HitPattern
+NVPOVERLAP,Return number of station overlaps in VELO as defined by HitPattern of a track
+OBJECT_KEY,Key of the KeyedObject.
+ODINTCK,Extracts ODIN TCK from ODIN
+ORIGIN_VX,Get the x position of the origin vertex of a MCParticle.
+ORIGIN_VY,Get the y position of the origin vertex of a MCParticle.
+ORIGIN_VZ,Get the z position of the origin vertex of a MCParticle.
+OWNPV,Get PV associated to particle.
+OWNPVDIRA,Direction angle between the three-momentum of a particle and its OWNPVFDVEC()
+OWNPVDLS,Decay length significance with respect to the OWNPV()
+OWNPVETA,Eta-coordinate of OWNPVFDVEC()
+OWNPVFD,Distance between the endvertex position and the position of the PV associated to a particle
+OWNPVFDCHI2,Flight distance chi2 with respect to the OWNPV()
+OWNPVFDIR,Unity vector of OWNPVFDVEC()
+OWNPVFDVEC,Three-vector distance between the endvertex position and the position of the PV associated to a particle
+OWNPVIP,Impact parameter with respect to the OWNPV()
+OWNPVIPCHI2,Impact parameter chi2 with respect to the OWNPV()
+OWNPVLTIME,Lifetime with respect to the OWNPV()
+OWNPVLTIME_WITH_ERROR,Lifetime and variance with respect to the OWNPV()
+OWNPVVDRHO,Rho-coordinate of OWNPVFDVEC()
+OWNPVVDX,Distance along the x-axis between the endvertex and the PV associated to a particle
+OWNPVVDY,Distance along the y-axis between the endvertex and the PV associated to a particle
+OWNPVVDZ,Distance along the z-axis between the endvertex and the PV associated to a particle
+OWNPVX,X-coordinate of the PV associated to the particle
+OWNPVY,Y-coordinate of the PV associated to the particle
+OWNPVZ,Z-coordinate of the PV associated to the particle
+OWNPV_POS,Position of OWNPV(). Functor’s call operator expects a particle-like object.
+P,Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).
+PARTICLE_ID,Particle ID of a Particle or MCParticle.
+PARTICLE_ID_OBJ,Get the particleID object of a particle.
+PARTICLE_PARAMS_CTAU,Returns the c*tau of Gaudi::Math::ParticleParams
+PARTICLE_PARAMS_FLIGHT_DISTANCE,Returns the flight distance of Gaudi::Math::ParticleParams
+PARTICLE_PARAMS_LEN_MOM_COV,Returns the “Matrix” with correlation errors between momentum and decay length from Gaudi::Math::ParticleParams
+PARTICLE_PARAMS_LEN_POS_COV,Returns the “Matrix” with correlation errors between position and decay length from Gaudi::Math::ParticleParams
+PARTICLE_PROPERTY,Get the particle properties of the specific ID (string representation)
+PARTICLE_PROPERTY_WITH_SMALLEST_DELTACHI2,"Evaluates the particle property express by the functor of the related particle with the smallest delta chi2, defined as the absolute difference of the chi2 of the related particle and the reference one given a relation table"
+PDG_MASS,"Get the PDG mass given the specific ID (string representation), e.g. PDG_MASS(“pi+”)"
+PERR2,Returns the square of the uncertainty on the momentum of a particle
+PHI,Get the phi coordinate of a slope (see SLOPES() for definition).
+PHI_COORDINATE,Get phi coordinate. Functor to be used in composition.
+PID_E,Gives measure of the electron mass hypothesis relative to the pion hypotesis.
+PID_K,Gives measure of the kaon mass hypothesis relative to the pion hypotesis.
+PID_MU,Gives measure of the muon mass hypothesis relative to the pion hypotesis.
+PID_P,Gives measure of the proton mass hypothesis relative to the pion hypotesis.
+PID_PI,CombDLLpi. Should be peaked at zero.
+POISON,"Impersonate a functor, but, when invoked, throw an exception with the provided message"
+POSITION,Get the position of an object.
+POSITION_X,Get the X-coordinate of the POSITION()
+POSITION_Y,Get the Y-coordinate of the POSITION()
+POSITION_Z,Get the Z-coordinate of the POSITION()
+POS_COV_MATRIX,"Get the covariance matrix for (x, y, z)"
+PPHASMUONINFO,ProtoParticle has MUON info
+PPHASRICH,ProtoParticle has RICH info
+PROBNN_D,MVA technique to establish deuterium mass hypothesis which keep in consideration the correlation between detector systems and includes tracking information.
+PROBNN_E,MVA technique to establish electron mass hypothesis which keep in consideration the correlation between detector systems and includes tracking information.
+PROBNN_GHOST,MVA technique to establish ghost tracks hypothesis which keep in consideration the correlation between detector systems and includes tracking information.
+PROBNN_K,MVA technique to establish kaon mass hypothesis which keep in consideration the correlation between detector systems and includes tracking information.
+PROBNN_MU,MVA technique to establish muon mass hypothesis which keep in consideration the correlation between detector systems and includes tracking information.
+PROBNN_P,MVA technique to establish proton mass hypothesis which keep in consideration the correlation between detector systems and includes tracking information.
+PROBNN_PI,MVA technique to establish pion mass hypothesis which keep in consideration the correlation between detector systems and includes tracking information.
+PROTOPARTICLE,Get the ProtoParticle from a Particle
+PT,Get the transverse momentum (see THREEMOMENTUM() for definition).
+PT_WITH_BREM,Get the transverse momentum of a track with brem correction
+PVTRACKS,Tracks from vertex fit
+PX,Get the X-coordinate of the momentum (see THREEMOMENTUM() for definition).
+PY,Get the Y-coordinate of the momentum (see THREEMOMENTUM() for definition).
+PZ,Get the Z-coordinate of the momentum (see THREEMOMENTUM() for definition).
+P_WITH_BREM,Get the magnitude of the momentum vector of a track with brem correction
+QOVERP,q/p
+RECSUMMARY_INFO,Extracts DataType information from LHCb::RecSummary.DataType
+REFERENCEPOINT,Get the track reference point (position at which the momentum of the particle is evaluated)
+REFERENCEPOINT_X,Get the X-coordinate of the reference point (see REFERENCEPOINT() for definition).
+REFERENCEPOINT_Y,Get the Y-coordinate of the reference point (see REFERENCEPOINT() for definition).
+REFERENCEPOINT_Z,Get the Z-coordinate of the reference point (see REFERENCEPOINT() for definition).
+REF_ENDVERTEX_IP,Evaluates the impact parameter of another particle (second argument) w.r.t. the end vertex of a particle (first argument)
+REF_ENDVERTEX_IPCHI2,Evaluates the impact parameter chisq of a particle (second argument) w.r.t. the end vertex of another particle (first argument)
+RELATIONS,"Given a relation table, return the set of relations contained"
+REQUIRE_CLOSE,"Check if the output of two functors that return floating point values are close to each other within some absolute difference and/or relative difference The condition imposed is “( F1 == F2 ) || ( &#124;F1 - F2&#124; < max( AbsDiff, RelDiff * ( &#124;F1&#124; + &#124;F2&#124; ) ) )”"
+REVERSE_RANGE,Return the reversed range
+RHO_COORDINATE,Get rho coordinate. Functor to be used in composition.
+RICH1_GAS_USED,Rich 1 gas flag.
+RICH2_GAS_USED,Rich 2 gas flag.
+RICH_DLL_BT,Rich-based DLL for below threshold tracks.
+RICH_DLL_D,Rich-based DLL for deuteron-ID.
+RICH_DLL_E,Rich-based DLL for electron-ID.
+RICH_DLL_K,Rich-based DLL for kaon-ID.
+RICH_DLL_MU,Rich-based DLL for mu-ID.
+RICH_DLL_P,Rich-based DLL for proton-ID.
+RICH_DLL_PI,Rich-based DLL for pion-ID.
+RICH_SCALED_DLL_E,Rich-based DLL for electron-ID. Scaled with monotonic function to approximate true DLL. For usage in combined DLLs (with other subdetectors).
+RICH_SCALED_DLL_MU,Rich-based DLL for mu-ID. Scaled with monotonic function to approximate true DLL. For usage in combined DLLs (with other subdetectors).
+RICH_THRESHOLD_DE,Rich threshold for deuterons.
+RICH_THRESHOLD_EL,Rich threshold for electrons.
+RICH_THRESHOLD_KA,Rich threshold for kaons.
+RICH_THRESHOLD_MU,Rich threshold for muons.
+RICH_THRESHOLD_PI,Rich threshold for pions.
+RICH_THRESHOLD_PR,Rich threshold for protons.
+RPPVIPCHI2,Evaluates the impact parameter chi2 of a particle (related one) w.r.t. the primary vertex of another particle (reference one)
+RUNNUMBER,Extracts run number from ODIN
+SHARE_BPV,Check whenever two particles are sharing the same BPV()
+SHARE_TRACKS,Check whenever two particles are sharing the same track
+SIGNED_DELTA_MASS,Get the signed difference between the reconstructed and the PDG mass (for reference see PDG_MASS()) It expects a particle-like object as input.
+SINGLE,Functor to place a single object of type T into a range of T with size 1
+SIZE,Size of the container at the given TES location
+SIZE_OF,Get Size of input
+SLOPES,"Get the slopes vector (tx=dx/dz,ty=dy/dz,1.) from a track"
+SMALLEST_DELTACHI2,"Evaluates the smallest delta chi2, defined as the absolute difference of the chi2 of the related particle and the reference particle given a relation table"
+SMOG_INJECTED_GAS,Get the SMOG injected gas from the Online conditions.
+SMOG_INJECTION_MODE,Get the SMOG injection mode from the Online conditions.
+SMOG_STABLE_INJECTION,Get the SMOG stable injection flag from the Online conditions.
+SQRT,Evaluates the square root of a scalar quantity
+STATES,Retrieve const Container with pointers to all the states
+STATE_AT,Access the state at the requested location. Throws if state not present.
+SUBCOMB,Apply a functor to a subcombination obtained from the decay produces of a composite particle
+SUM,Calculate the [scalar] sum of the given functor value.
+SUMCONE,Evaluates the sum of the results of the application of the functor to each particle on the TO side of the table
+SUM_RANGE,Return the sum of a range of values
+TCK,Extracts TCK from selection DecReports
+TES,Return references to specified TES locations
+THETA,Get the theta coordinate of a slope (see SLOPES() for definition).
+THETA_COORDINATE,Get theta coordinate. Functor to be used in composition.
+THREEMOMENTUM,3-Momentum vector.
+THREE_MOM_COV_MATRIX,"Get the covariance matrix for (px, py, pz)"
+THREE_MOM_POS_COV_MATRIX,"Get the covariance matrix for (px, py, pz) x (x, y, z): [(x,px), (x,py), (x,pz)] [(y,px), (y,py), (y,pz)] [(z,px), (z,py), (z,pz)]"
+TO,"Given a relation, return the TO side"
+TOLINALG,convert gaudi/root classes to linalg vecs.
+TO_VALUE_RELATION_TABLE,Retrieve the ‘TO’ value of the relation table with protoparticles in the ‘FROM’ side (see PROTOPARTICLE() functor).
+TRACK,Get the track object from a ChargedBasic
+TRACKFLAG,Track flag.
+TRACKHAST,"Returns True if track has hits in T stations, False otherwise"
+TRACKHASUT,"Returns True if track has hits in UT detector, False otherwise"
+TRACKHASVELO,"Returns True if track has hits in Velo, False otherwise"
+TRACKHISTORY,ComposedBoundFunctor:
+TRACKISCLONE,Track flag contains Clone
+TRACKISDOWNSTREAM,Track type is Downstream
+TRACKISINVALID,Track flag contains Invalid
+TRACKISLONG,Track type is Long
+TRACKISSELECTED,Track flag contains Selected
+TRACKISTTRACK,Track type is Ttrack
+TRACKISUPSTREAM,Track type is Upstream
+TRACKISVELO,Track type is Velo
+TRACKISVELOBACKWARD,Track type is VeloBackward
+TRACKSTATE,Returns the CTB or first state of a given track.
+TRACKTYPE,Track type.
+TRACK_COVARIANCE,"Get the covariance matrix for an track state: (x,y,tx,ty,qop)."
+TRACK_MOMVEC,Get the 3-vector momentum of a track (see TRACK() for definition)
+TRACK_P,Get the magnitude of the momentum vector of a track (see TRACK() for definition)
+TRACK_POSVEC_CLOSESTTOBEAM,Get the position vector of TRACK() at the closest-to-beam state (see CLOSESTTOBEAM() for definition).
+TRACK_POS_CLOSESTTOBEAM_X,Get the X-coordinate of the position vector of a track at the closest-to-beam state (see CLOSESTTOBEAM() for definition).
+TRACK_POS_CLOSESTTOBEAM_Y,Get the Y-coordinate of the position vector of a track at the closest-to-beam state (see CLOSESTTOBEAM() for definition).
+TRACK_POS_CLOSESTTOBEAM_Z,Get the Z-coordinate of the position vector of a track at the closest-to-beam state (see CLOSESTTOBEAM() for definition).
+TRACK_PT,Get the transverse momentum of a track (see TRACK() for definition)
+TRACK_PX,Get the X-coordinate of the momentum of a track (see TRACK_MOMVEC() for definition)
+TRACK_PY,Get the Y-coordinate of the momentum of a track (see TRACK_MOMVEC() for definition)
+TRACK_PZ,Get the Z-coordinate of the momentum of a track (see TRACK_MOMVEC() for definition)
+TWOBODY_TILT,"axis_str should be X or Y, case sensitive"
+TWOBODY_YZ_INTERSECTION_Y,The y-position of the y-z straight line intersection calculated using the slopes and closest to beam positions. Can be used to help reduce combinatorics before vertex fit if combination mass is unreliable.
+TWOBODY_YZ_INTERSECTION_Z,The z-position of the y-z straight line intersection calculated using the slopes and closest to beam positions. Can be used to help reduce combinatorics before vertex fit if combination mass is unreliable.
+TX,Get the X-coordinate of the slope (see SLOPES() for definition).
+TY,Get the Y-coordinate of the slope (see SLOPES() for definition).
+UNITVECTOR,Normalize vector.
+UPSTREAMCHI2,Return chi2 of fitted upstream track segment
+UPSTREAMCHI2DOF,Return chi2/ndof of fitted upstream track segment
+UTHITADCS,ADCs of UT hits on track.
+UTHITSIZES,Size of UT hits on track.
+UTLHCBIDOVERLAP,Return the overlap in UT LHCbIDs between a Particle and the Particle in a container of Particles with the highest overlap in LHCbIDs Args: Particles: DataHandle of container of Particles to search for largest overlap VPFrac: Minimum overlap fraction in VP to be considered for best overlap UTFrac: Minimum overlap fraction in UT to be considered for best overlap FTFrac: Minimum overlap fraction in FT to be considered for best overlap MuonFrac: Minimum overlap fraction in the Muon to be considered for best overlap UseMuonNeighbours: Use neighbouring muon hits for overlap check
+VALUE,"Return contained value of an optional. If no value is contained, it throws an exception. This functor is used currently for example to store Tis/Tos information using relation table, where a value is always expected in the optional."
+VALUE_FROM_DICT,"Return value from a dictionary with specified key. If the key is not found, it throws an exception."
+VALUE_OR,Return contained value of optional or specified default if optional is empty
+VELOCHI2,Return chi2 of fitted VELO segment
+VELOCHI2DOF,Return chi2/ndof of fitted VELO segment
+VELOMATCHCHI2,Chi2 of VELO track when matching it to a composite charged particle reconstructed with downstream tracks as defined in https://inspirehep.net/literature/2768765.
+VELOMATCHIP,IP of VELO track to the endvertex of a composite charged particle reconstructed with downstream tracks as defined in https://inspirehep.net/literature/2768765.
+VPCHANNELID,Get the VPChannelID from a VPMicroCluster object
+VPCLUSTERS,Get VPMicroClusters from track-like object
+VPLHCBIDOVERLAP,Return the overlap in VP LHCbIDs between a Particle and the Particle in a container of Particles with the highest overlap in LHCbIDs Args: Particles: DataHandle of container of Particles to search for largest overlap VPFrac: Minimum overlap fraction in VP to be considered for best overlap UTFrac: Minimum overlap fraction in UT to be considered for best overlap FTFrac: Minimum overlap fraction in FT to be considered for best overlap MuonFrac: Minimum overlap fraction in the Muon to be considered for best overlap UseMuonNeighbours: Use neighbouring muon hits for overlap check
+VPLIGHTCLUSTERPOSITION,"Obtain position coordinates of LHCbIDs by mathcing with container of VPLightClusters If the LHCbID is not a VP id, or if the id is not found in the provided container, an empty optional is returned."
+VPMODULEID,Get the module number from a VPChannelID object
+VTX_DLS,Return the decay length significance w.r.t. the given vertex.
+VTX_FDCHI2,Return the flight distance chi2 w.r.t. the given vertex. The first implicit argument type is a vertex.
+VTX_LTIME,Return the particle lifetime w.r.t. the given vertex.
+VTX_LTIME_WITH_ERROR,Return the particle lifetime and variance w.r.t. the given vertex.
+WEIGHT,"Given a relation, return the WEIGHT side"
+WITH_BREM,"Gives wrapper around object to use brem-corrected momenta / covariances, no overlap check unless done in composite builder"
+X_COORDINATE,Get X coordinate. Functor to be used in composition.
+Y_COORDINATE,Get Y coordinate. Functor to be used in composition.
+Z_COORDINATE,Get Z coordinate. Functor to be used in composition.
+Functor,Create a new Functor class and return an instance of it.
+abs,Wrap the math::abs functor.
+acos,Wrap the math::acos functor.
+arccos,"WARNING: Deprecated, use acos instead."
+asin,Wrap the math::asin functor.
+atan,Wrap the math::atan functor.
+atan2,Wrap the math::atan2 functor.
+boost_from,Boost v1 4-vector from the rest frame of ref 4-vector
+boost_to,Boost v1 4-vector into the rest frame of ref 4-vector
+copysign,Wrap the math::copysign functor.
+cos,Wrap the math::cos functor.
+exp,Wrap the math::exp functor.
+in_range,Wrap the math::in_range functor.
+log,Wrap the math::log functor.
+pow,Wrap the math::pow functor.
+sign,Wrap the math::sign functor.
+similarity,"Wrap for “Similarity” functor. Given vector “vec” of length “n” and covariance matrix of size “nxn”, similarity computes: vec.transpose() * cov_matrix * vec"
+sin,Wrap the math::sin functor.
+sqrt,Wrap the math::sqrt functor.
+tan,Wrap the math::tan functor.
+where,"Wrap the math::where functor. If condition is true, return functor_a result is returned, else return functor_b result."

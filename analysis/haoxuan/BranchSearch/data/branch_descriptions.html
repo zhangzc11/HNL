@@ -1,0 +1,4114 @@
+<!DOCTYPE html><html><head>
+      <title>branch_descriptions</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="branch-变量描述表">Branch 变量描述表 </h1>
+<p>本文档列出了branch.csv中所有branch变量的含义描述。</p>
+<table>
+<thead>
+<tr>
+<th>Branch</th>
+<th>Content (中文描述)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ALLPVX</td>
+<td>Vector of x-coordinates of all primary vertices</td>
+</tr>
+<tr>
+<td>ALLPVY</td>
+<td>Vector of y-coordinates of all primary vertices</td>
+</tr>
+<tr>
+<td>ALLPVZ</td>
+<td>Vector of z-coordinates of all primary vertices</td>
+</tr>
+<tr>
+<td>BUNCHCROSSING_ID</td>
+<td>Bunch crossing identifier from ODIN</td>
+</tr>
+<tr>
+<td>BUNCHCROSSING_TYPE</td>
+<td>Bunch crossing type from ODIN</td>
+</tr>
+<tr>
+<td>Decision</td>
+<td>Global event 判定</td>
+</tr>
+<tr>
+<td>EVENTNUMBER</td>
+<td>Event number from ODIN</td>
+</tr>
+<tr>
+<td>EVENTTYPE</td>
+<td>Extracts event type from ODIN</td>
+</tr>
+<tr>
+<td>FillNumber</td>
+<td>LHC fill number from conditions</td>
+</tr>
+<tr>
+<td>GPSTIME</td>
+<td>GPS time from ODIN</td>
+</tr>
+<tr>
+<td>Hlt1DiMuonHighMassDecision</td>
+<td>Trigger 判定: Hlt1DiMuonHighMass</td>
+</tr>
+<tr>
+<td>Hlt1DiMuonLowMassDecision</td>
+<td>Trigger 判定: Hlt1DiMuonLowMass</td>
+</tr>
+<tr>
+<td>Hlt1DiMuonNoIPDecision</td>
+<td>Trigger 判定: Hlt1DiMuonNoIP</td>
+</tr>
+<tr>
+<td>Hlt1DiMuonNoIP_SSDecision</td>
+<td>Trigger 判定: Hlt1DiMuonNoIP SS</td>
+</tr>
+<tr>
+<td>Hlt1DiMuonSoftDecision</td>
+<td>Trigger 判定: Hlt1DiMuonSoft</td>
+</tr>
+<tr>
+<td>Hlt1GlobalDecision</td>
+<td>Trigger 判定: Hlt1Global</td>
+</tr>
+<tr>
+<td>Hlt1LowPtDiMuonDecision</td>
+<td>Trigger 判定: Hlt1LowPtDiMuon</td>
+</tr>
+<tr>
+<td>Hlt1LowPtMuonDecision</td>
+<td>Trigger 判定: Hlt1LowPtMuon</td>
+</tr>
+<tr>
+<td>Hlt1PhysDecision</td>
+<td>Trigger 判定: Hlt1Phys</td>
+</tr>
+<tr>
+<td>Hlt1SingleHighPtMuonDecision</td>
+<td>Trigger 判定: Hlt1SingleHighPtMuon</td>
+</tr>
+<tr>
+<td>Hlt1TrackMVADecision</td>
+<td>Trigger 判定: Hlt1TrackMVA</td>
+</tr>
+<tr>
+<td>Hlt1TrackMuonMVADecision</td>
+<td>Trigger 判定: Hlt1TrackMuonMVA</td>
+</tr>
+<tr>
+<td>Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision</td>
+<td>Trigger 判定: Hlt1TrackMuonMVAHlt1TwoTrackMVA</td>
+</tr>
+<tr>
+<td>Hlt1_TCK</td>
+<td>Hlt1 触发 configuration key</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiJetIncSVTag pT25M40Full</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiSVTagJet10GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiSVTagJet10GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiSVTagJet15GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiSVTagJet15GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiSVTagJet20GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiSVTagJet20GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiSVTagJet25GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiSVTagJet25GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiSVTagJet30GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiSVTagJet30GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiSVTagJet35GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiSVTagJet35GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiTopoTagJet10GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiTopoTagJet10GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiTopoTagJet15GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiTopoTagJet15GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiTopoTagJet20GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiTopoTagJet20GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiTopoTagJet25GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiTopoTagJet25GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiTopoTagJet30GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiTopoTagJet30GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_DiTopoTagJet35GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE DiTopoTagJet35GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_IncJet15GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE IncJet15GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_IncJet25GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE IncJet25GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_IncJet35GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE IncJet35GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_IncJet45GeVFullDecision</td>
+<td>Trigger 判定: Hlt2QEE IncJet45GeVFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_SingleHighPtElectronFullDecision</td>
+<td>Trigger 判定: Hlt2QEE SingleHighPtElectronFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_SingleHighPtMuonFullDecision</td>
+<td>Trigger 判定: Hlt2QEE SingleHighPtMuonFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_SingleHighPtMuonIsoFullDecision</td>
+<td>Trigger 判定: Hlt2QEE SingleHighPtMuonIsoFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision</td>
+<td>Trigger 判定: Hlt2QEE SingleHighPtMuonNoMuIDFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_SingleVHighPtElectronFullDecision</td>
+<td>Trigger 判定: Hlt2QEE SingleVHighPtElectronFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision</td>
+<td>Trigger 判定: Hlt2QEE ZToMuMu DoubleNoMuIDFull</td>
+</tr>
+<tr>
+<td>Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision</td>
+<td>Trigger 判定: Hlt2QEE ZToMuMu SingleNoMuIDFull</td>
+</tr>
+<tr>
+<td>Hlt2_TCK</td>
+<td>Hlt2 触发 configuration key</td>
+</tr>
+<tr>
+<td>Jet1_CPF</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_ConE</td>
+<td>Map a functor over a range; Get the 能量 (see FOURMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_ConETA</td>
+<td>Map a functor over a range; Get the eta (赝快度) coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_ConETA_indx</td>
+<td>Index array for Jet1_ConETA</td>
+</tr>
+<tr>
+<td>Jet1_ConE_indx</td>
+<td>Index array for Jet1_ConE</td>
+</tr>
+<tr>
+<td>Jet1_ConINBREM</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConINBREM_indx</td>
+<td>Index array for Jet1_ConINBREM</td>
+</tr>
+<tr>
+<td>Jet1_ConINECAL</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConINECAL_indx</td>
+<td>Index array for Jet1_ConINECAL</td>
+</tr>
+<tr>
+<td>Jet1_ConINHCAL</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConINHCAL_indx</td>
+<td>Index array for Jet1_ConINHCAL</td>
+</tr>
+<tr>
+<td>Jet1_ConINMUON</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConINMUON_indx</td>
+<td>Index array for Jet1_ConINMUON</td>
+</tr>
+<tr>
+<td>Jet1_ConKey</td>
+<td>Map a functor over a range; Key of the KeyedObject.</td>
+</tr>
+<tr>
+<td>Jet1_ConKey_indx</td>
+<td>Index array for Jet1_ConKey</td>
+</tr>
+<tr>
+<td>Jet1_ConMass</td>
+<td>Map a functor over a range; Get the particle (composite or basic) 质量.</td>
+</tr>
+<tr>
+<td>Jet1_ConMass_indx</td>
+<td>Index array for Jet1_ConMass</td>
+</tr>
+<tr>
+<td>Jet1_ConNFTHITS</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConNFTHITS_indx</td>
+<td>Index array for Jet1_ConNFTHITS</td>
+</tr>
+<tr>
+<td>Jet1_ConNFTHOLES</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConNFTHOLES_indx</td>
+<td>Index array for Jet1_ConNFTHOLES</td>
+</tr>
+<tr>
+<td>Jet1_ConNHITS</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConNHITS_indx</td>
+<td>Index array for Jet1_ConNHITS</td>
+</tr>
+<tr>
+<td>Jet1_ConNUTHITS</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConNUTHITS_indx</td>
+<td>Index array for Jet1_ConNUTHITS</td>
+</tr>
+<tr>
+<td>Jet1_ConNVPHITS</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConNVPHITSA</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConNVPHITSA_indx</td>
+<td>Index array for Jet1_ConNVPHITSA</td>
+</tr>
+<tr>
+<td>Jet1_ConNVPHITSC</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConNVPHITSC_indx</td>
+<td>Index array for Jet1_ConNVPHITSC</td>
+</tr>
+<tr>
+<td>Jet1_ConNVPHITS_indx</td>
+<td>Index array for Jet1_ConNVPHITS</td>
+</tr>
+<tr>
+<td>Jet1_ConNVPHOLES</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConNVPHOLES_indx</td>
+<td>Index array for Jet1_ConNVPHOLES</td>
+</tr>
+<tr>
+<td>Jet1_ConNVPLAYERS</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConNVPLAYERS_indx</td>
+<td>Index array for Jet1_ConNVPLAYERS</td>
+</tr>
+<tr>
+<td>Jet1_ConPHI</td>
+<td>Map a functor over a range; Get the phi coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_ConPHI_indx</td>
+<td>Index array for Jet1_ConPHI</td>
+</tr>
+<tr>
+<td>Jet1_ConPID</td>
+<td>Map a functor over a range; Particle ID of a Particle or MCParticle.</td>
+</tr>
+<tr>
+<td>Jet1_ConPID_indx</td>
+<td>Index array for Jet1_ConPID</td>
+</tr>
+<tr>
+<td>Jet1_ConPT</td>
+<td>Map a functor over a range; Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_ConPT_indx</td>
+<td>Index array for Jet1_ConPT</td>
+</tr>
+<tr>
+<td>Jet1_ConPX</td>
+<td>Map a functor over a range; Get the X-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_ConPX_indx</td>
+<td>Index array for Jet1_ConPX</td>
+</tr>
+<tr>
+<td>Jet1_ConPY</td>
+<td>Map a functor over a range; Get the Y-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_ConPY_indx</td>
+<td>Index array for Jet1_ConPY</td>
+</tr>
+<tr>
+<td>Jet1_ConPZ</td>
+<td>Map a functor over a range; Get the Z-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_ConPZ_indx</td>
+<td>Index array for Jet1_ConPZ</td>
+</tr>
+<tr>
+<td>Jet1_ConQ</td>
+<td>Map a functor over a range; Compute the 电荷</td>
+</tr>
+<tr>
+<td>Jet1_ConQ_indx</td>
+<td>Index array for Jet1_ConQ</td>
+</tr>
+<tr>
+<td>Jet1_ConSumINBREM</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumINECAL</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumINHCAL</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumINMUON</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumNUTHITS</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumTRACKHAST</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumTRACKHASUT</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumTRACKHASVELO</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumTRACKISDOWNSTREAM</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumTRACKISLONG</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumTRACKISTTRACK</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumTRACKISUPSTREAM</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConSumTRACKISVELO</td>
+<td>Count the number of elements in a range satisfying some predicate</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKHAST</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKHAST_indx</td>
+<td>Index array for Jet1_ConTRACKHAST</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKHASUT</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKHASUT_indx</td>
+<td>Index array for Jet1_ConTRACKHASUT</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKHASVELO</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKHASVELO_indx</td>
+<td>Index array for Jet1_ConTRACKHASVELO</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKISDOWNSTREAM</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKISDOWNSTREAM_indx</td>
+<td>Index array for Jet1_ConTRACKISDOWNSTREAM</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKISLONG</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKISLONG_indx</td>
+<td>Index array for Jet1_ConTRACKISLONG</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKISTTRACK</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKISTTRACK_indx</td>
+<td>Index array for Jet1_ConTRACKISTTRACK</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKISUPSTREAM</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKISUPSTREAM_indx</td>
+<td>Index array for Jet1_ConTRACKISUPSTREAM</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKISVELO</td>
+<td>Map a functor over a range; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Jet1_ConTRACKISVELO_indx</td>
+<td>Index array for Jet1_ConTRACKISVELO</td>
+</tr>
+<tr>
+<td>Jet1_E</td>
+<td>Get the 能量 (see FOURMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_ETA</td>
+<td>Get the eta (赝快度) coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_JEC</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_JECError</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_JetWidth</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_JetWidthNorm</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_Key</td>
+<td>Key of the KeyedObject.</td>
+</tr>
+<tr>
+<td>Jet1_M</td>
+<td>Get the particle (composite or basic) 质量.</td>
+</tr>
+<tr>
+<td>Jet1_MNF</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_MPT</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_MTF</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_N90</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_NHasPV</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_NIPChi2Inf4</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_NPVsForJEC</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_NSatCalo</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_NSatECAL</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_NSatHCAL</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_Ntracks</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_P</td>
+<td>Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_PARTICLE_ID</td>
+<td>Particle ID (PDG code)</td>
+</tr>
+<tr>
+<td>Jet1_PHI</td>
+<td>Get the phi coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_PROBNN_D</td>
+<td>MVA 概率 for 氘核 假设</td>
+</tr>
+<tr>
+<td>Jet1_PROBNN_E</td>
+<td>MVA 概率 for 电子 假设</td>
+</tr>
+<tr>
+<td>Jet1_PROBNN_GHOST</td>
+<td>MVA 概率 for ghost 径迹 假设</td>
+</tr>
+<tr>
+<td>Jet1_PROBNN_K</td>
+<td>MVA 概率 for K介子 假设</td>
+</tr>
+<tr>
+<td>Jet1_PROBNN_MU</td>
+<td>MVA 概率 for 缪子 假设</td>
+</tr>
+<tr>
+<td>Jet1_PROBNN_P</td>
+<td>MVA 概率 for 质子 假设</td>
+</tr>
+<tr>
+<td>Jet1_PROBNN_PI</td>
+<td>MVA 概率 for π介子 假设</td>
+</tr>
+<tr>
+<td>Jet1_PT</td>
+<td>Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_PX</td>
+<td>Get the X-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_PY</td>
+<td>Get the Y-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_PZ</td>
+<td>Get the Z-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_THETA</td>
+<td>Get the theta coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_log_P</td>
+<td>Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_log_PT</td>
+<td>Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Jet1_nChargedCons</td>
+<td>Evaluates the number of particles in a decay tree satisfying the predicate at the given depth (see GET_GENERATION() for definition)</td>
+</tr>
+<tr>
+<td>Jet1_nCons</td>
+<td>Evaluates the number of particles in a decay tree satisfying the predicate at the given depth (see GET_GENERATION() for definition)</td>
+</tr>
+<tr>
+<td>Jet1_nNeutralCons</td>
+<td>Evaluates the number of particles in a decay tree satisfying the predicate at the given depth (see GET_GENERATION() for definition)</td>
+</tr>
+<tr>
+<td>Jet1_vtx_x</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_vtx_y</td>
+<td></td>
+</tr>
+<tr>
+<td>Jet1_vtx_z</td>
+<td></td>
+</tr>
+<tr>
+<td>MuNuR_ALLPV_IP</td>
+<td>Impact parameter with respect to all primary vertices</td>
+</tr>
+<tr>
+<td>MuNuR_ALLPV_IPCHI2</td>
+<td>Impact parameter 卡方 with respect to all primary vertices</td>
+</tr>
+<tr>
+<td>MuNuR_BREMBENDCORR</td>
+<td>Correction factor accounting for bending biases in 径迹 due to 轫致辐射</td>
+</tr>
+<tr>
+<td>MuNuR_BREMENERGY</td>
+<td>Brem 动量-recovery 能量</td>
+</tr>
+<tr>
+<td>MuNuR_BREMHYPOAREA</td>
+<td>Area code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>MuNuR_BREMHYPOCOL</td>
+<td>Column code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>MuNuR_BREMHYPODELTAX</td>
+<td>Test statistic of being first-state like of CaloHypo (photon) for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>MuNuR_BREMHYPOENERGY</td>
+<td>Energy of CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>MuNuR_BREMHYPOID</td>
+<td>All significant bits representation of CellID (32bits) for CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>MuNuR_BREMHYPOMATCH_CHI2</td>
+<td>2D 卡方 of CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>MuNuR_BREMHYPOROW</td>
+<td>Row code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>MuNuR_BREMPIDE</td>
+<td>Brem-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>MuNuR_BREMTRACKBASEDENERGY</td>
+<td>Track-based 轫致辐射 能量 determination</td>
+</tr>
+<tr>
+<td>MuNuR_CLUSTERAREA</td>
+<td>Area code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>MuNuR_CLUSTERCOL</td>
+<td>Column code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>MuNuR_CLUSTERID</td>
+<td>CellID.all() of the best matching 簇 for a given reconstructed 径迹</td>
+</tr>
+<tr>
+<td>MuNuR_CLUSTERMATCH_CHI2</td>
+<td>CaloID estimator: 2D 卡方 for Track/CaloCluster matching (neutral + 电荷d)</td>
+</tr>
+<tr>
+<td>MuNuR_CLUSTERROW</td>
+<td>Row code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>MuNuR_CaloClusterMass</td>
+<td>Retrieve the CALO 簇 质量 obtained from MergedPi0Alg</td>
+</tr>
+<tr>
+<td>MuNuR_CaloNeutral1To9EnergyRatio</td>
+<td>Fraction of highest E cell (seed) to 9 (3x3) cells forming the 簇</td>
+</tr>
+<tr>
+<td>MuNuR_CaloNeutral4To9EnergyRatio</td>
+<td>Fraction of highest 2x2 cell (seed) to 9 (3x3) cells forming the 簇</td>
+</tr>
+<tr>
+<td>MuNuR_CaloNeutralArea</td>
+<td>Retrieve area code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>MuNuR_CaloNeutralCol</td>
+<td>Retrieve column code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>MuNuR_CaloNeutralEcalEnergy</td>
+<td>Retrieve the ECAL 簇 能量 associated to the neutral CaloHypo</td>
+</tr>
+<tr>
+<td>MuNuR_CaloNeutralHcal2EcalEnergyRatio</td>
+<td>Retrieve the HCAL/ECAL 能量 ratio associated to the neutral CaloHypo</td>
+</tr>
+<tr>
+<td>MuNuR_CaloNeutralID</td>
+<td>Retrieve bitwise information (32bits) of all CALO neutral seed CellIDs</td>
+</tr>
+<tr>
+<td>MuNuR_CaloNeutralRow</td>
+<td>Retrieve row code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>MuNuR_CaloNeutralShowerShape</td>
+<td>CaloID estimator: 2nd order moment of the 簇 (簇射 width)</td>
+</tr>
+<tr>
+<td>MuNuR_CaloNumSaturatedCells</td>
+<td>Number of saturated cells in 量能器</td>
+</tr>
+<tr>
+<td>MuNuR_CaloTrackMatchChi2</td>
+<td>Chi2 of 径迹-量能器 簇 match</td>
+</tr>
+<tr>
+<td>MuNuR_E</td>
+<td>Get the 能量 (see FOURMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_ECALPIDE</td>
+<td>Ecal-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>MuNuR_ECALPIDMU</td>
+<td>Ecal-based DLL for mu-ID</td>
+</tr>
+<tr>
+<td>MuNuR_ELECTRONAREA</td>
+<td>Area code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>MuNuR_ELECTRONCOL</td>
+<td>Column code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>MuNuR_ELECTRONENERGY</td>
+<td>Cluster 能量 associated to CaloHypo (电荷d 电子)</td>
+</tr>
+<tr>
+<td>MuNuR_ELECTRONID</td>
+<td>All significant bits representation of CellID (32bits) associated to CaloHypo seed (电子 hypo)</td>
+</tr>
+<tr>
+<td>MuNuR_ELECTRONMATCH_CHI2</td>
+<td>CaloID estimator: 3D 卡方 for Track/CaloHypo(e) matching (电荷d)</td>
+</tr>
+<tr>
+<td>MuNuR_ELECTRONROW</td>
+<td>Row code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>MuNuR_ELECTRONSHOWERDLL</td>
+<td>Summed per-cell E/p DLL (电子 versus π介子) with 径迹-based cell selection</td>
+</tr>
+<tr>
+<td>MuNuR_ELECTRONSHOWEREOP</td>
+<td>Electron 能量/动量 with 径迹-based cell selection</td>
+</tr>
+<tr>
+<td>MuNuR_ETA</td>
+<td>Get the eta (赝快度) coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_GHOSTPROB</td>
+<td>Track 幽灵径迹概率 (see TRACK() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_HASBREM</td>
+<td>Has non-zero 轫致辐射 动量-recovery 能量</td>
+</tr>
+<tr>
+<td>MuNuR_HASBREMADDED</td>
+<td>Has non-zero 轫致辐射 动量-recovery 能量 added (using Particle class 标志)</td>
+</tr>
+<tr>
+<td>MuNuR_HCALEOP</td>
+<td>Hcal 能量 deposit over 动量 (径迹)</td>
+</tr>
+<tr>
+<td>MuNuR_HCALPIDE</td>
+<td>Hcal-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>MuNuR_HCALPIDMU</td>
+<td>Hcal-based DLL for mu-ID</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1DiMuonHighMassDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1DiMuonHighMassDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1DiMuonHighMassDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1DiMuonHighMassDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1DiMuonLowMassDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1DiMuonLowMassDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1DiMuonLowMassDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1DiMuonLowMassDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1DiMuonNoIPDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1DiMuonNoIPDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1DiMuonNoIPDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1DiMuonNoIPDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1DiMuonNoIP_SSDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1DiMuonNoIP SSDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1DiMuonNoIP_SSDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1DiMuonNoIP SSDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1DiMuonSoftDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1DiMuonSoftDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1DiMuonSoftDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1DiMuonSoftDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1GlobalDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1GlobalDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1GlobalDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1GlobalDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1LowPtDiMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1LowPtDiMuonDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1LowPtDiMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1LowPtDiMuonDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1LowPtMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1LowPtMuonDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1LowPtMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1LowPtMuonDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1PhysDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1PhysDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1PhysDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1PhysDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1SingleHighPtMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1SingleHighPtMuonDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1SingleHighPtMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1SingleHighPtMuonDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1TrackMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1TrackMVADecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1TrackMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1TrackMVADecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1TrackMuonMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt1TrackMuonMVADecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt1TrackMuonMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt1TrackMuonMVADecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiJetIncSVTag pT25M40FullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiJetIncSVTag pT25M40FullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet10GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiSVTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet10GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiSVTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiSVTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiSVTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet20GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiSVTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet20GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiSVTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiSVTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiSVTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet30GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiSVTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet30GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiSVTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiSVTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiSVTagJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiSVTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiTopoTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiTopoTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiTopoTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiTopoTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiTopoTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiTopoTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiTopoTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiTopoTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiTopoTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiTopoTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE DiTopoTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE DiTopoTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_IncJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE IncJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_IncJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE IncJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_IncJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE IncJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_IncJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE IncJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_IncJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE IncJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_IncJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE IncJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_IncJet45GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE IncJet45GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_IncJet45GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE IncJet45GeVFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_SingleHighPtElectronFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE SingleHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_SingleHighPtElectronFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE SingleHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_SingleHighPtMuonFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE SingleHighPtMuonFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_SingleHighPtMuonFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE SingleHighPtMuonFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE SingleHighPtMuonIsoFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE SingleHighPtMuonIsoFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE SingleHighPtMuonNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE SingleHighPtMuonNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_SingleVHighPtElectronFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE SingleVHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_SingleVHighPtElectronFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE SingleVHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for MuNuR Hlt2QEE ZToMuMu SingleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for MuNuR Hlt2QEE ZToMuMu SingleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>MuNuR_ID</td>
+<td>Particle ID of a Particle or MCParticle.</td>
+</tr>
+<tr>
+<td>MuNuR_INBREM</td>
+<td>In Brem acceptance</td>
+</tr>
+<tr>
+<td>MuNuR_INECAL</td>
+<td>In Ecal acceptance</td>
+</tr>
+<tr>
+<td>MuNuR_INHCAL</td>
+<td>In Hcal acceptance</td>
+</tr>
+<tr>
+<td>MuNuR_INMUON</td>
+<td>InAcceptance. Functor’s call operator expects a particle-like object.</td>
+</tr>
+<tr>
+<td>MuNuR_ISCLONE</td>
+<td>Track 标志 contains Clone; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_ISDOWNSTREAM</td>
+<td>Track type is Downstream; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_ISLONG</td>
+<td>Track type is Long; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_ISMUON</td>
+<td>IsMuon. Functor’s call operator expects a particle-like object.</td>
+</tr>
+<tr>
+<td>MuNuR_ISMUONTIGHT</td>
+<td>IsMuonTight. Functor’s call operator expects a particle-like object.</td>
+</tr>
+<tr>
+<td>MuNuR_ISTTRACK</td>
+<td>Track type is T径迹; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_ISUPSTREAM</td>
+<td>Track type is Upstream; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_ISVELO</td>
+<td>Track type is Velo; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_Key</td>
+<td>Key of the KeyedObject.</td>
+</tr>
+<tr>
+<td>MuNuR_M</td>
+<td>Get the particle (composite or basic) 质量.</td>
+</tr>
+<tr>
+<td>MuNuR_MINIP</td>
+<td>Miniumum 撞击参数 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>MuNuR_MINIPCHI2</td>
+<td>Miniumum 撞击参数 卡方 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>MuNuR_NFTHITS</td>
+<td>Number of FT 击中数.; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_NFTHOLES</td>
+<td>Return number of holes in SciFi of 径迹 as defined by HitPattern; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_NHITS</td>
+<td>Track number of 击中数.; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_NUTHITS</td>
+<td>Number of UT 击中数.; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_NVPHITS</td>
+<td>Number of VP 击中数.; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_NVPHITSA</td>
+<td>Return number of 击中数 in VELO A-side; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_NVPHITSC</td>
+<td>Return number of 击中数 in VELO C-side; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_NVPHOLES</td>
+<td>Return number of holes in VELO of 径迹 as defined by HitPattern; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_NVPLAYERS</td>
+<td>Return number of VELO layers of 径迹 as defined by HitPattern; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_OWNPVIP</td>
+<td>Impact parameter with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>MuNuR_OWNPVIPCHI2</td>
+<td>Impact parameter 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>MuNuR_OWNPVNDOF</td>
+<td>Number of degrees of freedom [for 卡方]; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_OWNPVX</td>
+<td>X-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>MuNuR_OWNPVY</td>
+<td>Y-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>MuNuR_OWNPVZ</td>
+<td>Z-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>MuNuR_P</td>
+<td>Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_PARTICLE_ID</td>
+<td>Particle ID (PDG code)</td>
+</tr>
+<tr>
+<td>MuNuR_PHI</td>
+<td>Get the phi coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_PIDK</td>
+<td>Gives measure of the K介子 质量 假设 relative to the π介子 hypotesis.</td>
+</tr>
+<tr>
+<td>MuNuR_PIDPi</td>
+<td>CombDLLpi. Should be peaked at zero.</td>
+</tr>
+<tr>
+<td>MuNuR_PIDe</td>
+<td>Gives measure of the 电子 质量 假设 relative to the π介子 hypotesis.</td>
+</tr>
+<tr>
+<td>MuNuR_PIDmu</td>
+<td>Gives measure of the 缪子 质量 假设 relative to the π介子 hypotesis.</td>
+</tr>
+<tr>
+<td>MuNuR_PIDp</td>
+<td>Gives measure of the 质子 质量 假设 relative to the π介子 hypotesis.</td>
+</tr>
+<tr>
+<td>MuNuR_POSITION_STATEAT_FirstMeasurement_X</td>
+<td>X position at first measurement state</td>
+</tr>
+<tr>
+<td>MuNuR_POSITION_STATEAT_FirstMeasurement_Y</td>
+<td>Y position at first measurement state</td>
+</tr>
+<tr>
+<td>MuNuR_POSITION_STATEAT_FirstMeasurement_Z</td>
+<td>Z position at first measurement state</td>
+</tr>
+<tr>
+<td>MuNuR_POSITION_STATEAT_LastMeasurement_X</td>
+<td>X position at last measurement state</td>
+</tr>
+<tr>
+<td>MuNuR_POSITION_STATEAT_LastMeasurement_Y</td>
+<td>Y position at last measurement state</td>
+</tr>
+<tr>
+<td>MuNuR_POSITION_STATEAT_LastMeasurement_Z</td>
+<td>Z position at last measurement state</td>
+</tr>
+<tr>
+<td>MuNuR_PPHASRICH</td>
+<td>ProtoParticle has RICH info; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_PROBNN_D</td>
+<td>MVA 概率 for 氘核 假设</td>
+</tr>
+<tr>
+<td>MuNuR_PROBNN_E</td>
+<td>MVA 概率 for 电子 假设</td>
+</tr>
+<tr>
+<td>MuNuR_PROBNN_GHOST</td>
+<td>MVA 概率 for ghost 径迹 假设</td>
+</tr>
+<tr>
+<td>MuNuR_PROBNN_K</td>
+<td>MVA 概率 for K介子 假设</td>
+</tr>
+<tr>
+<td>MuNuR_PROBNN_MU</td>
+<td>MVA 概率 for 缪子 假设</td>
+</tr>
+<tr>
+<td>MuNuR_PROBNN_P</td>
+<td>MVA 概率 for 质子 假设</td>
+</tr>
+<tr>
+<td>MuNuR_PROBNN_PI</td>
+<td>MVA 概率 for π介子 假设</td>
+</tr>
+<tr>
+<td>MuNuR_PT</td>
+<td>Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_PX</td>
+<td>Get the X-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_PY</td>
+<td>Get the Y-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_PZ</td>
+<td>Get the Z-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_Q</td>
+<td>Compute the 电荷</td>
+</tr>
+<tr>
+<td>MuNuR_QOVERP</td>
+<td>q/p</td>
+</tr>
+<tr>
+<td>MuNuR_THETA</td>
+<td>Get the theta coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_TRACKHAST</td>
+<td>Returns True if 径迹 has 击中数 in T stations, False otherwise; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_TRACKHASUT</td>
+<td>Returns True if 径迹 has 击中数 in UT detector, False otherwise; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_TRACKHASVELO</td>
+<td>Returns True if 径迹 has 击中数 in Velo, False otherwise; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_TRACKHISTORY</td>
+<td>ComposedBoundFunctor:; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_TRACKPT</td>
+<td>Get the 横动量 of a 径迹 (see TRACK() for definition)</td>
+</tr>
+<tr>
+<td>MuNuR_TRCHI2</td>
+<td>Vertex or 径迹 chi^2.</td>
+</tr>
+<tr>
+<td>MuNuR_TRCHI2DOF</td>
+<td>Vertex or 径迹 chi^2 per degrees of freedom.</td>
+</tr>
+<tr>
+<td>MuNuR_TRNDOF</td>
+<td>Number of degrees of freedom [for 卡方]; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>MuNuR_TX</td>
+<td>Get the X-coordinate of the slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_TY</td>
+<td>Get the Y-coordinate of the slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_log_P</td>
+<td>Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>MuNuR_log_PT</td>
+<td>Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Mu_ALLPV_IP</td>
+<td>Impact parameter with respect to all primary vertices</td>
+</tr>
+<tr>
+<td>Mu_ALLPV_IPCHI2</td>
+<td>Impact parameter 卡方 with respect to all primary vertices</td>
+</tr>
+<tr>
+<td>Mu_BREMBENDCORR</td>
+<td>Correction factor accounting for bending biases in 径迹 due to 轫致辐射</td>
+</tr>
+<tr>
+<td>Mu_BREMENERGY</td>
+<td>Brem 动量-recovery 能量</td>
+</tr>
+<tr>
+<td>Mu_BREMHYPOAREA</td>
+<td>Area code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>Mu_BREMHYPOCOL</td>
+<td>Column code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>Mu_BREMHYPODELTAX</td>
+<td>Test statistic of being first-state like of CaloHypo (photon) for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>Mu_BREMHYPOENERGY</td>
+<td>Energy of CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>Mu_BREMHYPOID</td>
+<td>All significant bits representation of CellID (32bits) for CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>Mu_BREMHYPOMATCH_CHI2</td>
+<td>2D 卡方 of CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>Mu_BREMHYPOROW</td>
+<td>Row code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>Mu_BREMPIDE</td>
+<td>Brem-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>Mu_BREMTRACKBASEDENERGY</td>
+<td>Track-based 轫致辐射 能量 determination</td>
+</tr>
+<tr>
+<td>Mu_CLUSTERAREA</td>
+<td>Area code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>Mu_CLUSTERCOL</td>
+<td>Column code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>Mu_CLUSTERID</td>
+<td>CellID.all() of the best matching 簇 for a given reconstructed 径迹</td>
+</tr>
+<tr>
+<td>Mu_CLUSTERMATCH_CHI2</td>
+<td>CaloID estimator: 2D 卡方 for Track/CaloCluster matching (neutral + 电荷d)</td>
+</tr>
+<tr>
+<td>Mu_CLUSTERROW</td>
+<td>Row code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>Mu_CaloClusterMass</td>
+<td>Retrieve the CALO 簇 质量 obtained from MergedPi0Alg</td>
+</tr>
+<tr>
+<td>Mu_CaloNeutral1To9EnergyRatio</td>
+<td>Fraction of highest E cell (seed) to 9 (3x3) cells forming the 簇</td>
+</tr>
+<tr>
+<td>Mu_CaloNeutral4To9EnergyRatio</td>
+<td>Fraction of highest 2x2 cell (seed) to 9 (3x3) cells forming the 簇</td>
+</tr>
+<tr>
+<td>Mu_CaloNeutralArea</td>
+<td>Retrieve area code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>Mu_CaloNeutralCol</td>
+<td>Retrieve column code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>Mu_CaloNeutralEcalEnergy</td>
+<td>Retrieve the ECAL 簇 能量 associated to the neutral CaloHypo</td>
+</tr>
+<tr>
+<td>Mu_CaloNeutralHcal2EcalEnergyRatio</td>
+<td>Retrieve the HCAL/ECAL 能量 ratio associated to the neutral CaloHypo</td>
+</tr>
+<tr>
+<td>Mu_CaloNeutralID</td>
+<td>Retrieve bitwise information (32bits) of all CALO neutral seed CellIDs</td>
+</tr>
+<tr>
+<td>Mu_CaloNeutralRow</td>
+<td>Retrieve row code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>Mu_CaloNeutralShowerShape</td>
+<td>CaloID estimator: 2nd order moment of the 簇 (簇射 width)</td>
+</tr>
+<tr>
+<td>Mu_CaloNumSaturatedCells</td>
+<td>Number of saturated cells in 量能器</td>
+</tr>
+<tr>
+<td>Mu_CaloTrackMatchChi2</td>
+<td>Chi2 of 径迹-量能器 簇 match</td>
+</tr>
+<tr>
+<td>Mu_E</td>
+<td>Get the 能量 (see FOURMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Mu_ECALPIDE</td>
+<td>Ecal-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>Mu_ECALPIDMU</td>
+<td>Ecal-based DLL for mu-ID</td>
+</tr>
+<tr>
+<td>Mu_ELECTRONAREA</td>
+<td>Area code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>Mu_ELECTRONCOL</td>
+<td>Column code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>Mu_ELECTRONENERGY</td>
+<td>Cluster 能量 associated to CaloHypo (电荷d 电子)</td>
+</tr>
+<tr>
+<td>Mu_ELECTRONID</td>
+<td>All significant bits representation of CellID (32bits) associated to CaloHypo seed (电子 hypo)</td>
+</tr>
+<tr>
+<td>Mu_ELECTRONMATCH_CHI2</td>
+<td>CaloID estimator: 3D 卡方 for Track/CaloHypo(e) matching (电荷d)</td>
+</tr>
+<tr>
+<td>Mu_ELECTRONROW</td>
+<td>Row code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>Mu_ELECTRONSHOWERDLL</td>
+<td>Summed per-cell E/p DLL (电子 versus π介子) with 径迹-based cell selection</td>
+</tr>
+<tr>
+<td>Mu_ELECTRONSHOWEREOP</td>
+<td>Electron 能量/动量 with 径迹-based cell selection</td>
+</tr>
+<tr>
+<td>Mu_ETA</td>
+<td>Get the eta (赝快度) coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>Mu_GHOSTPROB</td>
+<td>Track 幽灵径迹概率 (see TRACK() for definition).</td>
+</tr>
+<tr>
+<td>Mu_HASBREM</td>
+<td>Has non-zero 轫致辐射 动量-recovery 能量</td>
+</tr>
+<tr>
+<td>Mu_HASBREMADDED</td>
+<td>Has non-zero 轫致辐射 动量-recovery 能量 added (using Particle class 标志)</td>
+</tr>
+<tr>
+<td>Mu_HCALEOP</td>
+<td>Hcal 能量 deposit over 动量 (径迹)</td>
+</tr>
+<tr>
+<td>Mu_HCALPIDE</td>
+<td>Hcal-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>Mu_HCALPIDMU</td>
+<td>Hcal-based DLL for mu-ID</td>
+</tr>
+<tr>
+<td>Mu_Hlt1DiMuonHighMassDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1DiMuonHighMassDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1DiMuonHighMassDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1DiMuonHighMassDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1DiMuonLowMassDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1DiMuonLowMassDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1DiMuonLowMassDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1DiMuonLowMassDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1DiMuonNoIPDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1DiMuonNoIPDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1DiMuonNoIPDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1DiMuonNoIPDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1DiMuonNoIP_SSDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1DiMuonNoIP SSDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1DiMuonNoIP_SSDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1DiMuonNoIP SSDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1DiMuonSoftDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1DiMuonSoftDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1DiMuonSoftDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1DiMuonSoftDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1GlobalDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1GlobalDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1GlobalDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1GlobalDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1LowPtDiMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1LowPtDiMuonDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1LowPtDiMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1LowPtDiMuonDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1LowPtMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1LowPtMuonDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1LowPtMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1LowPtMuonDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1PhysDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1PhysDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1PhysDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1PhysDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1SingleHighPtMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1SingleHighPtMuonDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1SingleHighPtMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1SingleHighPtMuonDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1TrackMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1TrackMVADecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1TrackMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1TrackMVADecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1TrackMuonMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt1TrackMuonMVADecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt1TrackMuonMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt1TrackMuonMVADecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiJetIncSVTag pT25M40FullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiJetIncSVTag pT25M40FullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet10GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiSVTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet10GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiSVTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiSVTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiSVTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet20GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiSVTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet20GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiSVTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiSVTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiSVTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet30GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiSVTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet30GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiSVTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiSVTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiSVTagJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiSVTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiTopoTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiTopoTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiTopoTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiTopoTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiTopoTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiTopoTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiTopoTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiTopoTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiTopoTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiTopoTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE DiTopoTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE DiTopoTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_IncJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE IncJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_IncJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE IncJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_IncJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE IncJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_IncJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE IncJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_IncJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE IncJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_IncJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE IncJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_IncJet45GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE IncJet45GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_IncJet45GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE IncJet45GeVFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_SingleHighPtElectronFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE SingleHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_SingleHighPtElectronFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE SingleHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_SingleHighPtMuonFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE SingleHighPtMuonFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_SingleHighPtMuonFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE SingleHighPtMuonFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE SingleHighPtMuonIsoFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE SingleHighPtMuonIsoFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE SingleHighPtMuonNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE SingleHighPtMuonNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_SingleVHighPtElectronFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE SingleVHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_SingleVHighPtElectronFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE SingleVHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for Mu Hlt2QEE ZToMuMu SingleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>Mu_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for Mu Hlt2QEE ZToMuMu SingleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>Mu_ID</td>
+<td>Particle ID of a Particle or MCParticle.</td>
+</tr>
+<tr>
+<td>Mu_INBREM</td>
+<td>In Brem acceptance</td>
+</tr>
+<tr>
+<td>Mu_INECAL</td>
+<td>In Ecal acceptance</td>
+</tr>
+<tr>
+<td>Mu_INHCAL</td>
+<td>In Hcal acceptance</td>
+</tr>
+<tr>
+<td>Mu_INMUON</td>
+<td>InAcceptance. Functor’s call operator expects a particle-like object.</td>
+</tr>
+<tr>
+<td>Mu_ISCLONE</td>
+<td>Track 标志 contains Clone; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_ISDOWNSTREAM</td>
+<td>Track type is Downstream; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_ISLONG</td>
+<td>Track type is Long; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_ISMUON</td>
+<td>IsMuon. Functor’s call operator expects a particle-like object.</td>
+</tr>
+<tr>
+<td>Mu_ISMUONTIGHT</td>
+<td>IsMuonTight. Functor’s call operator expects a particle-like object.</td>
+</tr>
+<tr>
+<td>Mu_ISTTRACK</td>
+<td>Track type is T径迹; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_ISUPSTREAM</td>
+<td>Track type is Upstream; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_ISVELO</td>
+<td>Track type is Velo; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_Key</td>
+<td>Key of the KeyedObject.</td>
+</tr>
+<tr>
+<td>Mu_M</td>
+<td>Get the particle (composite or basic) 质量.</td>
+</tr>
+<tr>
+<td>Mu_MINIP</td>
+<td>Miniumum 撞击参数 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>Mu_MINIPCHI2</td>
+<td>Miniumum 撞击参数 卡方 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>Mu_NFTHITS</td>
+<td>Number of FT 击中数.; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_NFTHOLES</td>
+<td>Return number of holes in SciFi of 径迹 as defined by HitPattern; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_NHITS</td>
+<td>Track number of 击中数.; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_NUTHITS</td>
+<td>Number of UT 击中数.; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_NVPHITS</td>
+<td>Number of VP 击中数.; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_NVPHITSA</td>
+<td>Return number of 击中数 in VELO A-side; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_NVPHITSC</td>
+<td>Return number of 击中数 in VELO C-side; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_NVPHOLES</td>
+<td>Return number of holes in VELO of 径迹 as defined by HitPattern; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_NVPLAYERS</td>
+<td>Return number of VELO layers of 径迹 as defined by HitPattern; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_OWNPVIP</td>
+<td>Impact parameter with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>Mu_OWNPVIPCHI2</td>
+<td>Impact parameter 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>Mu_OWNPVNDOF</td>
+<td>Number of degrees of freedom [for 卡方]; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_OWNPVX</td>
+<td>X-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>Mu_OWNPVY</td>
+<td>Y-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>Mu_OWNPVZ</td>
+<td>Z-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>Mu_P</td>
+<td>Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Mu_PARTICLE_ID</td>
+<td>Particle ID (PDG code)</td>
+</tr>
+<tr>
+<td>Mu_PHI</td>
+<td>Get the phi coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>Mu_PIDK</td>
+<td>Gives measure of the K介子 质量 假设 relative to the π介子 hypotesis.</td>
+</tr>
+<tr>
+<td>Mu_PIDPi</td>
+<td>CombDLLpi. Should be peaked at zero.</td>
+</tr>
+<tr>
+<td>Mu_PIDe</td>
+<td>Gives measure of the 电子 质量 假设 relative to the π介子 hypotesis.</td>
+</tr>
+<tr>
+<td>Mu_PIDmu</td>
+<td>Gives measure of the 缪子 质量 假设 relative to the π介子 hypotesis.</td>
+</tr>
+<tr>
+<td>Mu_PIDp</td>
+<td>Gives measure of the 质子 质量 假设 relative to the π介子 hypotesis.</td>
+</tr>
+<tr>
+<td>Mu_POSITION_STATEAT_FirstMeasurement_X</td>
+<td>X position at first measurement state</td>
+</tr>
+<tr>
+<td>Mu_POSITION_STATEAT_FirstMeasurement_Y</td>
+<td>Y position at first measurement state</td>
+</tr>
+<tr>
+<td>Mu_POSITION_STATEAT_FirstMeasurement_Z</td>
+<td>Z position at first measurement state</td>
+</tr>
+<tr>
+<td>Mu_POSITION_STATEAT_LastMeasurement_X</td>
+<td>X position at last measurement state</td>
+</tr>
+<tr>
+<td>Mu_POSITION_STATEAT_LastMeasurement_Y</td>
+<td>Y position at last measurement state</td>
+</tr>
+<tr>
+<td>Mu_POSITION_STATEAT_LastMeasurement_Z</td>
+<td>Z position at last measurement state</td>
+</tr>
+<tr>
+<td>Mu_PPHASRICH</td>
+<td>ProtoParticle has RICH info; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_PROBNN_D</td>
+<td>MVA 概率 for 氘核 假设</td>
+</tr>
+<tr>
+<td>Mu_PROBNN_E</td>
+<td>MVA 概率 for 电子 假设</td>
+</tr>
+<tr>
+<td>Mu_PROBNN_GHOST</td>
+<td>MVA 概率 for ghost 径迹 假设</td>
+</tr>
+<tr>
+<td>Mu_PROBNN_K</td>
+<td>MVA 概率 for K介子 假设</td>
+</tr>
+<tr>
+<td>Mu_PROBNN_MU</td>
+<td>MVA 概率 for 缪子 假设</td>
+</tr>
+<tr>
+<td>Mu_PROBNN_P</td>
+<td>MVA 概率 for 质子 假设</td>
+</tr>
+<tr>
+<td>Mu_PROBNN_PI</td>
+<td>MVA 概率 for π介子 假设</td>
+</tr>
+<tr>
+<td>Mu_PT</td>
+<td>Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Mu_PX</td>
+<td>Get the X-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Mu_PY</td>
+<td>Get the Y-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Mu_PZ</td>
+<td>Get the Z-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Mu_Q</td>
+<td>Compute the 电荷</td>
+</tr>
+<tr>
+<td>Mu_QOVERP</td>
+<td>q/p</td>
+</tr>
+<tr>
+<td>Mu_THETA</td>
+<td>Get the theta coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>Mu_TRACKHAST</td>
+<td>Returns True if 径迹 has 击中数 in T stations, False otherwise; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_TRACKHASUT</td>
+<td>Returns True if 径迹 has 击中数 in UT detector, False otherwise; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_TRACKHASVELO</td>
+<td>Returns True if 径迹 has 击中数 in Velo, False otherwise; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_TRACKHISTORY</td>
+<td>ComposedBoundFunctor:; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_TRACKPT</td>
+<td>Get the 横动量 of a 径迹 (see TRACK() for definition)</td>
+</tr>
+<tr>
+<td>Mu_TRCHI2</td>
+<td>Vertex or 径迹 chi^2.</td>
+</tr>
+<tr>
+<td>Mu_TRCHI2DOF</td>
+<td>Vertex or 径迹 chi^2 per degrees of freedom.</td>
+</tr>
+<tr>
+<td>Mu_TRNDOF</td>
+<td>Number of degrees of freedom [for 卡方]; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>Mu_TX</td>
+<td>Get the X-coordinate of the slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>Mu_TY</td>
+<td>Get the Y-coordinate of the slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>Mu_log_P</td>
+<td>Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>Mu_log_PT</td>
+<td>Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_ALLPV_FD</td>
+<td>Flight distance with respect to all primary vertices</td>
+</tr>
+<tr>
+<td>NuR_ALLPV_IP</td>
+<td>Impact parameter with respect to all primary vertices</td>
+</tr>
+<tr>
+<td>NuR_ALLPV_IPCHI2</td>
+<td>Impact parameter 卡方 with respect to all primary vertices</td>
+</tr>
+<tr>
+<td>NuR_ALV</td>
+<td>Compute the cosine value of angle between two decay products.</td>
+</tr>
+<tr>
+<td>NuR_BPV_IPCHI2</td>
+<td>Impact parameter Chi2 with respect to the BPV(). More precisely that means the difference in the 卡方 of the PV fit (of the BPV) between including and excluding the object the function is called on.</td>
+</tr>
+<tr>
+<td>NuR_BPV_LTIME</td>
+<td>Lifetime with respect to the BPV()</td>
+</tr>
+<tr>
+<td>NuR_BREMBENDCORR</td>
+<td>Correction factor accounting for bending biases in 径迹 due to 轫致辐射</td>
+</tr>
+<tr>
+<td>NuR_BREMENERGY</td>
+<td>Brem 动量-recovery 能量</td>
+</tr>
+<tr>
+<td>NuR_BREMHYPOAREA</td>
+<td>Area code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>NuR_BREMHYPOCOL</td>
+<td>Column code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>NuR_BREMHYPODELTAX</td>
+<td>Test statistic of being first-state like of CaloHypo (photon) for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>NuR_BREMHYPOENERGY</td>
+<td>Energy of CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>NuR_BREMHYPOID</td>
+<td>All significant bits representation of CellID (32bits) for CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>NuR_BREMHYPOMATCH_CHI2</td>
+<td>2D 卡方 of CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>NuR_BREMHYPOROW</td>
+<td>Row code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>NuR_BREMPIDE</td>
+<td>Brem-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>NuR_BREMTRACKBASEDENERGY</td>
+<td>Track-based 轫致辐射 能量 determination</td>
+</tr>
+<tr>
+<td>NuR_CLUSTERAREA</td>
+<td>Area code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>NuR_CLUSTERCOL</td>
+<td>Column code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>NuR_CLUSTERID</td>
+<td>CellID.all() of the best matching 簇 for a given reconstructed 径迹</td>
+</tr>
+<tr>
+<td>NuR_CLUSTERMATCH_CHI2</td>
+<td>CaloID estimator: 2D 卡方 for Track/CaloCluster matching (neutral + 电荷d)</td>
+</tr>
+<tr>
+<td>NuR_CLUSTERROW</td>
+<td>Row code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>NuR_CaloClusterMass</td>
+<td>Retrieve the CALO 簇 质量 obtained from MergedPi0Alg</td>
+</tr>
+<tr>
+<td>NuR_CaloNeutral1To9EnergyRatio</td>
+<td>Fraction of highest E cell (seed) to 9 (3x3) cells forming the 簇</td>
+</tr>
+<tr>
+<td>NuR_CaloNeutral4To9EnergyRatio</td>
+<td>Fraction of highest 2x2 cell (seed) to 9 (3x3) cells forming the 簇</td>
+</tr>
+<tr>
+<td>NuR_CaloNeutralArea</td>
+<td>Retrieve area code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>NuR_CaloNeutralCol</td>
+<td>Retrieve column code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>NuR_CaloNeutralEcalEnergy</td>
+<td>Retrieve the ECAL 簇 能量 associated to the neutral CaloHypo</td>
+</tr>
+<tr>
+<td>NuR_CaloNeutralHcal2EcalEnergyRatio</td>
+<td>Retrieve the HCAL/ECAL 能量 ratio associated to the neutral CaloHypo</td>
+</tr>
+<tr>
+<td>NuR_CaloNeutralID</td>
+<td>Retrieve bitwise information (32bits) of all CALO neutral seed CellIDs</td>
+</tr>
+<tr>
+<td>NuR_CaloNeutralRow</td>
+<td>Retrieve row code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>NuR_CaloNeutralShowerShape</td>
+<td>CaloID estimator: 2nd order moment of the 簇 (簇射 width)</td>
+</tr>
+<tr>
+<td>NuR_CaloNumSaturatedCells</td>
+<td>Number of saturated cells in 量能器</td>
+</tr>
+<tr>
+<td>NuR_CaloTrackMatchChi2</td>
+<td>Chi2 of 径迹-量能器 簇 match</td>
+</tr>
+<tr>
+<td>NuR_DOCA12</td>
+<td></td>
+</tr>
+<tr>
+<td>NuR_DOCA12CHI2</td>
+<td></td>
+</tr>
+<tr>
+<td>NuR_E</td>
+<td>Get the 能量 (see FOURMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_ECALPIDE</td>
+<td>Ecal-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>NuR_ECALPIDMU</td>
+<td>Ecal-based DLL for mu-ID</td>
+</tr>
+<tr>
+<td>NuR_ELECTRONAREA</td>
+<td>Area code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>NuR_ELECTRONCOL</td>
+<td>Column code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>NuR_ELECTRONENERGY</td>
+<td>Cluster 能量 associated to CaloHypo (电荷d 电子)</td>
+</tr>
+<tr>
+<td>NuR_ELECTRONID</td>
+<td>All significant bits representation of CellID (32bits) associated to CaloHypo seed (电子 hypo)</td>
+</tr>
+<tr>
+<td>NuR_ELECTRONMATCH_CHI2</td>
+<td>CaloID estimator: 3D 卡方 for Track/CaloHypo(e) matching (电荷d)</td>
+</tr>
+<tr>
+<td>NuR_ELECTRONROW</td>
+<td>Row code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>NuR_ELECTRONSHOWERDLL</td>
+<td>Summed per-cell E/p DLL (电子 versus π介子) with 径迹-based cell selection</td>
+</tr>
+<tr>
+<td>NuR_ELECTRONSHOWEREOP</td>
+<td>Electron 能量/动量 with 径迹-based cell selection</td>
+</tr>
+<tr>
+<td>NuR_END_VX</td>
+<td>Get the X-coordinate of the ENDVERTEX() of a particle.</td>
+</tr>
+<tr>
+<td>NuR_END_VY</td>
+<td>Get the Y-coordinate of the ENDVERTEX() of a particle.</td>
+</tr>
+<tr>
+<td>NuR_END_VZ</td>
+<td>Get the Z–coordinate of the ENDVERTEX() of a particle.</td>
+</tr>
+<tr>
+<td>NuR_ETA</td>
+<td>Get the eta (赝快度) coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>NuR_HASBREM</td>
+<td>Has non-zero 轫致辐射 动量-recovery 能量</td>
+</tr>
+<tr>
+<td>NuR_HASBREMADDED</td>
+<td>Has non-zero 轫致辐射 动量-recovery 能量 added (using Particle class 标志)</td>
+</tr>
+<tr>
+<td>NuR_HCALEOP</td>
+<td>Hcal 能量 deposit over 动量 (径迹)</td>
+</tr>
+<tr>
+<td>NuR_HCALPIDE</td>
+<td>Hcal-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>NuR_HCALPIDMU</td>
+<td>Hcal-based DLL for mu-ID</td>
+</tr>
+<tr>
+<td>NuR_Hlt1DiMuonHighMassDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1DiMuonHighMassDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1DiMuonHighMassDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1DiMuonHighMassDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1DiMuonLowMassDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1DiMuonLowMassDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1DiMuonLowMassDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1DiMuonLowMassDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1DiMuonNoIPDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1DiMuonNoIPDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1DiMuonNoIPDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1DiMuonNoIPDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1DiMuonNoIP_SSDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1DiMuonNoIP SSDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1DiMuonNoIP_SSDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1DiMuonNoIP SSDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1DiMuonSoftDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1DiMuonSoftDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1DiMuonSoftDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1DiMuonSoftDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1GlobalDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1GlobalDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1GlobalDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1GlobalDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1LowPtDiMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1LowPtDiMuonDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1LowPtDiMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1LowPtDiMuonDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1LowPtMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1LowPtMuonDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1LowPtMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1LowPtMuonDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1PhysDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1PhysDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1PhysDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1PhysDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1SingleHighPtMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1SingleHighPtMuonDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1SingleHighPtMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1SingleHighPtMuonDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1TrackMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1TrackMVADecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1TrackMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1TrackMVADecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1TrackMuonMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt1TrackMuonMVADecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt1TrackMuonMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt1TrackMuonMVADecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiJetIncSVTag pT25M40FullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiJetIncSVTag pT25M40FullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet10GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiSVTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet10GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiSVTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiSVTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiSVTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet20GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiSVTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet20GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiSVTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiSVTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiSVTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet30GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiSVTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet30GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiSVTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiSVTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiSVTagJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiSVTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiTopoTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiTopoTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiTopoTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiTopoTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiTopoTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiTopoTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiTopoTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiTopoTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiTopoTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiTopoTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE DiTopoTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE DiTopoTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_IncJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE IncJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_IncJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE IncJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_IncJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE IncJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_IncJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE IncJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_IncJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE IncJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_IncJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE IncJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_IncJet45GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE IncJet45GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_IncJet45GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE IncJet45GeVFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_SingleHighPtElectronFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE SingleHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_SingleHighPtElectronFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE SingleHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_SingleHighPtMuonFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE SingleHighPtMuonFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_SingleHighPtMuonFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE SingleHighPtMuonFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE SingleHighPtMuonIsoFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE SingleHighPtMuonIsoFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE SingleHighPtMuonNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE SingleHighPtMuonNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_SingleVHighPtElectronFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE SingleVHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_SingleVHighPtElectronFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE SingleVHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for NuR Hlt2QEE ZToMuMu SingleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>NuR_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for NuR Hlt2QEE ZToMuMu SingleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>NuR_ID</td>
+<td>Particle ID of a Particle or MCParticle.</td>
+</tr>
+<tr>
+<td>NuR_INBREM</td>
+<td>In Brem acceptance</td>
+</tr>
+<tr>
+<td>NuR_INECAL</td>
+<td>In Ecal acceptance</td>
+</tr>
+<tr>
+<td>NuR_INHCAL</td>
+<td>In Hcal acceptance</td>
+</tr>
+<tr>
+<td>NuR_KEY</td>
+<td>Key of the KeyedObject.; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>NuR_Key</td>
+<td>Key of the KeyedObject.</td>
+</tr>
+<tr>
+<td>NuR_M</td>
+<td>Get the particle (composite or basic) 质量.</td>
+</tr>
+<tr>
+<td>NuR_MAX_DOCA</td>
+<td>Compute the maximum pairwise 最近距离 between members of a combination using IDistanceCalculator.</td>
+</tr>
+<tr>
+<td>NuR_MAX_DOCACHI2</td>
+<td>Compute the maximum pairwise significance of the 最近距离, computed using an IDistanceCalculator implementation, between members of a combination.</td>
+</tr>
+<tr>
+<td>NuR_MAX_MINIPCHI2</td>
+<td>Calculate the maximum of the given functor value.; Miniumum 撞击参数 卡方 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>NuR_MAX_OWNPVIPCHI2</td>
+<td>Calculate the maximum of the given functor value.; Impact parameter 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>NuR_MAX_P</td>
+<td>Calculate the maximum of the given functor value.; Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_MAX_PT</td>
+<td>Calculate the maximum of the given functor value.; Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_MAX_SDOCA</td>
+<td>Compute the maximum pairwise 最近距离 between members of a combination.</td>
+</tr>
+<tr>
+<td>NuR_MAX_SDOCACHI2</td>
+<td>Compute the maximum pairwise significance of the 最近距离 between members of a combination.</td>
+</tr>
+<tr>
+<td>NuR_MINIP</td>
+<td>Miniumum 撞击参数 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>NuR_MINIPCHI2</td>
+<td>Miniumum 撞击参数 卡方 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>NuR_MIN_OWNPVIPCHI2</td>
+<td>Calculate the minimum of the given functor value.; Impact parameter 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>NuR_MIN_P</td>
+<td>Calculate the minimum of the given functor value.; Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_MIN_PT</td>
+<td>Calculate the minimum of the given functor value.; Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_OBJECT_KEY</td>
+<td>Key of the KeyedObject.</td>
+</tr>
+<tr>
+<td>NuR_OWNPVIP</td>
+<td>Impact parameter with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>NuR_OWNPVIPCHI2</td>
+<td>Impact parameter 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>NuR_OWNPVNDOF</td>
+<td>Number of degrees of freedom [for 卡方]; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>NuR_OWNPVX</td>
+<td>X-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>NuR_OWNPVY</td>
+<td>Y-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>NuR_OWNPVZ</td>
+<td>Z-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_DIRA</td>
+<td>Direction angle between the three-动量 of a particle and its OWNPVFDVEC()</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_DLS</td>
+<td>Decay length significance with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_ETA</td>
+<td>Eta-coordinate of OWNPVFDVEC()</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_FD</td>
+<td>Distance between the end顶点 position and the position of the PV associated to a particle</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_FDCHI2</td>
+<td>Flight distance 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_FDIRX</td>
+<td>X-component of unit flight direction vector with respect to own PV</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_FDIRY</td>
+<td>Y-component of unit flight direction vector with respect to own PV</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_FDIRZ</td>
+<td>Z-component of unit flight direction vector with respect to own PV</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_FDVECX</td>
+<td>X-component of 飞行距离 vector with respect to own PV</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_FDVECY</td>
+<td>Y-component of 飞行距离 vector with respect to own PV</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_FDVECZ</td>
+<td>Z-component of 飞行距离 vector with respect to own PV</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_LTIME</td>
+<td>Lifetime with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_VDRHO</td>
+<td>Rho-coordinate of OWNPVFDVEC()</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_VDX</td>
+<td>Distance along the x-axis between the end顶点 and the PV associated to a particle</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_VDY</td>
+<td>Distance along the y-axis between the end顶点 and the PV associated to a particle</td>
+</tr>
+<tr>
+<td>NuR_OWNPV_VDZ</td>
+<td>Distance along the z-axis between the end顶点 and the PV associated to a particle</td>
+</tr>
+<tr>
+<td>NuR_P</td>
+<td>Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_PARTICLE_ID</td>
+<td>Particle ID (PDG code)</td>
+</tr>
+<tr>
+<td>NuR_PHI</td>
+<td>Get the phi coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>NuR_PROBNN_D</td>
+<td>MVA 概率 for 氘核 假设</td>
+</tr>
+<tr>
+<td>NuR_PROBNN_E</td>
+<td>MVA 概率 for 电子 假设</td>
+</tr>
+<tr>
+<td>NuR_PROBNN_GHOST</td>
+<td>MVA 概率 for ghost 径迹 假设</td>
+</tr>
+<tr>
+<td>NuR_PROBNN_K</td>
+<td>MVA 概率 for K介子 假设</td>
+</tr>
+<tr>
+<td>NuR_PROBNN_MU</td>
+<td>MVA 概率 for 缪子 假设</td>
+</tr>
+<tr>
+<td>NuR_PROBNN_P</td>
+<td>MVA 概率 for 质子 假设</td>
+</tr>
+<tr>
+<td>NuR_PROBNN_PI</td>
+<td>MVA 概率 for π介子 假设</td>
+</tr>
+<tr>
+<td>NuR_PT</td>
+<td>Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_PX</td>
+<td>Get the X-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_PY</td>
+<td>Get the Y-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_PZ</td>
+<td>Get the Z-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_Q</td>
+<td>Compute the 电荷</td>
+</tr>
+<tr>
+<td>NuR_SDOCA12</td>
+<td></td>
+</tr>
+<tr>
+<td>NuR_SUM_MINIPCHI2</td>
+<td>Calculate the [scalar] sum of the given functor value.; Miniumum 撞击参数 卡方 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>NuR_SUM_OWNPVIPCHI2</td>
+<td>Calculate the [scalar] sum of the given functor value.; Impact parameter 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>NuR_SUM_P</td>
+<td>Calculate the [scalar] sum of the given functor value.; Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_SUM_PT</td>
+<td>Calculate the [scalar] sum of the given functor value.; Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_THETA</td>
+<td>Get the theta coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>NuR_VTXCHI2</td>
+<td>Vertex or 径迹 chi^2.</td>
+</tr>
+<tr>
+<td>NuR_VTXCHI2NDOF</td>
+<td>Vertex or 径迹 chi^2 per degrees of freedom.</td>
+</tr>
+<tr>
+<td>NuR_log_MAX_P</td>
+<td>Calculate the maximum of the given functor value.</td>
+</tr>
+<tr>
+<td>NuR_log_MAX_PT</td>
+<td>Calculate the maximum of the given functor value.</td>
+</tr>
+<tr>
+<td>NuR_log_MIN_P</td>
+<td>Calculate the minimum of the given functor value.</td>
+</tr>
+<tr>
+<td>NuR_log_MIN_PT</td>
+<td>Calculate the minimum of the given functor value.</td>
+</tr>
+<tr>
+<td>NuR_log_P</td>
+<td>Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_log_PT</td>
+<td>Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>NuR_log_SUM_P</td>
+<td>Calculate the [scalar] sum of the given functor value.</td>
+</tr>
+<tr>
+<td>NuR_log_SUM_PT</td>
+<td>Calculate the [scalar] sum of the given functor value.</td>
+</tr>
+<tr>
+<td>ODINTCK</td>
+<td>ODIN 触发 configuration key</td>
+</tr>
+<tr>
+<td>PV_SIZE</td>
+<td>Size of the container at the given TES location</td>
+</tr>
+<tr>
+<td>RUNNUMBER</td>
+<td>Run number from ODIN</td>
+</tr>
+<tr>
+<td>SpruceQEE_Dijets1515Decision</td>
+<td>Trigger 判定: SpruceQEE Di喷注s1515</td>
+</tr>
+<tr>
+<td>SpruceQEE_Dijets2020Decision</td>
+<td>Trigger 判定: SpruceQEE Di喷注s2020</td>
+</tr>
+<tr>
+<td>SpruceQEE_Dijets2525Decision</td>
+<td>Trigger 判定: SpruceQEE Di喷注s2525</td>
+</tr>
+<tr>
+<td>SpruceQEE_Dijets3030Decision</td>
+<td>Trigger 判定: SpruceQEE Di喷注s3030</td>
+</tr>
+<tr>
+<td>SpruceQEE_Dijets3535Decision</td>
+<td>Trigger 判定: SpruceQEE Di喷注s3535</td>
+</tr>
+<tr>
+<td>SpruceQEE_IncSVTagDijetsDecision</td>
+<td>Trigger 判定: SpruceQEE IncSVTagDi喷注s</td>
+</tr>
+<tr>
+<td>SpruceQEE_SingleHighPtElectronDecision</td>
+<td>Trigger 判定: SpruceQEE SingleHighPtElectron</td>
+</tr>
+<tr>
+<td>SpruceQEE_SingleHighPtMuonDecision</td>
+<td>Trigger 判定: SpruceQEE SingleHighPtMuon</td>
+</tr>
+<tr>
+<td>SpruceQEE_SingleHighPtMuonIsoDecision</td>
+<td>Trigger 判定: SpruceQEE SingleHighPtMuonIso</td>
+</tr>
+<tr>
+<td>SpruceQEE_SingleJet15Decision</td>
+<td>Trigger 判定: SpruceQEE SingleJet15</td>
+</tr>
+<tr>
+<td>SpruceQEE_SingleJet25Decision</td>
+<td>Trigger 判定: SpruceQEE SingleJet25</td>
+</tr>
+<tr>
+<td>SpruceQEE_SingleJet35Decision</td>
+<td>Trigger 判定: SpruceQEE SingleJet35</td>
+</tr>
+<tr>
+<td>SpruceQEE_SingleJet45Decision</td>
+<td>Trigger 判定: SpruceQEE SingleJet45</td>
+</tr>
+<tr>
+<td>SpruceQEE_SingleVHighPtElectronDecision</td>
+<td>Trigger 判定: SpruceQEE SingleVHighPtElectron</td>
+</tr>
+<tr>
+<td>SpruceQEE_WJetDecision</td>
+<td>Trigger 判定: SpruceQEE WJet</td>
+</tr>
+<tr>
+<td>SpruceQEE_WJetJetDecision</td>
+<td>Trigger 判定: SpruceQEE WJetJet</td>
+</tr>
+<tr>
+<td>SpruceQEE_ZToMuMuDecision</td>
+<td>Trigger 判定: SpruceQEE ZToMuMu</td>
+</tr>
+<tr>
+<td>SpruceQEE_ZToMuMu_DoubleNoMuIDDecision</td>
+<td>Trigger 判定: SpruceQEE ZToMuMu DoubleNoMuID</td>
+</tr>
+<tr>
+<td>SpruceQEE_ZToMuMu_SingleNoMuIDDecision</td>
+<td>Trigger 判定: SpruceQEE ZToMuMu SingleNoMuID</td>
+</tr>
+<tr>
+<td>SpruceQEE_diSVTag1010Decision</td>
+<td>Trigger 判定: SpruceQEE diSVTag1010</td>
+</tr>
+<tr>
+<td>SpruceQEE_diSVTag1515Decision</td>
+<td>Trigger 判定: SpruceQEE diSVTag1515</td>
+</tr>
+<tr>
+<td>SpruceQEE_diSVTag2020Decision</td>
+<td>Trigger 判定: SpruceQEE diSVTag2020</td>
+</tr>
+<tr>
+<td>SpruceQEE_diSVTag2525Decision</td>
+<td>Trigger 判定: SpruceQEE diSVTag2525</td>
+</tr>
+<tr>
+<td>SpruceQEE_diSVTag3030Decision</td>
+<td>Trigger 判定: SpruceQEE diSVTag3030</td>
+</tr>
+<tr>
+<td>SpruceQEE_diSVTag3535Decision</td>
+<td>Trigger 判定: SpruceQEE diSVTag3535</td>
+</tr>
+<tr>
+<td>SpruceQEE_diTopoTag1010Decision</td>
+<td>Trigger 判定: SpruceQEE diTopoTag1010</td>
+</tr>
+<tr>
+<td>SpruceQEE_diTopoTag1515Decision</td>
+<td>Trigger 判定: SpruceQEE diTopoTag1515</td>
+</tr>
+<tr>
+<td>SpruceQEE_diTopoTag2020Decision</td>
+<td>Trigger 判定: SpruceQEE diTopoTag2020</td>
+</tr>
+<tr>
+<td>SpruceQEE_diTopoTag2525Decision</td>
+<td>Trigger 判定: SpruceQEE diTopoTag2525</td>
+</tr>
+<tr>
+<td>SpruceQEE_diTopoTag3030Decision</td>
+<td>Trigger 判定: SpruceQEE diTopoTag3030</td>
+</tr>
+<tr>
+<td>SpruceQEE_diTopoTag3535Decision</td>
+<td>Trigger 判定: SpruceQEE diTopoTag3535</td>
+</tr>
+<tr>
+<td>Spruce_TCK</td>
+<td>Spruce 触发 configuration key</td>
+</tr>
+<tr>
+<td>W_ALLPV_FD</td>
+<td>Flight distance with respect to all primary vertices</td>
+</tr>
+<tr>
+<td>W_ALLPV_IP</td>
+<td>Impact parameter with respect to all primary vertices</td>
+</tr>
+<tr>
+<td>W_ALLPV_IPCHI2</td>
+<td>Impact parameter 卡方 with respect to all primary vertices</td>
+</tr>
+<tr>
+<td>W_ALV</td>
+<td>Compute the cosine value of angle between two decay products.</td>
+</tr>
+<tr>
+<td>W_BPV_IPCHI2</td>
+<td>Impact parameter Chi2 with respect to the BPV(). More precisely that means the difference in the 卡方 of the PV fit (of the BPV) between including and excluding the object the function is called on.</td>
+</tr>
+<tr>
+<td>W_BPV_LTIME</td>
+<td>Lifetime with respect to the BPV()</td>
+</tr>
+<tr>
+<td>W_BREMBENDCORR</td>
+<td>Correction factor accounting for bending biases in 径迹 due to 轫致辐射</td>
+</tr>
+<tr>
+<td>W_BREMENERGY</td>
+<td>Brem 动量-recovery 能量</td>
+</tr>
+<tr>
+<td>W_BREMHYPOAREA</td>
+<td>Area code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>W_BREMHYPOCOL</td>
+<td>Column code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>W_BREMHYPODELTAX</td>
+<td>Test statistic of being first-state like of CaloHypo (photon) for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>W_BREMHYPOENERGY</td>
+<td>Energy of CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>W_BREMHYPOID</td>
+<td>All significant bits representation of CellID (32bits) for CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>W_BREMHYPOMATCH_CHI2</td>
+<td>2D 卡方 of CaloHypo (photon) associated to 径迹 for 轫致辐射 recovery</td>
+</tr>
+<tr>
+<td>W_BREMHYPOROW</td>
+<td>Row code of 轫致辐射 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>W_BREMPIDE</td>
+<td>Brem-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>W_BREMTRACKBASEDENERGY</td>
+<td>Track-based 轫致辐射 能量 determination</td>
+</tr>
+<tr>
+<td>W_CLUSTERAREA</td>
+<td>Area code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>W_CLUSTERCOL</td>
+<td>Column code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>W_CLUSTERID</td>
+<td>CellID.all() of the best matching 簇 for a given reconstructed 径迹</td>
+</tr>
+<tr>
+<td>W_CLUSTERMATCH_CHI2</td>
+<td>CaloID estimator: 2D 卡方 for Track/CaloCluster matching (neutral + 电荷d)</td>
+</tr>
+<tr>
+<td>W_CLUSTERROW</td>
+<td>Row code of best matching 簇 CellID</td>
+</tr>
+<tr>
+<td>W_CaloClusterMass</td>
+<td>Retrieve the CALO 簇 质量 obtained from MergedPi0Alg</td>
+</tr>
+<tr>
+<td>W_CaloNeutral1To9EnergyRatio</td>
+<td>Fraction of highest E cell (seed) to 9 (3x3) cells forming the 簇</td>
+</tr>
+<tr>
+<td>W_CaloNeutral4To9EnergyRatio</td>
+<td>Fraction of highest 2x2 cell (seed) to 9 (3x3) cells forming the 簇</td>
+</tr>
+<tr>
+<td>W_CaloNeutralArea</td>
+<td>Retrieve area code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>W_CaloNeutralCol</td>
+<td>Retrieve column code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>W_CaloNeutralEcalEnergy</td>
+<td>Retrieve the ECAL 簇 能量 associated to the neutral CaloHypo</td>
+</tr>
+<tr>
+<td>W_CaloNeutralHcal2EcalEnergyRatio</td>
+<td>Retrieve the HCAL/ECAL 能量 ratio associated to the neutral CaloHypo</td>
+</tr>
+<tr>
+<td>W_CaloNeutralID</td>
+<td>Retrieve bitwise information (32bits) of all CALO neutral seed CellIDs</td>
+</tr>
+<tr>
+<td>W_CaloNeutralRow</td>
+<td>Retrieve row code of neutral CaloHypo CellID</td>
+</tr>
+<tr>
+<td>W_CaloNeutralShowerShape</td>
+<td>CaloID estimator: 2nd order moment of the 簇 (簇射 width)</td>
+</tr>
+<tr>
+<td>W_CaloNumSaturatedCells</td>
+<td>Number of saturated cells in 量能器</td>
+</tr>
+<tr>
+<td>W_CaloTrackMatchChi2</td>
+<td>Chi2 of 径迹-量能器 簇 match</td>
+</tr>
+<tr>
+<td>W_DOCA12</td>
+<td></td>
+</tr>
+<tr>
+<td>W_DOCA12CHI2</td>
+<td></td>
+</tr>
+<tr>
+<td>W_E</td>
+<td>Get the 能量 (see FOURMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_ECALPIDE</td>
+<td>Ecal-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>W_ECALPIDMU</td>
+<td>Ecal-based DLL for mu-ID</td>
+</tr>
+<tr>
+<td>W_ELECTRONAREA</td>
+<td>Area code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>W_ELECTRONCOL</td>
+<td>Column code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>W_ELECTRONENERGY</td>
+<td>Cluster 能量 associated to CaloHypo (电荷d 电子)</td>
+</tr>
+<tr>
+<td>W_ELECTRONID</td>
+<td>All significant bits representation of CellID (32bits) associated to CaloHypo seed (电子 hypo)</td>
+</tr>
+<tr>
+<td>W_ELECTRONMATCH_CHI2</td>
+<td>CaloID estimator: 3D 卡方 for Track/CaloHypo(e) matching (电荷d)</td>
+</tr>
+<tr>
+<td>W_ELECTRONROW</td>
+<td>Row code of 电子 CaloHypo CellID</td>
+</tr>
+<tr>
+<td>W_ELECTRONSHOWERDLL</td>
+<td>Summed per-cell E/p DLL (电子 versus π介子) with 径迹-based cell selection</td>
+</tr>
+<tr>
+<td>W_ELECTRONSHOWEREOP</td>
+<td>Electron 能量/动量 with 径迹-based cell selection</td>
+</tr>
+<tr>
+<td>W_END_VX</td>
+<td>Get the X-coordinate of the ENDVERTEX() of a particle.</td>
+</tr>
+<tr>
+<td>W_END_VY</td>
+<td>Get the Y-coordinate of the ENDVERTEX() of a particle.</td>
+</tr>
+<tr>
+<td>W_END_VZ</td>
+<td>Get the Z–coordinate of the ENDVERTEX() of a particle.</td>
+</tr>
+<tr>
+<td>W_ETA</td>
+<td>Get the eta (赝快度) coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>W_HASBREM</td>
+<td>Has non-zero 轫致辐射 动量-recovery 能量</td>
+</tr>
+<tr>
+<td>W_HASBREMADDED</td>
+<td>Has non-zero 轫致辐射 动量-recovery 能量 added (using Particle class 标志)</td>
+</tr>
+<tr>
+<td>W_HCALEOP</td>
+<td>Hcal 能量 deposit over 动量 (径迹)</td>
+</tr>
+<tr>
+<td>W_HCALPIDE</td>
+<td>Hcal-based DLL for 电子-ID</td>
+</tr>
+<tr>
+<td>W_HCALPIDMU</td>
+<td>Hcal-based DLL for mu-ID</td>
+</tr>
+<tr>
+<td>W_Hlt1DiMuonHighMassDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1DiMuonHighMassDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1DiMuonHighMassDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1DiMuonHighMassDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1DiMuonLowMassDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1DiMuonLowMassDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1DiMuonLowMassDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1DiMuonLowMassDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1DiMuonNoIPDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1DiMuonNoIPDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1DiMuonNoIPDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1DiMuonNoIPDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1DiMuonNoIP_SSDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1DiMuonNoIP SSDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1DiMuonNoIP_SSDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1DiMuonNoIP SSDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1DiMuonSoftDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1DiMuonSoftDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1DiMuonSoftDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1DiMuonSoftDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1GlobalDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1GlobalDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1GlobalDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1GlobalDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1LowPtDiMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1LowPtDiMuonDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1LowPtDiMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1LowPtDiMuonDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1LowPtMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1LowPtMuonDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1LowPtMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1LowPtMuonDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1PhysDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1PhysDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1PhysDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1PhysDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1SingleHighPtMuonDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1SingleHighPtMuonDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1SingleHighPtMuonDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1SingleHighPtMuonDecision</td>
+</tr>
+<tr>
+<td>W_Hlt1TrackMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1TrackMVADecision</td>
+</tr>
+<tr>
+<td>W_Hlt1TrackMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1TrackMVADecision</td>
+</tr>
+<tr>
+<td>W_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision</td>
+</tr>
+<tr>
+<td>W_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision</td>
+</tr>
+<tr>
+<td>W_Hlt1TrackMuonMVADecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt1TrackMuonMVADecision</td>
+</tr>
+<tr>
+<td>W_Hlt1TrackMuonMVADecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt1TrackMuonMVADecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiJetIncSVTag pT25M40FullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiJetIncSVTag pT25M40FullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet10GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiSVTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet10GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiSVTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiSVTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiSVTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet20GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiSVTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet20GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiSVTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiSVTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiSVTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet30GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiSVTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet30GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiSVTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiSVTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiSVTagJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiSVTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiTopoTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiTopoTagJet10GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiTopoTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiTopoTagJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiTopoTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiTopoTagJet20GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiTopoTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiTopoTagJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiTopoTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiTopoTagJet30GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE DiTopoTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE DiTopoTagJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_IncJet15GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE IncJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_IncJet15GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE IncJet15GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_IncJet25GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE IncJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_IncJet25GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE IncJet25GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_IncJet35GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE IncJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_IncJet35GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE IncJet35GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_IncJet45GeVFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE IncJet45GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_IncJet45GeVFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE IncJet45GeVFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_SingleHighPtElectronFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE SingleHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_SingleHighPtElectronFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE SingleHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_SingleHighPtMuonFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE SingleHighPtMuonFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_SingleHighPtMuonFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE SingleHighPtMuonFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE SingleHighPtMuonIsoFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE SingleHighPtMuonIsoFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE SingleHighPtMuonNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE SingleHighPtMuonNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_SingleVHighPtElectronFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE SingleVHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_SingleVHighPtElectronFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE SingleVHighPtElectronFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TIS</td>
+<td>Trigger Independent of Signal (TIS) 标志 for W Hlt2QEE ZToMuMu SingleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>W_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TOS</td>
+<td>Trigger on Signal (TOS) 标志 for W Hlt2QEE ZToMuMu SingleNoMuIDFullDecision</td>
+</tr>
+<tr>
+<td>W_ID</td>
+<td>Particle ID of a Particle or MCParticle.</td>
+</tr>
+<tr>
+<td>W_INBREM</td>
+<td>In Brem acceptance</td>
+</tr>
+<tr>
+<td>W_INECAL</td>
+<td>In Ecal acceptance</td>
+</tr>
+<tr>
+<td>W_INHCAL</td>
+<td>In Hcal acceptance</td>
+</tr>
+<tr>
+<td>W_KEY</td>
+<td>Key of the KeyedObject.; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>W_Key</td>
+<td>Key of the KeyedObject.</td>
+</tr>
+<tr>
+<td>W_M</td>
+<td>Get the particle (composite or basic) 质量.</td>
+</tr>
+<tr>
+<td>W_MAX_DOCA</td>
+<td>Compute the maximum pairwise 最近距离 between members of a combination using IDistanceCalculator.</td>
+</tr>
+<tr>
+<td>W_MAX_DOCACHI2</td>
+<td>Compute the maximum pairwise significance of the 最近距离, computed using an IDistanceCalculator implementation, between members of a combination.</td>
+</tr>
+<tr>
+<td>W_MAX_MINIPCHI2</td>
+<td>Calculate the maximum of the given functor value.; Miniumum 撞击参数 卡方 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>W_MAX_OWNPVIPCHI2</td>
+<td>Calculate the maximum of the given functor value.; Impact parameter 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>W_MAX_P</td>
+<td>Calculate the maximum of the given functor value.; Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_MAX_PT</td>
+<td>Calculate the maximum of the given functor value.; Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_MAX_SDOCA</td>
+<td>Compute the maximum pairwise 最近距离 between members of a combination.</td>
+</tr>
+<tr>
+<td>W_MAX_SDOCACHI2</td>
+<td>Compute the maximum pairwise significance of the 最近距离 between members of a combination.</td>
+</tr>
+<tr>
+<td>W_MINIP</td>
+<td>Miniumum 撞击参数 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>W_MINIPCHI2</td>
+<td>Miniumum 撞击参数 卡方 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>W_MIN_OWNPVIPCHI2</td>
+<td>Calculate the minimum of the given functor value.; Impact parameter 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>W_MIN_P</td>
+<td>Calculate the minimum of the given functor value.; Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_MIN_PT</td>
+<td>Calculate the minimum of the given functor value.; Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_MmuWmuN</td>
+<td>Combined 质量 of 缪子 and W candidate</td>
+</tr>
+<tr>
+<td>W_OBJECT_KEY</td>
+<td>Key of the KeyedObject.</td>
+</tr>
+<tr>
+<td>W_OWNPVIP</td>
+<td>Impact parameter with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>W_OWNPVIPCHI2</td>
+<td>Impact parameter 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>W_OWNPVNDOF</td>
+<td>Number of degrees of freedom [for 卡方]; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>W_OWNPVX</td>
+<td>X-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>W_OWNPVY</td>
+<td>Y-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>W_OWNPVZ</td>
+<td>Z-coordinate of the PV associated to the particle</td>
+</tr>
+<tr>
+<td>W_OWNPV_DIRA</td>
+<td>Direction angle between the three-动量 of a particle and its OWNPVFDVEC()</td>
+</tr>
+<tr>
+<td>W_OWNPV_DLS</td>
+<td>Decay length significance with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>W_OWNPV_ETA</td>
+<td>Eta-coordinate of OWNPVFDVEC()</td>
+</tr>
+<tr>
+<td>W_OWNPV_FD</td>
+<td>Distance between the end顶点 position and the position of the PV associated to a particle</td>
+</tr>
+<tr>
+<td>W_OWNPV_FDCHI2</td>
+<td>Flight distance 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>W_OWNPV_FDIRX</td>
+<td>X-component of unit flight direction vector with respect to own PV</td>
+</tr>
+<tr>
+<td>W_OWNPV_FDIRY</td>
+<td>Y-component of unit flight direction vector with respect to own PV</td>
+</tr>
+<tr>
+<td>W_OWNPV_FDIRZ</td>
+<td>Z-component of unit flight direction vector with respect to own PV</td>
+</tr>
+<tr>
+<td>W_OWNPV_FDVECX</td>
+<td>X-component of 飞行距离 vector with respect to own PV</td>
+</tr>
+<tr>
+<td>W_OWNPV_FDVECY</td>
+<td>Y-component of 飞行距离 vector with respect to own PV</td>
+</tr>
+<tr>
+<td>W_OWNPV_FDVECZ</td>
+<td>Z-component of 飞行距离 vector with respect to own PV</td>
+</tr>
+<tr>
+<td>W_OWNPV_LTIME</td>
+<td>Lifetime with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>W_OWNPV_VDRHO</td>
+<td>Rho-coordinate of OWNPVFDVEC()</td>
+</tr>
+<tr>
+<td>W_OWNPV_VDX</td>
+<td>Distance along the x-axis between the end顶点 and the PV associated to a particle</td>
+</tr>
+<tr>
+<td>W_OWNPV_VDY</td>
+<td>Distance along the y-axis between the end顶点 and the PV associated to a particle</td>
+</tr>
+<tr>
+<td>W_OWNPV_VDZ</td>
+<td>Distance along the z-axis between the end顶点 and the PV associated to a particle</td>
+</tr>
+<tr>
+<td>W_P</td>
+<td>Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_PARTICLE_ID</td>
+<td>Particle ID (PDG code)</td>
+</tr>
+<tr>
+<td>W_PHI</td>
+<td>Get the phi coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>W_PROBNN_D</td>
+<td>MVA 概率 for 氘核 假设</td>
+</tr>
+<tr>
+<td>W_PROBNN_E</td>
+<td>MVA 概率 for 电子 假设</td>
+</tr>
+<tr>
+<td>W_PROBNN_GHOST</td>
+<td>MVA 概率 for ghost 径迹 假设</td>
+</tr>
+<tr>
+<td>W_PROBNN_K</td>
+<td>MVA 概率 for K介子 假设</td>
+</tr>
+<tr>
+<td>W_PROBNN_MU</td>
+<td>MVA 概率 for 缪子 假设</td>
+</tr>
+<tr>
+<td>W_PROBNN_P</td>
+<td>MVA 概率 for 质子 假设</td>
+</tr>
+<tr>
+<td>W_PROBNN_PI</td>
+<td>MVA 概率 for π介子 假设</td>
+</tr>
+<tr>
+<td>W_PT</td>
+<td>Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_PX</td>
+<td>Get the X-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_PY</td>
+<td>Get the Y-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_PZ</td>
+<td>Get the Z-coordinate of the 动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_Q</td>
+<td>Compute the 电荷</td>
+</tr>
+<tr>
+<td>W_SDOCA12</td>
+<td></td>
+</tr>
+<tr>
+<td>W_SUM_MINIPCHI2</td>
+<td>Calculate the [scalar] sum of the given functor value.; Miniumum 撞击参数 卡方 with respect to the given vertices.</td>
+</tr>
+<tr>
+<td>W_SUM_OWNPVIPCHI2</td>
+<td>Calculate the [scalar] sum of the given functor value.; Impact parameter 卡方 with respect to the OWNPV()</td>
+</tr>
+<tr>
+<td>W_SUM_P</td>
+<td>Calculate the [scalar] sum of the given functor value.; Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_SUM_PT</td>
+<td>Calculate the [scalar] sum of the given functor value.; Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_THETA</td>
+<td>Get the theta coordinate of a slope (see SLOPES() for definition).</td>
+</tr>
+<tr>
+<td>W_VTXCHI2</td>
+<td>Vertex or 径迹 chi^2.</td>
+</tr>
+<tr>
+<td>W_VTXCHI2NDOF</td>
+<td>Vertex or 径迹 chi^2 per degrees of freedom.</td>
+</tr>
+<tr>
+<td>W_log_MAX_P</td>
+<td>Calculate the maximum of the given functor value.</td>
+</tr>
+<tr>
+<td>W_log_MAX_PT</td>
+<td>Calculate the maximum of the given functor value.</td>
+</tr>
+<tr>
+<td>W_log_MIN_P</td>
+<td>Calculate the minimum of the given functor value.</td>
+</tr>
+<tr>
+<td>W_log_MIN_PT</td>
+<td>Calculate the minimum of the given functor value.</td>
+</tr>
+<tr>
+<td>W_log_P</td>
+<td>Get the magnitude of the 动量 vector (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_log_PT</td>
+<td>Get the 横动量 (see THREEMOMENTUM() for definition).</td>
+</tr>
+<tr>
+<td>W_log_SUM_P</td>
+<td>Calculate the [scalar] sum of the given functor value.</td>
+</tr>
+<tr>
+<td>W_log_SUM_PT</td>
+<td>Calculate the [scalar] sum of the given functor value.</td>
+</tr>
+<tr>
+<td>nBackTracks</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nDownstreamTracks</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nEcalClusters</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nFTClusters</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nLongTracks</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nPVs</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nRich1Hits</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nRich2Hits</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nTTracks</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nUTClusters</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nUpstreamTracks</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nVPClusters</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+<tr>
+<td>nVeloTracks</td>
+<td>Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

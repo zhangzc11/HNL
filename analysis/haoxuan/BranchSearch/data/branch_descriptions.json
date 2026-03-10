@@ -1,0 +1,5082 @@
+[
+  {
+    "Branch": "ALLPVX",
+    "Content": "Vector of x-coordinates of all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "ALLPVY",
+    "Content": "Vector of y-coordinates of all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "ALLPVZ",
+    "Content": "Vector of z-coordinates of all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "BUNCHCROSSING_ID",
+    "Content": "Bunch crossing identifier from ODIN",
+    "Functions": ""
+  },
+  {
+    "Branch": "BUNCHCROSSING_TYPE",
+    "Content": "Bunch crossing type from ODIN",
+    "Functions": ""
+  },
+  {
+    "Branch": "Decision",
+    "Content": "Global event decision",
+    "Functions": ""
+  },
+  {
+    "Branch": "EVENTNUMBER",
+    "Content": "Event number from ODIN",
+    "Functions": ""
+  },
+  {
+    "Branch": "EVENTTYPE",
+    "Content": "Extracts event type from ODIN",
+    "Functions": "EVENTTYPE"
+  },
+  {
+    "Branch": "FillNumber",
+    "Content": "LHC fill number from conditions",
+    "Functions": ""
+  },
+  {
+    "Branch": "GPSTIME",
+    "Content": "GPS time from ODIN",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1DiMuonHighMassDecision",
+    "Content": "Trigger decision: Hlt1DiMuonHighMass",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1DiMuonLowMassDecision",
+    "Content": "Trigger decision: Hlt1DiMuonLowMass",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1DiMuonNoIPDecision",
+    "Content": "Trigger decision: Hlt1DiMuonNoIP",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1DiMuonNoIP_SSDecision",
+    "Content": "Trigger decision: Hlt1DiMuonNoIP SS",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1DiMuonSoftDecision",
+    "Content": "Trigger decision: Hlt1DiMuonSoft",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1GlobalDecision",
+    "Content": "Trigger decision: Hlt1Global",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1LowPtDiMuonDecision",
+    "Content": "Trigger decision: Hlt1LowPtDiMuon",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1LowPtMuonDecision",
+    "Content": "Trigger decision: Hlt1LowPtMuon",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1PhysDecision",
+    "Content": "Trigger decision: Hlt1Phys",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1SingleHighPtMuonDecision",
+    "Content": "Trigger decision: Hlt1SingleHighPtMuon",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1TrackMVADecision",
+    "Content": "Trigger decision: Hlt1TrackMVA",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1TrackMuonMVADecision",
+    "Content": "Trigger decision: Hlt1TrackMuonMVA",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision",
+    "Content": "Trigger decision: Hlt1TrackMuonMVAHlt1TwoTrackMVA",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt1_TCK",
+    "Content": "Hlt1 trigger configuration key",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiJetIncSVTag pT25M40Full",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiSVTagJet10GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiSVTagJet10GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiSVTagJet15GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiSVTagJet15GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiSVTagJet20GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiSVTagJet20GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiSVTagJet25GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiSVTagJet25GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiSVTagJet30GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiSVTagJet30GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiSVTagJet35GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiSVTagJet35GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiTopoTagJet10GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiTopoTagJet10GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiTopoTagJet15GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiTopoTagJet15GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiTopoTagJet20GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiTopoTagJet20GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiTopoTagJet25GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiTopoTagJet25GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiTopoTagJet30GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiTopoTagJet30GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_DiTopoTagJet35GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE DiTopoTagJet35GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_IncJet15GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE IncJet15GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_IncJet25GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE IncJet25GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_IncJet35GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE IncJet35GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_IncJet45GeVFullDecision",
+    "Content": "Trigger decision: Hlt2QEE IncJet45GeVFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_SingleHighPtElectronFullDecision",
+    "Content": "Trigger decision: Hlt2QEE SingleHighPtElectronFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_SingleHighPtMuonFullDecision",
+    "Content": "Trigger decision: Hlt2QEE SingleHighPtMuonFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_SingleHighPtMuonIsoFullDecision",
+    "Content": "Trigger decision: Hlt2QEE SingleHighPtMuonIsoFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision",
+    "Content": "Trigger decision: Hlt2QEE SingleHighPtMuonNoMuIDFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_SingleVHighPtElectronFullDecision",
+    "Content": "Trigger decision: Hlt2QEE SingleVHighPtElectronFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision",
+    "Content": "Trigger decision: Hlt2QEE ZToMuMu DoubleNoMuIDFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision",
+    "Content": "Trigger decision: Hlt2QEE ZToMuMu SingleNoMuIDFull",
+    "Functions": ""
+  },
+  {
+    "Branch": "Hlt2_TCK",
+    "Content": "Hlt2 trigger configuration key",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_CPF",
+    "Content": "",
+    "Functions": "INFO_9006"
+  },
+  {
+    "Branch": "Jet1_ConE",
+    "Content": "Map a functor over a range; Get the energy (see FOURMOMENTUM() for definition).",
+    "Functions": "MAP, ENERGY"
+  },
+  {
+    "Branch": "Jet1_ConETA",
+    "Content": "Map a functor over a range; Get the eta (pseudorapidity) coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "MAP, ETA"
+  },
+  {
+    "Branch": "Jet1_ConETA_indx",
+    "Content": "Index array for Jet1_ConETA",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConE_indx",
+    "Content": "Index array for Jet1_ConE",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConINBREM",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConINBREM_indx",
+    "Content": "Index array for Jet1_ConINBREM",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConINECAL",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConINECAL_indx",
+    "Content": "Index array for Jet1_ConINECAL",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConINHCAL",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConINHCAL_indx",
+    "Content": "Index array for Jet1_ConINHCAL",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConINMUON",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConINMUON_indx",
+    "Content": "Index array for Jet1_ConINMUON",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConKey",
+    "Content": "Map a functor over a range; Key of the KeyedObject.",
+    "Functions": "MAP, OBJECT_KEY"
+  },
+  {
+    "Branch": "Jet1_ConKey_indx",
+    "Content": "Index array for Jet1_ConKey",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConMass",
+    "Content": "Map a functor over a range; Get the particle (composite or basic) mass.",
+    "Functions": "MAP, MASS"
+  },
+  {
+    "Branch": "Jet1_ConMass_indx",
+    "Content": "Index array for Jet1_ConMass",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConNFTHITS",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConNFTHITS_indx",
+    "Content": "Index array for Jet1_ConNFTHITS",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConNFTHOLES",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConNFTHOLES_indx",
+    "Content": "Index array for Jet1_ConNFTHOLES",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConNHITS",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConNHITS_indx",
+    "Content": "Index array for Jet1_ConNHITS",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConNUTHITS",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConNUTHITS_indx",
+    "Content": "Index array for Jet1_ConNUTHITS",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConNVPHITS",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConNVPHITSA",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConNVPHITSA_indx",
+    "Content": "Index array for Jet1_ConNVPHITSA",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConNVPHITSC",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConNVPHITSC_indx",
+    "Content": "Index array for Jet1_ConNVPHITSC",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConNVPHITS_indx",
+    "Content": "Index array for Jet1_ConNVPHITS",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConNVPHOLES",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConNVPHOLES_indx",
+    "Content": "Index array for Jet1_ConNVPHOLES",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConNVPLAYERS",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConNVPLAYERS_indx",
+    "Content": "Index array for Jet1_ConNVPLAYERS",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConPHI",
+    "Content": "Map a functor over a range; Get the phi coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "MAP, PHI"
+  },
+  {
+    "Branch": "Jet1_ConPHI_indx",
+    "Content": "Index array for Jet1_ConPHI",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConPID",
+    "Content": "Map a functor over a range; Particle ID of a Particle or MCParticle.",
+    "Functions": "MAP, PARTICLE_ID"
+  },
+  {
+    "Branch": "Jet1_ConPID_indx",
+    "Content": "Index array for Jet1_ConPID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConPT",
+    "Content": "Map a functor over a range; Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "MAP, PT"
+  },
+  {
+    "Branch": "Jet1_ConPT_indx",
+    "Content": "Index array for Jet1_ConPT",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConPX",
+    "Content": "Map a functor over a range; Get the X-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "MAP, PX"
+  },
+  {
+    "Branch": "Jet1_ConPX_indx",
+    "Content": "Index array for Jet1_ConPX",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConPY",
+    "Content": "Map a functor over a range; Get the Y-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "MAP, PY"
+  },
+  {
+    "Branch": "Jet1_ConPY_indx",
+    "Content": "Index array for Jet1_ConPY",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConPZ",
+    "Content": "Map a functor over a range; Get the Z-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "MAP, PZ"
+  },
+  {
+    "Branch": "Jet1_ConPZ_indx",
+    "Content": "Index array for Jet1_ConPZ",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConQ",
+    "Content": "Map a functor over a range; Compute the charge",
+    "Functions": "MAP, CHARGE"
+  },
+  {
+    "Branch": "Jet1_ConQ_indx",
+    "Content": "Index array for Jet1_ConQ",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConSumINBREM",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumINECAL",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumINHCAL",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumINMUON",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumNUTHITS",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumTRACKHAST",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumTRACKHASUT",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumTRACKHASVELO",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumTRACKISDOWNSTREAM",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumTRACKISLONG",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumTRACKISTTRACK",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumTRACKISUPSTREAM",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConSumTRACKISVELO",
+    "Content": "Count the number of elements in a range satisfying some predicate",
+    "Functions": "COUNT_IF"
+  },
+  {
+    "Branch": "Jet1_ConTRACKHAST",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConTRACKHAST_indx",
+    "Content": "Index array for Jet1_ConTRACKHAST",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConTRACKHASUT",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConTRACKHASUT_indx",
+    "Content": "Index array for Jet1_ConTRACKHASUT",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConTRACKHASVELO",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConTRACKHASVELO_indx",
+    "Content": "Index array for Jet1_ConTRACKHASVELO",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConTRACKISDOWNSTREAM",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConTRACKISDOWNSTREAM_indx",
+    "Content": "Index array for Jet1_ConTRACKISDOWNSTREAM",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConTRACKISLONG",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConTRACKISLONG_indx",
+    "Content": "Index array for Jet1_ConTRACKISLONG",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConTRACKISTTRACK",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConTRACKISTTRACK_indx",
+    "Content": "Index array for Jet1_ConTRACKISTTRACK",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConTRACKISUPSTREAM",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConTRACKISUPSTREAM_indx",
+    "Content": "Index array for Jet1_ConTRACKISUPSTREAM",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_ConTRACKISVELO",
+    "Content": "Map a functor over a range; Return contained value of optional or specified default if optional is empty",
+    "Functions": "MAP, VALUE_OR"
+  },
+  {
+    "Branch": "Jet1_ConTRACKISVELO_indx",
+    "Content": "Index array for Jet1_ConTRACKISVELO",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_E",
+    "Content": "Get the energy (see FOURMOMENTUM() for definition).",
+    "Functions": "ENERGY"
+  },
+  {
+    "Branch": "Jet1_ETA",
+    "Content": "Get the eta (pseudorapidity) coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "ETA"
+  },
+  {
+    "Branch": "Jet1_JEC",
+    "Content": "",
+    "Functions": "INFO_9101"
+  },
+  {
+    "Branch": "Jet1_JECError",
+    "Content": "",
+    "Functions": "INFO_9103"
+  },
+  {
+    "Branch": "Jet1_JetWidth",
+    "Content": "",
+    "Functions": "INFO_9007"
+  },
+  {
+    "Branch": "Jet1_JetWidthNorm",
+    "Content": "",
+    "Functions": "INFO_9013"
+  },
+  {
+    "Branch": "Jet1_Key",
+    "Content": "Key of the KeyedObject.",
+    "Functions": "OBJECT_KEY"
+  },
+  {
+    "Branch": "Jet1_M",
+    "Content": "Get the particle (composite or basic) mass.",
+    "Functions": "MASS"
+  },
+  {
+    "Branch": "Jet1_MNF",
+    "Content": "",
+    "Functions": "INFO_9012"
+  },
+  {
+    "Branch": "Jet1_MPT",
+    "Content": "",
+    "Functions": "INFO_9011"
+  },
+  {
+    "Branch": "Jet1_MTF",
+    "Content": "",
+    "Functions": "INFO_9003"
+  },
+  {
+    "Branch": "Jet1_N90",
+    "Content": "",
+    "Functions": "INFO_9002"
+  },
+  {
+    "Branch": "Jet1_NHasPV",
+    "Content": "",
+    "Functions": "INFO_9005"
+  },
+  {
+    "Branch": "Jet1_NIPChi2Inf4",
+    "Content": "",
+    "Functions": "INFO_9010"
+  },
+  {
+    "Branch": "Jet1_NPVsForJEC",
+    "Content": "",
+    "Functions": "INFO_9102"
+  },
+  {
+    "Branch": "Jet1_NSatCalo",
+    "Content": "",
+    "Functions": "INFO_9004"
+  },
+  {
+    "Branch": "Jet1_NSatECAL",
+    "Content": "",
+    "Functions": "INFO_9008"
+  },
+  {
+    "Branch": "Jet1_NSatHCAL",
+    "Content": "",
+    "Functions": "INFO_9009"
+  },
+  {
+    "Branch": "Jet1_Ntracks",
+    "Content": "",
+    "Functions": "INFO_9001"
+  },
+  {
+    "Branch": "Jet1_P",
+    "Content": "Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "P"
+  },
+  {
+    "Branch": "Jet1_PARTICLE_ID",
+    "Content": "Particle ID (PDG code)",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_PHI",
+    "Content": "Get the phi coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "PHI"
+  },
+  {
+    "Branch": "Jet1_PROBNN_D",
+    "Content": "MVA probability for deuteron hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_PROBNN_E",
+    "Content": "MVA probability for electron hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_PROBNN_GHOST",
+    "Content": "MVA probability for ghost track hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_PROBNN_K",
+    "Content": "MVA probability for kaon hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_PROBNN_MU",
+    "Content": "MVA probability for muon hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_PROBNN_P",
+    "Content": "MVA probability for proton hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_PROBNN_PI",
+    "Content": "MVA probability for pion hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Jet1_PT",
+    "Content": "Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PT"
+  },
+  {
+    "Branch": "Jet1_PX",
+    "Content": "Get the X-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PX"
+  },
+  {
+    "Branch": "Jet1_PY",
+    "Content": "Get the Y-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PY"
+  },
+  {
+    "Branch": "Jet1_PZ",
+    "Content": "Get the Z-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PZ"
+  },
+  {
+    "Branch": "Jet1_THETA",
+    "Content": "Get the theta coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "THETA"
+  },
+  {
+    "Branch": "Jet1_log_P",
+    "Content": "Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "P"
+  },
+  {
+    "Branch": "Jet1_log_PT",
+    "Content": "Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PT"
+  },
+  {
+    "Branch": "Jet1_nChargedCons",
+    "Content": "Evaluates the number of particles in a decay tree satisfying the predicate at the given depth (see GET_GENERATION() for definition)",
+    "Functions": "NINGENERATION"
+  },
+  {
+    "Branch": "Jet1_nCons",
+    "Content": "Evaluates the number of particles in a decay tree satisfying the predicate at the given depth (see GET_GENERATION() for definition)",
+    "Functions": "NINGENERATION"
+  },
+  {
+    "Branch": "Jet1_nNeutralCons",
+    "Content": "Evaluates the number of particles in a decay tree satisfying the predicate at the given depth (see GET_GENERATION() for definition)",
+    "Functions": "NINGENERATION"
+  },
+  {
+    "Branch": "Jet1_vtx_x",
+    "Content": "",
+    "Functions": "INFO_9016"
+  },
+  {
+    "Branch": "Jet1_vtx_y",
+    "Content": "",
+    "Functions": "INFO_9017"
+  },
+  {
+    "Branch": "Jet1_vtx_z",
+    "Content": "",
+    "Functions": "INFO_9018"
+  },
+  {
+    "Branch": "MuNuR_ALLPV_IP",
+    "Content": "Impact parameter with respect to all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ALLPV_IPCHI2",
+    "Content": "Impact parameter chi2 with respect to all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_BREMBENDCORR",
+    "Content": "Correction factor accounting for bending biases in track due to brem",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_BREMENERGY",
+    "Content": "Brem momentum-recovery energy",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_BREMHYPOAREA",
+    "Content": "Area code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_BREMHYPOCOL",
+    "Content": "Column code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_BREMHYPODELTAX",
+    "Content": "Test statistic of being first-state like of CaloHypo (photon) for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_BREMHYPOENERGY",
+    "Content": "Energy of CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_BREMHYPOID",
+    "Content": "All significant bits representation of CellID (32bits) for CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_BREMHYPOMATCH_CHI2",
+    "Content": "2D chi2 of CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_BREMHYPOROW",
+    "Content": "Row code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_BREMPIDE",
+    "Content": "Brem-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_BREMTRACKBASEDENERGY",
+    "Content": "Track-based brem energy determination",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CLUSTERAREA",
+    "Content": "Area code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CLUSTERCOL",
+    "Content": "Column code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CLUSTERID",
+    "Content": "CellID.all() of the best matching cluster for a given reconstructed track",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CLUSTERMATCH_CHI2",
+    "Content": "CaloID estimator: 2D chi2 for Track/CaloCluster matching (neutral + charged)",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CLUSTERROW",
+    "Content": "Row code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloClusterMass",
+    "Content": "Retrieve the CALO cluster mass obtained from MergedPi0Alg",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloNeutral1To9EnergyRatio",
+    "Content": "Fraction of highest E cell (seed) to 9 (3x3) cells forming the cluster",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloNeutral4To9EnergyRatio",
+    "Content": "Fraction of highest 2x2 cell (seed) to 9 (3x3) cells forming the cluster",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloNeutralArea",
+    "Content": "Retrieve area code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloNeutralCol",
+    "Content": "Retrieve column code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloNeutralEcalEnergy",
+    "Content": "Retrieve the ECAL cluster energy associated to the neutral CaloHypo",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloNeutralHcal2EcalEnergyRatio",
+    "Content": "Retrieve the HCAL/ECAL energy ratio associated to the neutral CaloHypo",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloNeutralID",
+    "Content": "Retrieve bitwise information (32bits) of all CALO neutral seed CellIDs",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloNeutralRow",
+    "Content": "Retrieve row code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloNeutralShowerShape",
+    "Content": "CaloID estimator: 2nd order moment of the cluster (shower width)",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloNumSaturatedCells",
+    "Content": "Number of saturated cells in calorimeter",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_CaloTrackMatchChi2",
+    "Content": "Chi2 of track-calorimeter cluster match",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_E",
+    "Content": "Get the energy (see FOURMOMENTUM() for definition).",
+    "Functions": "ENERGY"
+  },
+  {
+    "Branch": "MuNuR_ECALPIDE",
+    "Content": "Ecal-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ECALPIDMU",
+    "Content": "Ecal-based DLL for mu-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ELECTRONAREA",
+    "Content": "Area code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ELECTRONCOL",
+    "Content": "Column code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ELECTRONENERGY",
+    "Content": "Cluster energy associated to CaloHypo (charged electron)",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ELECTRONID",
+    "Content": "All significant bits representation of CellID (32bits) associated to CaloHypo seed (electron hypo)",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ELECTRONMATCH_CHI2",
+    "Content": "CaloID estimator: 3D chi2 for Track/CaloHypo(e) matching (charged)",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ELECTRONROW",
+    "Content": "Row code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ELECTRONSHOWERDLL",
+    "Content": "Summed per-cell E/p DLL (electron versus pion) with track-based cell selection",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ELECTRONSHOWEREOP",
+    "Content": "Electron energy/momentum with track-based cell selection",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ETA",
+    "Content": "Get the eta (pseudorapidity) coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "ETA"
+  },
+  {
+    "Branch": "MuNuR_GHOSTPROB",
+    "Content": "Track ghost probability (see TRACK() for definition).",
+    "Functions": "GHOSTPROB"
+  },
+  {
+    "Branch": "MuNuR_HASBREM",
+    "Content": "Has non-zero brem momentum-recovery energy",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_HASBREMADDED",
+    "Content": "Has non-zero brem momentum-recovery energy added (using Particle class flag)",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_HCALEOP",
+    "Content": "Hcal energy deposit over momentum (track)",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_HCALPIDE",
+    "Content": "Hcal-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_HCALPIDMU",
+    "Content": "Hcal-based DLL for mu-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1DiMuonHighMassDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1DiMuonHighMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1DiMuonHighMassDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1DiMuonHighMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1DiMuonLowMassDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1DiMuonLowMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1DiMuonLowMassDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1DiMuonLowMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1DiMuonNoIPDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1DiMuonNoIPDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1DiMuonNoIPDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1DiMuonNoIPDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1DiMuonNoIP_SSDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1DiMuonNoIP SSDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1DiMuonNoIP_SSDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1DiMuonNoIP SSDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1DiMuonSoftDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1DiMuonSoftDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1DiMuonSoftDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1DiMuonSoftDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1GlobalDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1GlobalDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1GlobalDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1GlobalDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1LowPtDiMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1LowPtDiMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1LowPtDiMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1LowPtDiMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1LowPtMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1LowPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1LowPtMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1LowPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1PhysDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1PhysDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1PhysDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1PhysDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1SingleHighPtMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1SingleHighPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1SingleHighPtMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1SingleHighPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1TrackMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1TrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1TrackMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1TrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1TrackMuonMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt1TrackMuonMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt1TrackMuonMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt1TrackMuonMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiJetIncSVTag pT25M40FullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiJetIncSVTag pT25M40FullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet10GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiSVTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet10GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiSVTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiSVTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiSVTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet20GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiSVTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet20GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiSVTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiSVTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiSVTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet30GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiSVTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet30GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiSVTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiSVTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiSVTagJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiSVTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiTopoTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiTopoTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiTopoTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiTopoTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiTopoTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiTopoTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiTopoTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiTopoTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiTopoTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiTopoTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE DiTopoTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE DiTopoTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_IncJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE IncJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_IncJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE IncJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_IncJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE IncJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_IncJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE IncJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_IncJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE IncJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_IncJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE IncJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_IncJet45GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE IncJet45GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_IncJet45GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE IncJet45GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_SingleHighPtElectronFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE SingleHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_SingleHighPtElectronFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE SingleHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_SingleHighPtMuonFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE SingleHighPtMuonFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_SingleHighPtMuonFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE SingleHighPtMuonFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE SingleHighPtMuonIsoFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE SingleHighPtMuonIsoFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE SingleHighPtMuonNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE SingleHighPtMuonNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_SingleVHighPtElectronFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE SingleVHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_SingleVHighPtElectronFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE SingleVHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for MuNuR Hlt2QEE ZToMuMu SingleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for MuNuR Hlt2QEE ZToMuMu SingleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_ID",
+    "Content": "Particle ID of a Particle or MCParticle.",
+    "Functions": "PARTICLE_ID"
+  },
+  {
+    "Branch": "MuNuR_INBREM",
+    "Content": "In Brem acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_INECAL",
+    "Content": "In Ecal acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_INHCAL",
+    "Content": "In Hcal acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_INMUON",
+    "Content": "InAcceptance. Functor’s call operator expects a particle-like object.",
+    "Functions": "INMUON"
+  },
+  {
+    "Branch": "MuNuR_ISCLONE",
+    "Content": "Track flag contains Clone; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISCLONE, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_ISDOWNSTREAM",
+    "Content": "Track type is Downstream; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISDOWNSTREAM, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_ISLONG",
+    "Content": "Track type is Long; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISLONG, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_ISMUON",
+    "Content": "IsMuon. Functor’s call operator expects a particle-like object.",
+    "Functions": "ISMUON"
+  },
+  {
+    "Branch": "MuNuR_ISMUONTIGHT",
+    "Content": "IsMuonTight. Functor’s call operator expects a particle-like object.",
+    "Functions": "ISMUONTIGHT"
+  },
+  {
+    "Branch": "MuNuR_ISTTRACK",
+    "Content": "Track type is Ttrack; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISTTRACK, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_ISUPSTREAM",
+    "Content": "Track type is Upstream; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISUPSTREAM, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_ISVELO",
+    "Content": "Track type is Velo; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISVELO, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_Key",
+    "Content": "Key of the KeyedObject.",
+    "Functions": "OBJECT_KEY"
+  },
+  {
+    "Branch": "MuNuR_M",
+    "Content": "Get the particle (composite or basic) mass.",
+    "Functions": "MASS"
+  },
+  {
+    "Branch": "MuNuR_MINIP",
+    "Content": "Miniumum impact parameter with respect to the given vertices.",
+    "Functions": "MINIP"
+  },
+  {
+    "Branch": "MuNuR_MINIPCHI2",
+    "Content": "Miniumum impact parameter chi2 with respect to the given vertices.",
+    "Functions": "MINIPCHI2"
+  },
+  {
+    "Branch": "MuNuR_NFTHITS",
+    "Content": "Number of FT hits.; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NFTHITS, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_NFTHOLES",
+    "Content": "Return number of holes in SciFi of track as defined by HitPattern; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NFTHOLES, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_NHITS",
+    "Content": "Track number of hits.; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NHITS, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_NUTHITS",
+    "Content": "Number of UT hits.; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NUTHITS, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_NVPHITS",
+    "Content": "Number of VP hits.; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NVPHITS, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_NVPHITSA",
+    "Content": "Return number of hits in VELO A-side; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NVPHITSA, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_NVPHITSC",
+    "Content": "Return number of hits in VELO C-side; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NVPHITSC, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_NVPHOLES",
+    "Content": "Return number of holes in VELO of track as defined by HitPattern; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NVPHOLES, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_NVPLAYERS",
+    "Content": "Return number of VELO layers of track as defined by HitPattern; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NVPLAYERS, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_OWNPVIP",
+    "Content": "Impact parameter with respect to the OWNPV()",
+    "Functions": "OWNPVIP"
+  },
+  {
+    "Branch": "MuNuR_OWNPVIPCHI2",
+    "Content": "Impact parameter chi2 with respect to the OWNPV()",
+    "Functions": "OWNPVIPCHI2"
+  },
+  {
+    "Branch": "MuNuR_OWNPVNDOF",
+    "Content": "Number of degrees of freedom [for chi2]; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NDOF, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_OWNPVX",
+    "Content": "X-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVX"
+  },
+  {
+    "Branch": "MuNuR_OWNPVY",
+    "Content": "Y-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVY"
+  },
+  {
+    "Branch": "MuNuR_OWNPVZ",
+    "Content": "Z-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVZ"
+  },
+  {
+    "Branch": "MuNuR_P",
+    "Content": "Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "P"
+  },
+  {
+    "Branch": "MuNuR_PARTICLE_ID",
+    "Content": "Particle ID (PDG code)",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_PHI",
+    "Content": "Get the phi coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "PHI"
+  },
+  {
+    "Branch": "MuNuR_PIDK",
+    "Content": "Gives measure of the kaon mass hypothesis relative to the pion hypotesis.",
+    "Functions": "PID_K"
+  },
+  {
+    "Branch": "MuNuR_PIDPi",
+    "Content": "CombDLLpi. Should be peaked at zero.",
+    "Functions": "PID_PI"
+  },
+  {
+    "Branch": "MuNuR_PIDe",
+    "Content": "Gives measure of the electron mass hypothesis relative to the pion hypotesis.",
+    "Functions": "PID_E"
+  },
+  {
+    "Branch": "MuNuR_PIDmu",
+    "Content": "Gives measure of the muon mass hypothesis relative to the pion hypotesis.",
+    "Functions": "PID_MU"
+  },
+  {
+    "Branch": "MuNuR_PIDp",
+    "Content": "Gives measure of the proton mass hypothesis relative to the pion hypotesis.",
+    "Functions": "PID_P"
+  },
+  {
+    "Branch": "MuNuR_POSITION_STATEAT_FirstMeasurement_X",
+    "Content": "X position at first measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_POSITION_STATEAT_FirstMeasurement_Y",
+    "Content": "Y position at first measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_POSITION_STATEAT_FirstMeasurement_Z",
+    "Content": "Z position at first measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_POSITION_STATEAT_LastMeasurement_X",
+    "Content": "X position at last measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_POSITION_STATEAT_LastMeasurement_Y",
+    "Content": "Y position at last measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_POSITION_STATEAT_LastMeasurement_Z",
+    "Content": "Z position at last measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_PPHASRICH",
+    "Content": "ProtoParticle has RICH info; Return contained value of optional or specified default if optional is empty",
+    "Functions": "PPHASRICH, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_PROBNN_D",
+    "Content": "MVA probability for deuteron hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_PROBNN_E",
+    "Content": "MVA probability for electron hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_PROBNN_GHOST",
+    "Content": "MVA probability for ghost track hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_PROBNN_K",
+    "Content": "MVA probability for kaon hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_PROBNN_MU",
+    "Content": "MVA probability for muon hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_PROBNN_P",
+    "Content": "MVA probability for proton hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_PROBNN_PI",
+    "Content": "MVA probability for pion hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "MuNuR_PT",
+    "Content": "Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PT"
+  },
+  {
+    "Branch": "MuNuR_PX",
+    "Content": "Get the X-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PX"
+  },
+  {
+    "Branch": "MuNuR_PY",
+    "Content": "Get the Y-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PY"
+  },
+  {
+    "Branch": "MuNuR_PZ",
+    "Content": "Get the Z-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PZ"
+  },
+  {
+    "Branch": "MuNuR_Q",
+    "Content": "Compute the charge",
+    "Functions": "CHARGE"
+  },
+  {
+    "Branch": "MuNuR_QOVERP",
+    "Content": "q/p",
+    "Functions": "QOVERP"
+  },
+  {
+    "Branch": "MuNuR_THETA",
+    "Content": "Get the theta coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "THETA"
+  },
+  {
+    "Branch": "MuNuR_TRACKHAST",
+    "Content": "Returns True if track has hits in T stations, False otherwise; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKHAST, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_TRACKHASUT",
+    "Content": "Returns True if track has hits in UT detector, False otherwise; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKHASUT, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_TRACKHASVELO",
+    "Content": "Returns True if track has hits in Velo, False otherwise; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKHASVELO, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_TRACKHISTORY",
+    "Content": "ComposedBoundFunctor:; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKHISTORY, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_TRACKPT",
+    "Content": "Get the transverse momentum of a track (see TRACK() for definition)",
+    "Functions": "TRACK_PT"
+  },
+  {
+    "Branch": "MuNuR_TRCHI2",
+    "Content": "Vertex or track chi^2.",
+    "Functions": "CHI2"
+  },
+  {
+    "Branch": "MuNuR_TRCHI2DOF",
+    "Content": "Vertex or track chi^2 per degrees of freedom.",
+    "Functions": "CHI2DOF"
+  },
+  {
+    "Branch": "MuNuR_TRNDOF",
+    "Content": "Number of degrees of freedom [for chi2]; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NDOF, VALUE_OR"
+  },
+  {
+    "Branch": "MuNuR_TX",
+    "Content": "Get the X-coordinate of the slope (see SLOPES() for definition).",
+    "Functions": "TX"
+  },
+  {
+    "Branch": "MuNuR_TY",
+    "Content": "Get the Y-coordinate of the slope (see SLOPES() for definition).",
+    "Functions": "TY"
+  },
+  {
+    "Branch": "MuNuR_log_P",
+    "Content": "Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "P"
+  },
+  {
+    "Branch": "MuNuR_log_PT",
+    "Content": "Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PT"
+  },
+  {
+    "Branch": "Mu_ALLPV_IP",
+    "Content": "Impact parameter with respect to all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ALLPV_IPCHI2",
+    "Content": "Impact parameter chi2 with respect to all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_BREMBENDCORR",
+    "Content": "Correction factor accounting for bending biases in track due to brem",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_BREMENERGY",
+    "Content": "Brem momentum-recovery energy",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_BREMHYPOAREA",
+    "Content": "Area code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_BREMHYPOCOL",
+    "Content": "Column code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_BREMHYPODELTAX",
+    "Content": "Test statistic of being first-state like of CaloHypo (photon) for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_BREMHYPOENERGY",
+    "Content": "Energy of CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_BREMHYPOID",
+    "Content": "All significant bits representation of CellID (32bits) for CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_BREMHYPOMATCH_CHI2",
+    "Content": "2D chi2 of CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_BREMHYPOROW",
+    "Content": "Row code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_BREMPIDE",
+    "Content": "Brem-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_BREMTRACKBASEDENERGY",
+    "Content": "Track-based brem energy determination",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CLUSTERAREA",
+    "Content": "Area code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CLUSTERCOL",
+    "Content": "Column code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CLUSTERID",
+    "Content": "CellID.all() of the best matching cluster for a given reconstructed track",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CLUSTERMATCH_CHI2",
+    "Content": "CaloID estimator: 2D chi2 for Track/CaloCluster matching (neutral + charged)",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CLUSTERROW",
+    "Content": "Row code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloClusterMass",
+    "Content": "Retrieve the CALO cluster mass obtained from MergedPi0Alg",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloNeutral1To9EnergyRatio",
+    "Content": "Fraction of highest E cell (seed) to 9 (3x3) cells forming the cluster",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloNeutral4To9EnergyRatio",
+    "Content": "Fraction of highest 2x2 cell (seed) to 9 (3x3) cells forming the cluster",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloNeutralArea",
+    "Content": "Retrieve area code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloNeutralCol",
+    "Content": "Retrieve column code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloNeutralEcalEnergy",
+    "Content": "Retrieve the ECAL cluster energy associated to the neutral CaloHypo",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloNeutralHcal2EcalEnergyRatio",
+    "Content": "Retrieve the HCAL/ECAL energy ratio associated to the neutral CaloHypo",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloNeutralID",
+    "Content": "Retrieve bitwise information (32bits) of all CALO neutral seed CellIDs",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloNeutralRow",
+    "Content": "Retrieve row code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloNeutralShowerShape",
+    "Content": "CaloID estimator: 2nd order moment of the cluster (shower width)",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloNumSaturatedCells",
+    "Content": "Number of saturated cells in calorimeter",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_CaloTrackMatchChi2",
+    "Content": "Chi2 of track-calorimeter cluster match",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_E",
+    "Content": "Get the energy (see FOURMOMENTUM() for definition).",
+    "Functions": "ENERGY"
+  },
+  {
+    "Branch": "Mu_ECALPIDE",
+    "Content": "Ecal-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ECALPIDMU",
+    "Content": "Ecal-based DLL for mu-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ELECTRONAREA",
+    "Content": "Area code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ELECTRONCOL",
+    "Content": "Column code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ELECTRONENERGY",
+    "Content": "Cluster energy associated to CaloHypo (charged electron)",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ELECTRONID",
+    "Content": "All significant bits representation of CellID (32bits) associated to CaloHypo seed (electron hypo)",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ELECTRONMATCH_CHI2",
+    "Content": "CaloID estimator: 3D chi2 for Track/CaloHypo(e) matching (charged)",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ELECTRONROW",
+    "Content": "Row code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ELECTRONSHOWERDLL",
+    "Content": "Summed per-cell E/p DLL (electron versus pion) with track-based cell selection",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ELECTRONSHOWEREOP",
+    "Content": "Electron energy/momentum with track-based cell selection",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ETA",
+    "Content": "Get the eta (pseudorapidity) coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "ETA"
+  },
+  {
+    "Branch": "Mu_GHOSTPROB",
+    "Content": "Track ghost probability (see TRACK() for definition).",
+    "Functions": "GHOSTPROB"
+  },
+  {
+    "Branch": "Mu_HASBREM",
+    "Content": "Has non-zero brem momentum-recovery energy",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_HASBREMADDED",
+    "Content": "Has non-zero brem momentum-recovery energy added (using Particle class flag)",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_HCALEOP",
+    "Content": "Hcal energy deposit over momentum (track)",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_HCALPIDE",
+    "Content": "Hcal-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_HCALPIDMU",
+    "Content": "Hcal-based DLL for mu-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1DiMuonHighMassDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1DiMuonHighMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1DiMuonHighMassDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1DiMuonHighMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1DiMuonLowMassDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1DiMuonLowMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1DiMuonLowMassDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1DiMuonLowMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1DiMuonNoIPDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1DiMuonNoIPDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1DiMuonNoIPDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1DiMuonNoIPDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1DiMuonNoIP_SSDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1DiMuonNoIP SSDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1DiMuonNoIP_SSDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1DiMuonNoIP SSDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1DiMuonSoftDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1DiMuonSoftDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1DiMuonSoftDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1DiMuonSoftDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1GlobalDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1GlobalDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1GlobalDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1GlobalDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1LowPtDiMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1LowPtDiMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1LowPtDiMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1LowPtDiMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1LowPtMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1LowPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1LowPtMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1LowPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1PhysDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1PhysDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1PhysDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1PhysDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1SingleHighPtMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1SingleHighPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1SingleHighPtMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1SingleHighPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1TrackMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1TrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1TrackMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1TrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1TrackMuonMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt1TrackMuonMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt1TrackMuonMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt1TrackMuonMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiJetIncSVTag pT25M40FullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiJetIncSVTag pT25M40FullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet10GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiSVTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet10GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiSVTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiSVTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiSVTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet20GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiSVTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet20GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiSVTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiSVTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiSVTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet30GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiSVTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet30GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiSVTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiSVTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiSVTagJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiSVTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiTopoTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiTopoTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiTopoTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiTopoTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiTopoTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiTopoTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiTopoTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiTopoTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiTopoTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiTopoTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE DiTopoTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE DiTopoTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_IncJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE IncJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_IncJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE IncJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_IncJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE IncJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_IncJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE IncJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_IncJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE IncJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_IncJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE IncJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_IncJet45GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE IncJet45GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_IncJet45GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE IncJet45GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_SingleHighPtElectronFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE SingleHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_SingleHighPtElectronFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE SingleHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_SingleHighPtMuonFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE SingleHighPtMuonFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_SingleHighPtMuonFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE SingleHighPtMuonFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE SingleHighPtMuonIsoFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE SingleHighPtMuonIsoFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE SingleHighPtMuonNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE SingleHighPtMuonNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_SingleVHighPtElectronFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE SingleVHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_SingleVHighPtElectronFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE SingleVHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for Mu Hlt2QEE ZToMuMu SingleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for Mu Hlt2QEE ZToMuMu SingleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_ID",
+    "Content": "Particle ID of a Particle or MCParticle.",
+    "Functions": "PARTICLE_ID"
+  },
+  {
+    "Branch": "Mu_INBREM",
+    "Content": "In Brem acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_INECAL",
+    "Content": "In Ecal acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_INHCAL",
+    "Content": "In Hcal acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_INMUON",
+    "Content": "InAcceptance. Functor’s call operator expects a particle-like object.",
+    "Functions": "INMUON"
+  },
+  {
+    "Branch": "Mu_ISCLONE",
+    "Content": "Track flag contains Clone; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISCLONE, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_ISDOWNSTREAM",
+    "Content": "Track type is Downstream; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISDOWNSTREAM, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_ISLONG",
+    "Content": "Track type is Long; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISLONG, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_ISMUON",
+    "Content": "IsMuon. Functor’s call operator expects a particle-like object.",
+    "Functions": "ISMUON"
+  },
+  {
+    "Branch": "Mu_ISMUONTIGHT",
+    "Content": "IsMuonTight. Functor’s call operator expects a particle-like object.",
+    "Functions": "ISMUONTIGHT"
+  },
+  {
+    "Branch": "Mu_ISTTRACK",
+    "Content": "Track type is Ttrack; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISTTRACK, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_ISUPSTREAM",
+    "Content": "Track type is Upstream; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISUPSTREAM, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_ISVELO",
+    "Content": "Track type is Velo; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKISVELO, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_Key",
+    "Content": "Key of the KeyedObject.",
+    "Functions": "OBJECT_KEY"
+  },
+  {
+    "Branch": "Mu_M",
+    "Content": "Get the particle (composite or basic) mass.",
+    "Functions": "MASS"
+  },
+  {
+    "Branch": "Mu_MINIP",
+    "Content": "Miniumum impact parameter with respect to the given vertices.",
+    "Functions": "MINIP"
+  },
+  {
+    "Branch": "Mu_MINIPCHI2",
+    "Content": "Miniumum impact parameter chi2 with respect to the given vertices.",
+    "Functions": "MINIPCHI2"
+  },
+  {
+    "Branch": "Mu_NFTHITS",
+    "Content": "Number of FT hits.; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NFTHITS, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_NFTHOLES",
+    "Content": "Return number of holes in SciFi of track as defined by HitPattern; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NFTHOLES, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_NHITS",
+    "Content": "Track number of hits.; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NHITS, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_NUTHITS",
+    "Content": "Number of UT hits.; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NUTHITS, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_NVPHITS",
+    "Content": "Number of VP hits.; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NVPHITS, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_NVPHITSA",
+    "Content": "Return number of hits in VELO A-side; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NVPHITSA, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_NVPHITSC",
+    "Content": "Return number of hits in VELO C-side; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NVPHITSC, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_NVPHOLES",
+    "Content": "Return number of holes in VELO of track as defined by HitPattern; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NVPHOLES, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_NVPLAYERS",
+    "Content": "Return number of VELO layers of track as defined by HitPattern; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NVPLAYERS, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_OWNPVIP",
+    "Content": "Impact parameter with respect to the OWNPV()",
+    "Functions": "OWNPVIP"
+  },
+  {
+    "Branch": "Mu_OWNPVIPCHI2",
+    "Content": "Impact parameter chi2 with respect to the OWNPV()",
+    "Functions": "OWNPVIPCHI2"
+  },
+  {
+    "Branch": "Mu_OWNPVNDOF",
+    "Content": "Number of degrees of freedom [for chi2]; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NDOF, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_OWNPVX",
+    "Content": "X-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVX"
+  },
+  {
+    "Branch": "Mu_OWNPVY",
+    "Content": "Y-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVY"
+  },
+  {
+    "Branch": "Mu_OWNPVZ",
+    "Content": "Z-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVZ"
+  },
+  {
+    "Branch": "Mu_P",
+    "Content": "Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "P"
+  },
+  {
+    "Branch": "Mu_PARTICLE_ID",
+    "Content": "Particle ID (PDG code)",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_PHI",
+    "Content": "Get the phi coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "PHI"
+  },
+  {
+    "Branch": "Mu_PIDK",
+    "Content": "Gives measure of the kaon mass hypothesis relative to the pion hypotesis.",
+    "Functions": "PID_K"
+  },
+  {
+    "Branch": "Mu_PIDPi",
+    "Content": "CombDLLpi. Should be peaked at zero.",
+    "Functions": "PID_PI"
+  },
+  {
+    "Branch": "Mu_PIDe",
+    "Content": "Gives measure of the electron mass hypothesis relative to the pion hypotesis.",
+    "Functions": "PID_E"
+  },
+  {
+    "Branch": "Mu_PIDmu",
+    "Content": "Gives measure of the muon mass hypothesis relative to the pion hypotesis.",
+    "Functions": "PID_MU"
+  },
+  {
+    "Branch": "Mu_PIDp",
+    "Content": "Gives measure of the proton mass hypothesis relative to the pion hypotesis.",
+    "Functions": "PID_P"
+  },
+  {
+    "Branch": "Mu_POSITION_STATEAT_FirstMeasurement_X",
+    "Content": "X position at first measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_POSITION_STATEAT_FirstMeasurement_Y",
+    "Content": "Y position at first measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_POSITION_STATEAT_FirstMeasurement_Z",
+    "Content": "Z position at first measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_POSITION_STATEAT_LastMeasurement_X",
+    "Content": "X position at last measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_POSITION_STATEAT_LastMeasurement_Y",
+    "Content": "Y position at last measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_POSITION_STATEAT_LastMeasurement_Z",
+    "Content": "Z position at last measurement state",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_PPHASRICH",
+    "Content": "ProtoParticle has RICH info; Return contained value of optional or specified default if optional is empty",
+    "Functions": "PPHASRICH, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_PROBNN_D",
+    "Content": "MVA probability for deuteron hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_PROBNN_E",
+    "Content": "MVA probability for electron hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_PROBNN_GHOST",
+    "Content": "MVA probability for ghost track hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_PROBNN_K",
+    "Content": "MVA probability for kaon hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_PROBNN_MU",
+    "Content": "MVA probability for muon hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_PROBNN_P",
+    "Content": "MVA probability for proton hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_PROBNN_PI",
+    "Content": "MVA probability for pion hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "Mu_PT",
+    "Content": "Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PT"
+  },
+  {
+    "Branch": "Mu_PX",
+    "Content": "Get the X-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PX"
+  },
+  {
+    "Branch": "Mu_PY",
+    "Content": "Get the Y-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PY"
+  },
+  {
+    "Branch": "Mu_PZ",
+    "Content": "Get the Z-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PZ"
+  },
+  {
+    "Branch": "Mu_Q",
+    "Content": "Compute the charge",
+    "Functions": "CHARGE"
+  },
+  {
+    "Branch": "Mu_QOVERP",
+    "Content": "q/p",
+    "Functions": "QOVERP"
+  },
+  {
+    "Branch": "Mu_THETA",
+    "Content": "Get the theta coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "THETA"
+  },
+  {
+    "Branch": "Mu_TRACKHAST",
+    "Content": "Returns True if track has hits in T stations, False otherwise; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKHAST, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_TRACKHASUT",
+    "Content": "Returns True if track has hits in UT detector, False otherwise; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKHASUT, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_TRACKHASVELO",
+    "Content": "Returns True if track has hits in Velo, False otherwise; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKHASVELO, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_TRACKHISTORY",
+    "Content": "ComposedBoundFunctor:; Return contained value of optional or specified default if optional is empty",
+    "Functions": "TRACKHISTORY, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_TRACKPT",
+    "Content": "Get the transverse momentum of a track (see TRACK() for definition)",
+    "Functions": "TRACK_PT"
+  },
+  {
+    "Branch": "Mu_TRCHI2",
+    "Content": "Vertex or track chi^2.",
+    "Functions": "CHI2"
+  },
+  {
+    "Branch": "Mu_TRCHI2DOF",
+    "Content": "Vertex or track chi^2 per degrees of freedom.",
+    "Functions": "CHI2DOF"
+  },
+  {
+    "Branch": "Mu_TRNDOF",
+    "Content": "Number of degrees of freedom [for chi2]; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NDOF, VALUE_OR"
+  },
+  {
+    "Branch": "Mu_TX",
+    "Content": "Get the X-coordinate of the slope (see SLOPES() for definition).",
+    "Functions": "TX"
+  },
+  {
+    "Branch": "Mu_TY",
+    "Content": "Get the Y-coordinate of the slope (see SLOPES() for definition).",
+    "Functions": "TY"
+  },
+  {
+    "Branch": "Mu_log_P",
+    "Content": "Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "P"
+  },
+  {
+    "Branch": "Mu_log_PT",
+    "Content": "Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PT"
+  },
+  {
+    "Branch": "NuR_ALLPV_FD",
+    "Content": "Flight distance with respect to all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ALLPV_IP",
+    "Content": "Impact parameter with respect to all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ALLPV_IPCHI2",
+    "Content": "Impact parameter chi2 with respect to all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ALV",
+    "Content": "Compute the cosine value of angle between two decay products.",
+    "Functions": "ALV"
+  },
+  {
+    "Branch": "NuR_BPV_IPCHI2",
+    "Content": "Impact parameter Chi2 with respect to the BPV(). More precisely that means the difference in the chi2 of the PV fit (of the BPV) between including and excluding the object the function is called on.",
+    "Functions": "BPVIPCHI2"
+  },
+  {
+    "Branch": "NuR_BPV_LTIME",
+    "Content": "Lifetime with respect to the BPV()",
+    "Functions": "BPVLTIME"
+  },
+  {
+    "Branch": "NuR_BREMBENDCORR",
+    "Content": "Correction factor accounting for bending biases in track due to brem",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_BREMENERGY",
+    "Content": "Brem momentum-recovery energy",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_BREMHYPOAREA",
+    "Content": "Area code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_BREMHYPOCOL",
+    "Content": "Column code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_BREMHYPODELTAX",
+    "Content": "Test statistic of being first-state like of CaloHypo (photon) for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_BREMHYPOENERGY",
+    "Content": "Energy of CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_BREMHYPOID",
+    "Content": "All significant bits representation of CellID (32bits) for CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_BREMHYPOMATCH_CHI2",
+    "Content": "2D chi2 of CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_BREMHYPOROW",
+    "Content": "Row code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_BREMPIDE",
+    "Content": "Brem-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_BREMTRACKBASEDENERGY",
+    "Content": "Track-based brem energy determination",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CLUSTERAREA",
+    "Content": "Area code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CLUSTERCOL",
+    "Content": "Column code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CLUSTERID",
+    "Content": "CellID.all() of the best matching cluster for a given reconstructed track",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CLUSTERMATCH_CHI2",
+    "Content": "CaloID estimator: 2D chi2 for Track/CaloCluster matching (neutral + charged)",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CLUSTERROW",
+    "Content": "Row code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloClusterMass",
+    "Content": "Retrieve the CALO cluster mass obtained from MergedPi0Alg",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloNeutral1To9EnergyRatio",
+    "Content": "Fraction of highest E cell (seed) to 9 (3x3) cells forming the cluster",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloNeutral4To9EnergyRatio",
+    "Content": "Fraction of highest 2x2 cell (seed) to 9 (3x3) cells forming the cluster",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloNeutralArea",
+    "Content": "Retrieve area code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloNeutralCol",
+    "Content": "Retrieve column code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloNeutralEcalEnergy",
+    "Content": "Retrieve the ECAL cluster energy associated to the neutral CaloHypo",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloNeutralHcal2EcalEnergyRatio",
+    "Content": "Retrieve the HCAL/ECAL energy ratio associated to the neutral CaloHypo",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloNeutralID",
+    "Content": "Retrieve bitwise information (32bits) of all CALO neutral seed CellIDs",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloNeutralRow",
+    "Content": "Retrieve row code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloNeutralShowerShape",
+    "Content": "CaloID estimator: 2nd order moment of the cluster (shower width)",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloNumSaturatedCells",
+    "Content": "Number of saturated cells in calorimeter",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_CaloTrackMatchChi2",
+    "Content": "Chi2 of track-calorimeter cluster match",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_DOCA12",
+    "Content": "",
+    "Functions": "DOCA"
+  },
+  {
+    "Branch": "NuR_DOCA12CHI2",
+    "Content": "",
+    "Functions": "DOCACHI2"
+  },
+  {
+    "Branch": "NuR_E",
+    "Content": "Get the energy (see FOURMOMENTUM() for definition).",
+    "Functions": "ENERGY"
+  },
+  {
+    "Branch": "NuR_ECALPIDE",
+    "Content": "Ecal-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ECALPIDMU",
+    "Content": "Ecal-based DLL for mu-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ELECTRONAREA",
+    "Content": "Area code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ELECTRONCOL",
+    "Content": "Column code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ELECTRONENERGY",
+    "Content": "Cluster energy associated to CaloHypo (charged electron)",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ELECTRONID",
+    "Content": "All significant bits representation of CellID (32bits) associated to CaloHypo seed (electron hypo)",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ELECTRONMATCH_CHI2",
+    "Content": "CaloID estimator: 3D chi2 for Track/CaloHypo(e) matching (charged)",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ELECTRONROW",
+    "Content": "Row code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ELECTRONSHOWERDLL",
+    "Content": "Summed per-cell E/p DLL (electron versus pion) with track-based cell selection",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ELECTRONSHOWEREOP",
+    "Content": "Electron energy/momentum with track-based cell selection",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_END_VX",
+    "Content": "Get the X-coordinate of the ENDVERTEX() of a particle.",
+    "Functions": "END_VX"
+  },
+  {
+    "Branch": "NuR_END_VY",
+    "Content": "Get the Y-coordinate of the ENDVERTEX() of a particle.",
+    "Functions": "END_VY"
+  },
+  {
+    "Branch": "NuR_END_VZ",
+    "Content": "Get the Z–coordinate of the ENDVERTEX() of a particle.",
+    "Functions": "END_VZ"
+  },
+  {
+    "Branch": "NuR_ETA",
+    "Content": "Get the eta (pseudorapidity) coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "ETA"
+  },
+  {
+    "Branch": "NuR_HASBREM",
+    "Content": "Has non-zero brem momentum-recovery energy",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_HASBREMADDED",
+    "Content": "Has non-zero brem momentum-recovery energy added (using Particle class flag)",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_HCALEOP",
+    "Content": "Hcal energy deposit over momentum (track)",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_HCALPIDE",
+    "Content": "Hcal-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_HCALPIDMU",
+    "Content": "Hcal-based DLL for mu-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1DiMuonHighMassDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1DiMuonHighMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1DiMuonHighMassDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1DiMuonHighMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1DiMuonLowMassDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1DiMuonLowMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1DiMuonLowMassDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1DiMuonLowMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1DiMuonNoIPDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1DiMuonNoIPDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1DiMuonNoIPDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1DiMuonNoIPDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1DiMuonNoIP_SSDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1DiMuonNoIP SSDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1DiMuonNoIP_SSDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1DiMuonNoIP SSDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1DiMuonSoftDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1DiMuonSoftDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1DiMuonSoftDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1DiMuonSoftDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1GlobalDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1GlobalDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1GlobalDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1GlobalDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1LowPtDiMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1LowPtDiMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1LowPtDiMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1LowPtDiMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1LowPtMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1LowPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1LowPtMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1LowPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1PhysDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1PhysDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1PhysDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1PhysDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1SingleHighPtMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1SingleHighPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1SingleHighPtMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1SingleHighPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1TrackMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1TrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1TrackMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1TrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1TrackMuonMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt1TrackMuonMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt1TrackMuonMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt1TrackMuonMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiJetIncSVTag pT25M40FullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiJetIncSVTag pT25M40FullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet10GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiSVTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet10GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiSVTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiSVTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiSVTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet20GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiSVTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet20GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiSVTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiSVTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiSVTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet30GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiSVTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet30GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiSVTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiSVTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiSVTagJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiSVTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiTopoTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiTopoTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiTopoTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiTopoTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiTopoTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiTopoTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiTopoTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiTopoTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiTopoTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiTopoTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE DiTopoTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE DiTopoTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_IncJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE IncJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_IncJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE IncJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_IncJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE IncJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_IncJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE IncJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_IncJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE IncJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_IncJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE IncJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_IncJet45GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE IncJet45GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_IncJet45GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE IncJet45GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_SingleHighPtElectronFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE SingleHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_SingleHighPtElectronFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE SingleHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_SingleHighPtMuonFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE SingleHighPtMuonFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_SingleHighPtMuonFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE SingleHighPtMuonFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE SingleHighPtMuonIsoFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE SingleHighPtMuonIsoFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE SingleHighPtMuonNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE SingleHighPtMuonNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_SingleVHighPtElectronFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE SingleVHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_SingleVHighPtElectronFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE SingleVHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for NuR Hlt2QEE ZToMuMu SingleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for NuR Hlt2QEE ZToMuMu SingleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_ID",
+    "Content": "Particle ID of a Particle or MCParticle.",
+    "Functions": "PARTICLE_ID"
+  },
+  {
+    "Branch": "NuR_INBREM",
+    "Content": "In Brem acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_INECAL",
+    "Content": "In Ecal acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_INHCAL",
+    "Content": "In Hcal acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_KEY",
+    "Content": "Key of the KeyedObject.; Return contained value of optional or specified default if optional is empty",
+    "Functions": "OBJECT_KEY, VALUE_OR"
+  },
+  {
+    "Branch": "NuR_Key",
+    "Content": "Key of the KeyedObject.",
+    "Functions": "OBJECT_KEY"
+  },
+  {
+    "Branch": "NuR_M",
+    "Content": "Get the particle (composite or basic) mass.",
+    "Functions": "MASS"
+  },
+  {
+    "Branch": "NuR_MAX_DOCA",
+    "Content": "Compute the maximum pairwise distance of closest approach between members of a combination using IDistanceCalculator.",
+    "Functions": "MAXDOCA"
+  },
+  {
+    "Branch": "NuR_MAX_DOCACHI2",
+    "Content": "Compute the maximum pairwise significance of the distance of closest approach, computed using an IDistanceCalculator implementation, between members of a combination.",
+    "Functions": "MAXDOCACHI2"
+  },
+  {
+    "Branch": "NuR_MAX_MINIPCHI2",
+    "Content": "Calculate the maximum of the given functor value.; Miniumum impact parameter chi2 with respect to the given vertices.",
+    "Functions": "MAX, MINIPCHI2"
+  },
+  {
+    "Branch": "NuR_MAX_OWNPVIPCHI2",
+    "Content": "Calculate the maximum of the given functor value.; Impact parameter chi2 with respect to the OWNPV()",
+    "Functions": "MAX, OWNPVIPCHI2"
+  },
+  {
+    "Branch": "NuR_MAX_P",
+    "Content": "Calculate the maximum of the given functor value.; Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "MAX, P"
+  },
+  {
+    "Branch": "NuR_MAX_PT",
+    "Content": "Calculate the maximum of the given functor value.; Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "MAX, PT"
+  },
+  {
+    "Branch": "NuR_MAX_SDOCA",
+    "Content": "Compute the maximum pairwise distance of closest approach between members of a combination.",
+    "Functions": "MAXSDOCA"
+  },
+  {
+    "Branch": "NuR_MAX_SDOCACHI2",
+    "Content": "Compute the maximum pairwise significance of the distance of closest approach between members of a combination.",
+    "Functions": "MAXSDOCACHI2"
+  },
+  {
+    "Branch": "NuR_MINIP",
+    "Content": "Miniumum impact parameter with respect to the given vertices.",
+    "Functions": "MINIP"
+  },
+  {
+    "Branch": "NuR_MINIPCHI2",
+    "Content": "Miniumum impact parameter chi2 with respect to the given vertices.",
+    "Functions": "MINIPCHI2"
+  },
+  {
+    "Branch": "NuR_MIN_OWNPVIPCHI2",
+    "Content": "Calculate the minimum of the given functor value.; Impact parameter chi2 with respect to the OWNPV()",
+    "Functions": "MIN, OWNPVIPCHI2"
+  },
+  {
+    "Branch": "NuR_MIN_P",
+    "Content": "Calculate the minimum of the given functor value.; Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "MIN, P"
+  },
+  {
+    "Branch": "NuR_MIN_PT",
+    "Content": "Calculate the minimum of the given functor value.; Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "MIN, PT"
+  },
+  {
+    "Branch": "NuR_OBJECT_KEY",
+    "Content": "Key of the KeyedObject.",
+    "Functions": "OBJECT_KEY"
+  },
+  {
+    "Branch": "NuR_OWNPVIP",
+    "Content": "Impact parameter with respect to the OWNPV()",
+    "Functions": "OWNPVIP"
+  },
+  {
+    "Branch": "NuR_OWNPVIPCHI2",
+    "Content": "Impact parameter chi2 with respect to the OWNPV()",
+    "Functions": "OWNPVIPCHI2"
+  },
+  {
+    "Branch": "NuR_OWNPVNDOF",
+    "Content": "Number of degrees of freedom [for chi2]; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NDOF, VALUE_OR"
+  },
+  {
+    "Branch": "NuR_OWNPVX",
+    "Content": "X-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVX"
+  },
+  {
+    "Branch": "NuR_OWNPVY",
+    "Content": "Y-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVY"
+  },
+  {
+    "Branch": "NuR_OWNPVZ",
+    "Content": "Z-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVZ"
+  },
+  {
+    "Branch": "NuR_OWNPV_DIRA",
+    "Content": "Direction angle between the three-momentum of a particle and its OWNPVFDVEC()",
+    "Functions": "OWNPVDIRA"
+  },
+  {
+    "Branch": "NuR_OWNPV_DLS",
+    "Content": "Decay length significance with respect to the OWNPV()",
+    "Functions": "OWNPVDLS"
+  },
+  {
+    "Branch": "NuR_OWNPV_ETA",
+    "Content": "Eta-coordinate of OWNPVFDVEC()",
+    "Functions": "OWNPVETA"
+  },
+  {
+    "Branch": "NuR_OWNPV_FD",
+    "Content": "Distance between the endvertex position and the position of the PV associated to a particle",
+    "Functions": "OWNPVFD"
+  },
+  {
+    "Branch": "NuR_OWNPV_FDCHI2",
+    "Content": "Flight distance chi2 with respect to the OWNPV()",
+    "Functions": "OWNPVFDCHI2"
+  },
+  {
+    "Branch": "NuR_OWNPV_FDIRX",
+    "Content": "X-component of unit flight direction vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_OWNPV_FDIRY",
+    "Content": "Y-component of unit flight direction vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_OWNPV_FDIRZ",
+    "Content": "Z-component of unit flight direction vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_OWNPV_FDVECX",
+    "Content": "X-component of flight distance vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_OWNPV_FDVECY",
+    "Content": "Y-component of flight distance vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_OWNPV_FDVECZ",
+    "Content": "Z-component of flight distance vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_OWNPV_LTIME",
+    "Content": "Lifetime with respect to the OWNPV()",
+    "Functions": "OWNPVLTIME"
+  },
+  {
+    "Branch": "NuR_OWNPV_VDRHO",
+    "Content": "Rho-coordinate of OWNPVFDVEC()",
+    "Functions": "OWNPVVDRHO"
+  },
+  {
+    "Branch": "NuR_OWNPV_VDX",
+    "Content": "Distance along the x-axis between the endvertex and the PV associated to a particle",
+    "Functions": "OWNPVVDX"
+  },
+  {
+    "Branch": "NuR_OWNPV_VDY",
+    "Content": "Distance along the y-axis between the endvertex and the PV associated to a particle",
+    "Functions": "OWNPVVDY"
+  },
+  {
+    "Branch": "NuR_OWNPV_VDZ",
+    "Content": "Distance along the z-axis between the endvertex and the PV associated to a particle",
+    "Functions": "OWNPVVDZ"
+  },
+  {
+    "Branch": "NuR_P",
+    "Content": "Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "P"
+  },
+  {
+    "Branch": "NuR_PARTICLE_ID",
+    "Content": "Particle ID (PDG code)",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_PHI",
+    "Content": "Get the phi coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "PHI"
+  },
+  {
+    "Branch": "NuR_PROBNN_D",
+    "Content": "MVA probability for deuteron hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_PROBNN_E",
+    "Content": "MVA probability for electron hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_PROBNN_GHOST",
+    "Content": "MVA probability for ghost track hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_PROBNN_K",
+    "Content": "MVA probability for kaon hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_PROBNN_MU",
+    "Content": "MVA probability for muon hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_PROBNN_P",
+    "Content": "MVA probability for proton hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_PROBNN_PI",
+    "Content": "MVA probability for pion hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "NuR_PT",
+    "Content": "Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PT"
+  },
+  {
+    "Branch": "NuR_PX",
+    "Content": "Get the X-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PX"
+  },
+  {
+    "Branch": "NuR_PY",
+    "Content": "Get the Y-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PY"
+  },
+  {
+    "Branch": "NuR_PZ",
+    "Content": "Get the Z-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PZ"
+  },
+  {
+    "Branch": "NuR_Q",
+    "Content": "Compute the charge",
+    "Functions": "CHARGE"
+  },
+  {
+    "Branch": "NuR_SDOCA12",
+    "Content": "",
+    "Functions": "SDOCA"
+  },
+  {
+    "Branch": "NuR_SUM_MINIPCHI2",
+    "Content": "Calculate the [scalar] sum of the given functor value.; Miniumum impact parameter chi2 with respect to the given vertices.",
+    "Functions": "SUM, MINIPCHI2"
+  },
+  {
+    "Branch": "NuR_SUM_OWNPVIPCHI2",
+    "Content": "Calculate the [scalar] sum of the given functor value.; Impact parameter chi2 with respect to the OWNPV()",
+    "Functions": "SUM, OWNPVIPCHI2"
+  },
+  {
+    "Branch": "NuR_SUM_P",
+    "Content": "Calculate the [scalar] sum of the given functor value.; Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "SUM, P"
+  },
+  {
+    "Branch": "NuR_SUM_PT",
+    "Content": "Calculate the [scalar] sum of the given functor value.; Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "SUM, PT"
+  },
+  {
+    "Branch": "NuR_THETA",
+    "Content": "Get the theta coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "THETA"
+  },
+  {
+    "Branch": "NuR_VTXCHI2",
+    "Content": "Vertex or track chi^2.",
+    "Functions": "CHI2"
+  },
+  {
+    "Branch": "NuR_VTXCHI2NDOF",
+    "Content": "Vertex or track chi^2 per degrees of freedom.",
+    "Functions": "CHI2DOF"
+  },
+  {
+    "Branch": "NuR_log_MAX_P",
+    "Content": "Calculate the maximum of the given functor value.",
+    "Functions": "MAX"
+  },
+  {
+    "Branch": "NuR_log_MAX_PT",
+    "Content": "Calculate the maximum of the given functor value.",
+    "Functions": "MAX"
+  },
+  {
+    "Branch": "NuR_log_MIN_P",
+    "Content": "Calculate the minimum of the given functor value.",
+    "Functions": "MIN"
+  },
+  {
+    "Branch": "NuR_log_MIN_PT",
+    "Content": "Calculate the minimum of the given functor value.",
+    "Functions": "MIN"
+  },
+  {
+    "Branch": "NuR_log_P",
+    "Content": "Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "P"
+  },
+  {
+    "Branch": "NuR_log_PT",
+    "Content": "Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PT"
+  },
+  {
+    "Branch": "NuR_log_SUM_P",
+    "Content": "Calculate the [scalar] sum of the given functor value.",
+    "Functions": "SUM"
+  },
+  {
+    "Branch": "NuR_log_SUM_PT",
+    "Content": "Calculate the [scalar] sum of the given functor value.",
+    "Functions": "SUM"
+  },
+  {
+    "Branch": "ODINTCK",
+    "Content": "ODIN trigger configuration key",
+    "Functions": ""
+  },
+  {
+    "Branch": "PV_SIZE",
+    "Content": "Size of the container at the given TES location",
+    "Functions": "SIZE"
+  },
+  {
+    "Branch": "RUNNUMBER",
+    "Content": "Run number from ODIN",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_Dijets1515Decision",
+    "Content": "Trigger decision: SpruceQEE Dijets1515",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_Dijets2020Decision",
+    "Content": "Trigger decision: SpruceQEE Dijets2020",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_Dijets2525Decision",
+    "Content": "Trigger decision: SpruceQEE Dijets2525",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_Dijets3030Decision",
+    "Content": "Trigger decision: SpruceQEE Dijets3030",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_Dijets3535Decision",
+    "Content": "Trigger decision: SpruceQEE Dijets3535",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_IncSVTagDijetsDecision",
+    "Content": "Trigger decision: SpruceQEE IncSVTagDijets",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_SingleHighPtElectronDecision",
+    "Content": "Trigger decision: SpruceQEE SingleHighPtElectron",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_SingleHighPtMuonDecision",
+    "Content": "Trigger decision: SpruceQEE SingleHighPtMuon",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_SingleHighPtMuonIsoDecision",
+    "Content": "Trigger decision: SpruceQEE SingleHighPtMuonIso",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_SingleJet15Decision",
+    "Content": "Trigger decision: SpruceQEE SingleJet15",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_SingleJet25Decision",
+    "Content": "Trigger decision: SpruceQEE SingleJet25",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_SingleJet35Decision",
+    "Content": "Trigger decision: SpruceQEE SingleJet35",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_SingleJet45Decision",
+    "Content": "Trigger decision: SpruceQEE SingleJet45",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_SingleVHighPtElectronDecision",
+    "Content": "Trigger decision: SpruceQEE SingleVHighPtElectron",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_WJetDecision",
+    "Content": "Trigger decision: SpruceQEE WJet",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_WJetJetDecision",
+    "Content": "Trigger decision: SpruceQEE WJetJet",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_ZToMuMuDecision",
+    "Content": "Trigger decision: SpruceQEE ZToMuMu",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_ZToMuMu_DoubleNoMuIDDecision",
+    "Content": "Trigger decision: SpruceQEE ZToMuMu DoubleNoMuID",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_ZToMuMu_SingleNoMuIDDecision",
+    "Content": "Trigger decision: SpruceQEE ZToMuMu SingleNoMuID",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diSVTag1010Decision",
+    "Content": "Trigger decision: SpruceQEE diSVTag1010",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diSVTag1515Decision",
+    "Content": "Trigger decision: SpruceQEE diSVTag1515",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diSVTag2020Decision",
+    "Content": "Trigger decision: SpruceQEE diSVTag2020",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diSVTag2525Decision",
+    "Content": "Trigger decision: SpruceQEE diSVTag2525",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diSVTag3030Decision",
+    "Content": "Trigger decision: SpruceQEE diSVTag3030",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diSVTag3535Decision",
+    "Content": "Trigger decision: SpruceQEE diSVTag3535",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diTopoTag1010Decision",
+    "Content": "Trigger decision: SpruceQEE diTopoTag1010",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diTopoTag1515Decision",
+    "Content": "Trigger decision: SpruceQEE diTopoTag1515",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diTopoTag2020Decision",
+    "Content": "Trigger decision: SpruceQEE diTopoTag2020",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diTopoTag2525Decision",
+    "Content": "Trigger decision: SpruceQEE diTopoTag2525",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diTopoTag3030Decision",
+    "Content": "Trigger decision: SpruceQEE diTopoTag3030",
+    "Functions": ""
+  },
+  {
+    "Branch": "SpruceQEE_diTopoTag3535Decision",
+    "Content": "Trigger decision: SpruceQEE diTopoTag3535",
+    "Functions": ""
+  },
+  {
+    "Branch": "Spruce_TCK",
+    "Content": "Spruce trigger configuration key",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ALLPV_FD",
+    "Content": "Flight distance with respect to all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ALLPV_IP",
+    "Content": "Impact parameter with respect to all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ALLPV_IPCHI2",
+    "Content": "Impact parameter chi2 with respect to all primary vertices",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ALV",
+    "Content": "Compute the cosine value of angle between two decay products.",
+    "Functions": "ALV"
+  },
+  {
+    "Branch": "W_BPV_IPCHI2",
+    "Content": "Impact parameter Chi2 with respect to the BPV(). More precisely that means the difference in the chi2 of the PV fit (of the BPV) between including and excluding the object the function is called on.",
+    "Functions": "BPVIPCHI2"
+  },
+  {
+    "Branch": "W_BPV_LTIME",
+    "Content": "Lifetime with respect to the BPV()",
+    "Functions": "BPVLTIME"
+  },
+  {
+    "Branch": "W_BREMBENDCORR",
+    "Content": "Correction factor accounting for bending biases in track due to brem",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_BREMENERGY",
+    "Content": "Brem momentum-recovery energy",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_BREMHYPOAREA",
+    "Content": "Area code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_BREMHYPOCOL",
+    "Content": "Column code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_BREMHYPODELTAX",
+    "Content": "Test statistic of being first-state like of CaloHypo (photon) for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_BREMHYPOENERGY",
+    "Content": "Energy of CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_BREMHYPOID",
+    "Content": "All significant bits representation of CellID (32bits) for CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_BREMHYPOMATCH_CHI2",
+    "Content": "2D chi2 of CaloHypo (photon) associated to track for brem recovery",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_BREMHYPOROW",
+    "Content": "Row code of brem CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_BREMPIDE",
+    "Content": "Brem-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_BREMTRACKBASEDENERGY",
+    "Content": "Track-based brem energy determination",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CLUSTERAREA",
+    "Content": "Area code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CLUSTERCOL",
+    "Content": "Column code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CLUSTERID",
+    "Content": "CellID.all() of the best matching cluster for a given reconstructed track",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CLUSTERMATCH_CHI2",
+    "Content": "CaloID estimator: 2D chi2 for Track/CaloCluster matching (neutral + charged)",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CLUSTERROW",
+    "Content": "Row code of best matching cluster CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloClusterMass",
+    "Content": "Retrieve the CALO cluster mass obtained from MergedPi0Alg",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloNeutral1To9EnergyRatio",
+    "Content": "Fraction of highest E cell (seed) to 9 (3x3) cells forming the cluster",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloNeutral4To9EnergyRatio",
+    "Content": "Fraction of highest 2x2 cell (seed) to 9 (3x3) cells forming the cluster",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloNeutralArea",
+    "Content": "Retrieve area code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloNeutralCol",
+    "Content": "Retrieve column code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloNeutralEcalEnergy",
+    "Content": "Retrieve the ECAL cluster energy associated to the neutral CaloHypo",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloNeutralHcal2EcalEnergyRatio",
+    "Content": "Retrieve the HCAL/ECAL energy ratio associated to the neutral CaloHypo",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloNeutralID",
+    "Content": "Retrieve bitwise information (32bits) of all CALO neutral seed CellIDs",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloNeutralRow",
+    "Content": "Retrieve row code of neutral CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloNeutralShowerShape",
+    "Content": "CaloID estimator: 2nd order moment of the cluster (shower width)",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloNumSaturatedCells",
+    "Content": "Number of saturated cells in calorimeter",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_CaloTrackMatchChi2",
+    "Content": "Chi2 of track-calorimeter cluster match",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_DOCA12",
+    "Content": "",
+    "Functions": "DOCA"
+  },
+  {
+    "Branch": "W_DOCA12CHI2",
+    "Content": "",
+    "Functions": "DOCACHI2"
+  },
+  {
+    "Branch": "W_E",
+    "Content": "Get the energy (see FOURMOMENTUM() for definition).",
+    "Functions": "ENERGY"
+  },
+  {
+    "Branch": "W_ECALPIDE",
+    "Content": "Ecal-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ECALPIDMU",
+    "Content": "Ecal-based DLL for mu-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ELECTRONAREA",
+    "Content": "Area code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ELECTRONCOL",
+    "Content": "Column code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ELECTRONENERGY",
+    "Content": "Cluster energy associated to CaloHypo (charged electron)",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ELECTRONID",
+    "Content": "All significant bits representation of CellID (32bits) associated to CaloHypo seed (electron hypo)",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ELECTRONMATCH_CHI2",
+    "Content": "CaloID estimator: 3D chi2 for Track/CaloHypo(e) matching (charged)",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ELECTRONROW",
+    "Content": "Row code of electron CaloHypo CellID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ELECTRONSHOWERDLL",
+    "Content": "Summed per-cell E/p DLL (electron versus pion) with track-based cell selection",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ELECTRONSHOWEREOP",
+    "Content": "Electron energy/momentum with track-based cell selection",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_END_VX",
+    "Content": "Get the X-coordinate of the ENDVERTEX() of a particle.",
+    "Functions": "END_VX"
+  },
+  {
+    "Branch": "W_END_VY",
+    "Content": "Get the Y-coordinate of the ENDVERTEX() of a particle.",
+    "Functions": "END_VY"
+  },
+  {
+    "Branch": "W_END_VZ",
+    "Content": "Get the Z–coordinate of the ENDVERTEX() of a particle.",
+    "Functions": "END_VZ"
+  },
+  {
+    "Branch": "W_ETA",
+    "Content": "Get the eta (pseudorapidity) coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "ETA"
+  },
+  {
+    "Branch": "W_HASBREM",
+    "Content": "Has non-zero brem momentum-recovery energy",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_HASBREMADDED",
+    "Content": "Has non-zero brem momentum-recovery energy added (using Particle class flag)",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_HCALEOP",
+    "Content": "Hcal energy deposit over momentum (track)",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_HCALPIDE",
+    "Content": "Hcal-based DLL for electron-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_HCALPIDMU",
+    "Content": "Hcal-based DLL for mu-ID",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1DiMuonHighMassDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1DiMuonHighMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1DiMuonHighMassDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1DiMuonHighMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1DiMuonLowMassDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1DiMuonLowMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1DiMuonLowMassDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1DiMuonLowMassDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1DiMuonNoIPDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1DiMuonNoIPDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1DiMuonNoIPDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1DiMuonNoIPDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1DiMuonNoIP_SSDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1DiMuonNoIP SSDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1DiMuonNoIP_SSDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1DiMuonNoIP SSDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1DiMuonSoftDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1DiMuonSoftDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1DiMuonSoftDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1DiMuonSoftDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1GlobalDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1GlobalDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1GlobalDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1GlobalDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1LowPtDiMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1LowPtDiMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1LowPtDiMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1LowPtDiMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1LowPtMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1LowPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1LowPtMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1LowPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1PhysDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1PhysDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1PhysDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1PhysDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1SingleHighPtMuonDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1SingleHighPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1SingleHighPtMuonDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1SingleHighPtMuonDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1TrackMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1TrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1TrackMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1TrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1TrackMuonMVADecisionHlt1TwoTrackMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1TrackMuonMVADecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt1TrackMuonMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt1TrackMuonMVADecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt1TrackMuonMVADecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiJetIncSVTag pT25M40FullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiJetIncSVTag_pT25M40FullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiJetIncSVTag pT25M40FullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet10GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiSVTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet10GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiSVTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiSVTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiSVTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet20GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiSVTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet20GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiSVTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiSVTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiSVTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet30GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiSVTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet30GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiSVTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiSVTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiSVTagJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiSVTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiTopoTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet10GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiTopoTagJet10GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiTopoTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiTopoTagJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiTopoTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet20GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiTopoTagJet20GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiTopoTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiTopoTagJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiTopoTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet30GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiTopoTagJet30GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE DiTopoTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_DiTopoTagJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE DiTopoTagJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_IncJet15GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE IncJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_IncJet15GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE IncJet15GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_IncJet25GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE IncJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_IncJet25GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE IncJet25GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_IncJet35GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE IncJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_IncJet35GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE IncJet35GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_IncJet45GeVFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE IncJet45GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_IncJet45GeVFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE IncJet45GeVFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_SingleHighPtElectronFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE SingleHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_SingleHighPtElectronFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE SingleHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_SingleHighPtMuonFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE SingleHighPtMuonFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_SingleHighPtMuonFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE SingleHighPtMuonFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE SingleHighPtMuonIsoFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_SingleHighPtMuonIsoFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE SingleHighPtMuonIsoFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE SingleHighPtMuonNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_SingleHighPtMuonNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE SingleHighPtMuonNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_SingleVHighPtElectronFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE SingleVHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_SingleVHighPtElectronFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE SingleVHighPtElectronFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_ZToMuMu_DoubleNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE ZToMuMu DoubleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TIS",
+    "Content": "Trigger Independent of Signal (TIS) flag for W Hlt2QEE ZToMuMu SingleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_Hlt2QEE_ZToMuMu_SingleNoMuIDFullDecision_TOS",
+    "Content": "Trigger on Signal (TOS) flag for W Hlt2QEE ZToMuMu SingleNoMuIDFullDecision",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_ID",
+    "Content": "Particle ID of a Particle or MCParticle.",
+    "Functions": "PARTICLE_ID"
+  },
+  {
+    "Branch": "W_INBREM",
+    "Content": "In Brem acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_INECAL",
+    "Content": "In Ecal acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_INHCAL",
+    "Content": "In Hcal acceptance",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_KEY",
+    "Content": "Key of the KeyedObject.; Return contained value of optional or specified default if optional is empty",
+    "Functions": "OBJECT_KEY, VALUE_OR"
+  },
+  {
+    "Branch": "W_Key",
+    "Content": "Key of the KeyedObject.",
+    "Functions": "OBJECT_KEY"
+  },
+  {
+    "Branch": "W_M",
+    "Content": "Get the particle (composite or basic) mass.",
+    "Functions": "MASS"
+  },
+  {
+    "Branch": "W_MAX_DOCA",
+    "Content": "Compute the maximum pairwise distance of closest approach between members of a combination using IDistanceCalculator.",
+    "Functions": "MAXDOCA"
+  },
+  {
+    "Branch": "W_MAX_DOCACHI2",
+    "Content": "Compute the maximum pairwise significance of the distance of closest approach, computed using an IDistanceCalculator implementation, between members of a combination.",
+    "Functions": "MAXDOCACHI2"
+  },
+  {
+    "Branch": "W_MAX_MINIPCHI2",
+    "Content": "Calculate the maximum of the given functor value.; Miniumum impact parameter chi2 with respect to the given vertices.",
+    "Functions": "MAX, MINIPCHI2"
+  },
+  {
+    "Branch": "W_MAX_OWNPVIPCHI2",
+    "Content": "Calculate the maximum of the given functor value.; Impact parameter chi2 with respect to the OWNPV()",
+    "Functions": "MAX, OWNPVIPCHI2"
+  },
+  {
+    "Branch": "W_MAX_P",
+    "Content": "Calculate the maximum of the given functor value.; Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "MAX, P"
+  },
+  {
+    "Branch": "W_MAX_PT",
+    "Content": "Calculate the maximum of the given functor value.; Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "MAX, PT"
+  },
+  {
+    "Branch": "W_MAX_SDOCA",
+    "Content": "Compute the maximum pairwise distance of closest approach between members of a combination.",
+    "Functions": "MAXSDOCA"
+  },
+  {
+    "Branch": "W_MAX_SDOCACHI2",
+    "Content": "Compute the maximum pairwise significance of the distance of closest approach between members of a combination.",
+    "Functions": "MAXSDOCACHI2"
+  },
+  {
+    "Branch": "W_MINIP",
+    "Content": "Miniumum impact parameter with respect to the given vertices.",
+    "Functions": "MINIP"
+  },
+  {
+    "Branch": "W_MINIPCHI2",
+    "Content": "Miniumum impact parameter chi2 with respect to the given vertices.",
+    "Functions": "MINIPCHI2"
+  },
+  {
+    "Branch": "W_MIN_OWNPVIPCHI2",
+    "Content": "Calculate the minimum of the given functor value.; Impact parameter chi2 with respect to the OWNPV()",
+    "Functions": "MIN, OWNPVIPCHI2"
+  },
+  {
+    "Branch": "W_MIN_P",
+    "Content": "Calculate the minimum of the given functor value.; Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "MIN, P"
+  },
+  {
+    "Branch": "W_MIN_PT",
+    "Content": "Calculate the minimum of the given functor value.; Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "MIN, PT"
+  },
+  {
+    "Branch": "W_MmuWmuN",
+    "Content": "",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_OBJECT_KEY",
+    "Content": "Key of the KeyedObject.",
+    "Functions": "OBJECT_KEY"
+  },
+  {
+    "Branch": "W_OWNPVIP",
+    "Content": "Impact parameter with respect to the OWNPV()",
+    "Functions": "OWNPVIP"
+  },
+  {
+    "Branch": "W_OWNPVIPCHI2",
+    "Content": "Impact parameter chi2 with respect to the OWNPV()",
+    "Functions": "OWNPVIPCHI2"
+  },
+  {
+    "Branch": "W_OWNPVNDOF",
+    "Content": "Number of degrees of freedom [for chi2]; Return contained value of optional or specified default if optional is empty",
+    "Functions": "NDOF, VALUE_OR"
+  },
+  {
+    "Branch": "W_OWNPVX",
+    "Content": "X-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVX"
+  },
+  {
+    "Branch": "W_OWNPVY",
+    "Content": "Y-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVY"
+  },
+  {
+    "Branch": "W_OWNPVZ",
+    "Content": "Z-coordinate of the PV associated to the particle",
+    "Functions": "OWNPVZ"
+  },
+  {
+    "Branch": "W_OWNPV_DIRA",
+    "Content": "Direction angle between the three-momentum of a particle and its OWNPVFDVEC()",
+    "Functions": "OWNPVDIRA"
+  },
+  {
+    "Branch": "W_OWNPV_DLS",
+    "Content": "Decay length significance with respect to the OWNPV()",
+    "Functions": "OWNPVDLS"
+  },
+  {
+    "Branch": "W_OWNPV_ETA",
+    "Content": "Eta-coordinate of OWNPVFDVEC()",
+    "Functions": "OWNPVETA"
+  },
+  {
+    "Branch": "W_OWNPV_FD",
+    "Content": "Distance between the endvertex position and the position of the PV associated to a particle",
+    "Functions": "OWNPVFD"
+  },
+  {
+    "Branch": "W_OWNPV_FDCHI2",
+    "Content": "Flight distance chi2 with respect to the OWNPV()",
+    "Functions": "OWNPVFDCHI2"
+  },
+  {
+    "Branch": "W_OWNPV_FDIRX",
+    "Content": "X-component of unit flight direction vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_OWNPV_FDIRY",
+    "Content": "Y-component of unit flight direction vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_OWNPV_FDIRZ",
+    "Content": "Z-component of unit flight direction vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_OWNPV_FDVECX",
+    "Content": "X-component of flight distance vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_OWNPV_FDVECY",
+    "Content": "Y-component of flight distance vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_OWNPV_FDVECZ",
+    "Content": "Z-component of flight distance vector with respect to own PV",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_OWNPV_LTIME",
+    "Content": "Lifetime with respect to the OWNPV()",
+    "Functions": "OWNPVLTIME"
+  },
+  {
+    "Branch": "W_OWNPV_VDRHO",
+    "Content": "Rho-coordinate of OWNPVFDVEC()",
+    "Functions": "OWNPVVDRHO"
+  },
+  {
+    "Branch": "W_OWNPV_VDX",
+    "Content": "Distance along the x-axis between the endvertex and the PV associated to a particle",
+    "Functions": "OWNPVVDX"
+  },
+  {
+    "Branch": "W_OWNPV_VDY",
+    "Content": "Distance along the y-axis between the endvertex and the PV associated to a particle",
+    "Functions": "OWNPVVDY"
+  },
+  {
+    "Branch": "W_OWNPV_VDZ",
+    "Content": "Distance along the z-axis between the endvertex and the PV associated to a particle",
+    "Functions": "OWNPVVDZ"
+  },
+  {
+    "Branch": "W_P",
+    "Content": "Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "P"
+  },
+  {
+    "Branch": "W_PARTICLE_ID",
+    "Content": "Particle ID (PDG code)",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_PHI",
+    "Content": "Get the phi coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "PHI"
+  },
+  {
+    "Branch": "W_PROBNN_D",
+    "Content": "MVA probability for deuteron hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_PROBNN_E",
+    "Content": "MVA probability for electron hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_PROBNN_GHOST",
+    "Content": "MVA probability for ghost track hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_PROBNN_K",
+    "Content": "MVA probability for kaon hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_PROBNN_MU",
+    "Content": "MVA probability for muon hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_PROBNN_P",
+    "Content": "MVA probability for proton hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_PROBNN_PI",
+    "Content": "MVA probability for pion hypothesis",
+    "Functions": ""
+  },
+  {
+    "Branch": "W_PT",
+    "Content": "Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PT"
+  },
+  {
+    "Branch": "W_PX",
+    "Content": "Get the X-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PX"
+  },
+  {
+    "Branch": "W_PY",
+    "Content": "Get the Y-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PY"
+  },
+  {
+    "Branch": "W_PZ",
+    "Content": "Get the Z-coordinate of the momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PZ"
+  },
+  {
+    "Branch": "W_Q",
+    "Content": "Compute the charge",
+    "Functions": "CHARGE"
+  },
+  {
+    "Branch": "W_SDOCA12",
+    "Content": "",
+    "Functions": "SDOCA"
+  },
+  {
+    "Branch": "W_SUM_MINIPCHI2",
+    "Content": "Calculate the [scalar] sum of the given functor value.; Miniumum impact parameter chi2 with respect to the given vertices.",
+    "Functions": "SUM, MINIPCHI2"
+  },
+  {
+    "Branch": "W_SUM_OWNPVIPCHI2",
+    "Content": "Calculate the [scalar] sum of the given functor value.; Impact parameter chi2 with respect to the OWNPV()",
+    "Functions": "SUM, OWNPVIPCHI2"
+  },
+  {
+    "Branch": "W_SUM_P",
+    "Content": "Calculate the [scalar] sum of the given functor value.; Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "SUM, P"
+  },
+  {
+    "Branch": "W_SUM_PT",
+    "Content": "Calculate the [scalar] sum of the given functor value.; Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "SUM, PT"
+  },
+  {
+    "Branch": "W_THETA",
+    "Content": "Get the theta coordinate of a slope (see SLOPES() for definition).",
+    "Functions": "THETA"
+  },
+  {
+    "Branch": "W_VTXCHI2",
+    "Content": "Vertex or track chi^2.",
+    "Functions": "CHI2"
+  },
+  {
+    "Branch": "W_VTXCHI2NDOF",
+    "Content": "Vertex or track chi^2 per degrees of freedom.",
+    "Functions": "CHI2DOF"
+  },
+  {
+    "Branch": "W_log_MAX_P",
+    "Content": "Calculate the maximum of the given functor value.",
+    "Functions": "MAX"
+  },
+  {
+    "Branch": "W_log_MAX_PT",
+    "Content": "Calculate the maximum of the given functor value.",
+    "Functions": "MAX"
+  },
+  {
+    "Branch": "W_log_MIN_P",
+    "Content": "Calculate the minimum of the given functor value.",
+    "Functions": "MIN"
+  },
+  {
+    "Branch": "W_log_MIN_PT",
+    "Content": "Calculate the minimum of the given functor value.",
+    "Functions": "MIN"
+  },
+  {
+    "Branch": "W_log_P",
+    "Content": "Get the magnitude of the momentum vector (see THREEMOMENTUM() for definition).",
+    "Functions": "P"
+  },
+  {
+    "Branch": "W_log_PT",
+    "Content": "Get the transverse momentum (see THREEMOMENTUM() for definition).",
+    "Functions": "PT"
+  },
+  {
+    "Branch": "W_log_SUM_P",
+    "Content": "Calculate the [scalar] sum of the given functor value.",
+    "Functions": "SUM"
+  },
+  {
+    "Branch": "W_log_SUM_PT",
+    "Content": "Calculate the [scalar] sum of the given functor value.",
+    "Functions": "SUM"
+  },
+  {
+    "Branch": "nBackTracks",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nDownstreamTracks",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nEcalClusters",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nFTClusters",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nLongTracks",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nPVs",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nRich1Hits",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nRich2Hits",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nTTracks",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nUTClusters",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nUpstreamTracks",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nVPClusters",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  },
+  {
+    "Branch": "nVeloTracks",
+    "Content": "Extracts DataType information from LHCb::RecSummary.DataType; Return contained value of optional or specified default if optional is empty",
+    "Functions": "RECSUMMARY_INFO, VALUE_OR"
+  }
+]
