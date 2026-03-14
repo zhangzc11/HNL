@@ -1,0 +1,8 @@
+AUC = 0.955739
+
+Feature ranking:
+MuNuR_PT         0.678274
+Mu_PT            0.228775
+W_PT             0.085425
+Mu_ETA           0.006713
+nPVs             0.000813
