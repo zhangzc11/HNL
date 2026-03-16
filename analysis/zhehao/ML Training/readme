@@ -1,1 +1,7 @@
-
+这里包含一个大致完整的机器学习筛选过程
+branch_differ_of_MC_and_data.py是一个branch过滤程序，作用是找出同时在MC与data中出现的branch，并且删除了一系列包含事件等关键词的branch
+filtered_branches.py是过滤后branch的列表
+KS排序.py是基于ks对data与MC相关性的一个排序，前50的结果保存在ks top 50.png中
+在对前50的结果进行一个筛选之后我们得到了一份尝试用于ml的branch列表，并使用KS筛选与相关矩阵运算.py对相关性进行了检查，结果保存在corr_data.png与corr_signal.png中
+最后使用得到的branch进行ml training，程序为ML_training_of_HNL_version1 （based on the frame from renhongjin）.py，其中branch的保留与否以及pre_selection的cut参考了combined前缀的png文件
+数据来源：data为原文件，MC为0tau5Gev tree_name = ss1j
