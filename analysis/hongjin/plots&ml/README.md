@@ -1,0 +1,3 @@
+plot_top30_by_tau.py 是一个画图程序，会画出特定DecayTree（默认OS1J）的前三十变量图，其中相同寿命的一个变量画在一张图上。图片保存在variable_plots文件夹下。
+
+ml_top30_tau0_grouped.py 是一个机器学习程序，其会将前28变量作为输入训练（去除'MuNuR_POSITION_STATEAT_LastMeasurement_Z'与'Mu_POSITION_STATEAT_LastMeasurement_Z'变量），并且逐一移去各变量，以ROC curve下面积（或AUC）变化值衡量变量重要性。ml_top30_tau0_grouped_fast.py 是其简化版，能加快运行速度。
