@@ -1,0 +1,24 @@
+AUC = 0.990342
+
+Feature ranking:
+Mu_log_PT        0.243089
+W_log_PT         0.168514
+MuNuR_log_PT     0.139344
+MuNuR_MINIP      0.066012
+Mu_ELECTRONENERGY  0.058899
+MuNuR_ELECTRONSHOWERDLL  0.058551
+NuR_log_PT       0.057604
+Mu_MINIP         0.045466
+Mu_ELECTRONSHOWERDLL  0.034626
+W_ETA            0.029453
+MuNuR_ELECTRONSHOWEREOP  0.020775
+MuNuR_log_P      0.018735
+MuNuR_E          0.015555
+W_THETA          0.013180
+Mu_THETA         0.011383
+Mu_log_P         0.007452
+MuNuR_ELECTRONENERGY  0.003267
+NuR_log_P        0.002469
+W_MINIP          0.002323
+Mu_ETA           0.002212
+W_log_P          0.001092
