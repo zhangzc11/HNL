@@ -1,0 +1,5 @@
+Branch: Mup_E
+Pre-selection condition: (Z_M > 75000) & (Z_M < 105000) 
+MC Normalization Factor: 0.2321
+Kolmogorov-Smirnov Statistic: 0.3464
+Kolmogorov-Smirnov p-value: 6.0336e-293
