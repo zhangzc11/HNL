@@ -1,0 +1,18 @@
+AUC = 0.980127
+
+Feature ranking:
+MuNuR_MINIP      0.383087
+Mu_log_PT        0.189912
+MuNuR_log_PT     0.178289
+Mu_MINIP         0.144430
+MuNuR_log_P      0.021276
+MuNuR_E          0.020558
+W_ETA            0.019757
+W_THETA          0.018392
+NuR_log_PT       0.008871
+NuR_log_P        0.006796
+W_MINIP          0.003184
+W_log_P          0.001719
+Mu_log_P         0.001457
+Mu_ETA           0.001230
+Mu_THETA         0.001043
