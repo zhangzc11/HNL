@@ -1,0 +1,1 @@
+--- GBDT_2 Feature Ranking ---AUC = 0.891348Feature ranking:Mu_log_PT                 0.753310Mu_MINIP                  0.202459Mu_log_P                  0.022458Mu_THETA                  0.012470Mu_ETA                    0.009303

@@ -1,0 +1,1 @@
+--- GBDT_1 Feature Ranking ---AUC = 0.727606Feature ranking:W_ETA                     0.350135W_MINIP                   0.269217W_THETA                   0.258213W_log_P                   0.122435

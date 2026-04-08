@@ -1,0 +1,1 @@
+--- GBDT_3 Feature Ranking ---AUC = 0.905952Feature ranking:MuNuR_log_PT              0.349570MuNuR_MINIP               0.306387NuR_log_PT                0.152680MuNuR_log_P               0.073292MuNuR_E                   0.059859NuR_log_P                 0.058213
