@@ -12,7 +12,7 @@ from PyConf.reading import get_mc_track_info
 from DaVinciMCTools import MCReconstructed as MCRected
 from DaVinciMCTools import MCReconstructible as MCRectible
 
-from PyConf.Algorithms import WeightedRelTableAlg
+from PyConf.Algorithms import WeightedRelTableAlg, ThOrParticleSelection
 #from Hlt2Conf.standard_jets import make_particleflow
 from Hlt2Conf.standard_jets import make_charged_particles
 from RecoConf.standard_particles import make_photons_PF, make_merged_pi0s, get_all_track_selector, standard_protoparticle_filter
@@ -28,6 +28,14 @@ from Hlt2Conf.standard_jets import build_jets
 from PyConf.Algorithms import ParticleFlowMakerMC, ParticleFlowMaker, ParticleMakerForParticleFlow
 from RecoConf.data_from_file import mc_unpackers
 from PyConf.reading import get_mc_particles
+
+
+from RecoConf.standard_particles import ( make_long_pions, make_down_pions, make_up_pions, make_photons, make_merged_pi0s)
+from Hlt2Conf.standard_jets import make_onlytrack_particleflow as make_onlytrack_particleflow_s
+from Hlt2Conf.standard_jets import make_particleflow as make_particleflow_s
+import itertools
+import numpy as np
+
 
 JET_PT_MIN = 10.0 * GeV
 
@@ -83,6 +91,115 @@ def make_base_vars(pvs):
     base_vars += FC.ChargedCaloInfo(extra_info=True)
 
     return base_vars
+
+def make_muon_vars(pvs):
+    muon_vars =  FunctorCollection({
+        "BPVIP": F.BPVIP(pvs),
+        "TRCHI2NDOF": F.CHI2DOF,
+        "PV_X": F.BPVX(pvs),
+        "PV_Y": F.BPVY(pvs),
+        "PV_Z": F.BPVZ(pvs),
+        "PERR2": F.PERR2(),
+        "HCALEOP": F.VALUE_OR(0) @ F.HCALEOP,
+        "ECALEOP": F.VALUE_OR(0) @ F.ELECTRONSHOWEREOP,
+    })
+    
+def _extract_muons_from_composite_candidate(data, decdesc):
+    """
+        Navigates the descendants of a candidate particle
+        Returns the child muons for that candidate.
+    """
+    return ThOrParticleSelection(
+        InputParticles=data,
+        Functor=F.FILTER(F.IS_ID(decdesc))
+        @ F.GET_ALL_DESCENDANTS()).OutputSelection
+
+def _safe_sumcone(reltable_alg, functor):
+    """
+        Given a relation table and a functor:
+            Returns SUM(functor) over all particles within that relation table.
+        Safe refers to giving the physical invalid value of 0 if the relation is empty (i.e. instead of NaN)
+    """
+    return F.VALUE_OR(0) @ F.SUMCONE(
+        Functor=functor, Relations=reltable_alg.OutputRelations)
+
+
+def make_isolation_vars(data, pref, selection):
+    """
+    For each candidate muon:
+        generate the particles within a cone with following cuts:
+            - radius 0.5 in (DPHI, DETA) space around signal candidate
+            - ~SHARE_TRACKS i.e. don't count our signal candidate
+            - OptionalCut: Share_OwnPV i.e. must come from the same primary vertex as the signal candidate
+        Defines and propagates:
+          Cone's PX and PY via _safe_sumcone
+
+        This is done for several different cone inputs:
+            - long, down, up, photons, merged pizeros, particleflow, track-only particleflow
+        For all cones, other than neutral contributions (pizeros, photons):
+            two versions of the cones are used and saved,
+            with and without the OptionalCut on PVs
+    Also generates the same but for longtrack cones with different cone radii
+    """
+    # extract muon particlecontainer from the main decay candidate.
+    mu_decdesc = {"Mup": "mu+", "Mum": "mu-", "Mu": "mu"}[pref]
+    isDimuon = "W" not in selection
+    mu_particles = _extract_muons_from_composite_candidate(
+        data=data, decdesc=mu_decdesc) if isDimuon else data
+
+
+    input_cands = {  # key: input_generator
+        "LongTrack": make_long_pions,
+        "Downstream": make_down_pions,
+        "Upstream": make_up_pions,
+        "Photons": make_photons,
+        "MergedPiZeros": make_merged_pi0s,
+        "Pflow": make_particleflow_s,
+        "Pflow_trackonly": make_onlytrack_particleflow_s
+    }
+
+    extra_cuts = {None: F.ALL, "ShareOwnPV": F.SHARE_BPV(None)}
+    iso_variables = {}
+    def __iso_variables__(input_cand, extra_cut_name, cone_radius) -> dict:
+        if extra_cut_name and input_cand in ["Photons", "MergedPiZeros"]:
+            # No point doing PV cuts on neutrals
+            return {}
+        cone_radius_name = f"0{cone_radius * 10:.0f}0"
+        name = f"{input_cand}ISO{cone_radius_name}"
+        if extra_cut_name:
+            name += f"_{extra_cut_name}"
+
+        alg = WeightedRelTableAlg(
+            ReferenceParticles=mu_particles,
+            InputCandidates=input_cands[input_cand](),
+            Cut=F.require_all(F.DR2 < (cone_radius**2), ~F.SHARE_TRACKS(),
+                              extra_cuts[extra_cut_name]))
+        return {
+            f"{name}_C{attr}": _safe_sumcone(alg, getattr(F, attr))
+            for attr in ["PX", "PY", "PT"]
+        }
+
+    for input_cand, extra_cut_name in itertools.product(
+            input_cands.keys(), extra_cuts.keys()):
+        iso_variables |= __iso_variables__(
+            input_cand=input_cand,
+            extra_cut_name=extra_cut_name,
+            cone_radius=0.5)
+
+    # As per https://gitlab.cern.ch/LHCb-QEE/ew/ew-analyses/-/issues/1049
+    # get LongTrack iso with different cones sizes
+
+    for cone_radius, extra_cut_name in itertools.product(
+            np.arange(start=0.2, stop=0.8, step=0.1), extra_cuts.keys()):
+        if np.isclose(cone_radius, 0.5):
+            # Avoid (cone size = 0.5) as that's handled in the above loop
+            continue
+        iso_variables |= __iso_variables__(
+            input_cand="LongTrack",
+            extra_cut_name=extra_cut_name,
+            cone_radius=float(cone_radius))
+
+    return FunctorCollection(iso_variables)
 
 def make_vertex_vars(pvs):
     return FunctorCollection({
@@ -216,6 +333,15 @@ def make_track_vars(pvs):
         "POSITION_STATEAT_LastMeasurement_X"      : F.POSITION_X @ F.STATE_AT("LastMeasurement") @ F.TRACK,
         "POSITION_STATEAT_LastMeasurement_Y"      : F.POSITION_Y @ F.STATE_AT("LastMeasurement") @ F.TRACK,
         "POSITION_STATEAT_LastMeasurement_Z"      : F.POSITION_Z @ F.STATE_AT("LastMeasurement") @ F.TRACK,
+        "BPVIP": F.BPVIP(pvs),
+        "TRCHI2NDOF": F.CHI2DOF,
+        "PV_X": F.BPVX(pvs),
+        "PV_Y": F.BPVY(pvs),
+        "PV_Z": F.BPVZ(pvs),
+        "sigma_P_over_P": fmath.sqrt(F.PERR2())/F.P(),
+        #"sigma_P": fmath.sqrt(F.PERR2()),
+        "HCALEOverP": F.VALUE_OR(0) @ F.HCALEOP,
+        "ECALEOverP": F.VALUE_OR(0) @ F.ELECTRONSHOWEREOP,
         })
 
 

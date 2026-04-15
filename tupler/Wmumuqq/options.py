@@ -136,11 +136,11 @@ def diyline(isSS=False, nJ=1):
         CombinationCut=combination_code_W,
         CompositeCut=vertex_code_W)  
 
-    return WR
+    return WR, muons_W, muons_N
   
 
 def make_algs_Wmumuqq(options, algname, isSS_=False, nJ_=1, doReco=True, mcInclusive=False):
-    data = diyline(isSS_, nJ_)
+    data, muons_W, muons_N = diyline(isSS_, nJ_)
 
     pvs = get_pvs()
 
@@ -167,8 +167,8 @@ def make_algs_Wmumuqq(options, algname, isSS_=False, nJ_=1, doReco=True, mcInclu
         #"ALL": all_vars,
         "W": all_vars+vertex_vars+mc_truth_vars+wcomb_vars,
         "NuR": all_vars+vertex_vars+mc_truth_vars,
-        "Mu": all_vars+track_vars+mc_truth_vars,
-        "MuNuR": all_vars+track_vars+mc_truth_vars,
+        "Mu": all_vars+track_vars+mc_truth_vars+utils.make_isolation_vars(muons_W, "Mu", "W"),
+        "MuNuR": all_vars+track_vars+mc_truth_vars+utils.make_isolation_vars(muons_N, "Mu", "W"),
     }
     for iJ in range(nJ_):
         variables["Jet"+str(iJ+1)] = jet_vars

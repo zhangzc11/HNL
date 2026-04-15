@@ -1,0 +1,2 @@
+/pool1/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42112001_Zmumu/merge00/00012345_00006789_6.spruce.dst
+/pool1/lhcb/zhicaiz/mc/2024/HNL_Wmumuqq/42112001_Zmumu/merge01/00012345_00006789_6.spruce.dst
